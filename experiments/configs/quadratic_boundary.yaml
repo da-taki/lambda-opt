@@ -1,0 +1,33 @@
+# Boundary regime: L_pred ≈ 1
+# LR tuned so optimizer is at the edge of contractivity
+# Expected: divergence stays roughly constant, bound is flat
+# This is the most theoretically interesting regime
+model:
+  type: quadratic
+  n: 10
+  condition_number: 20
+
+optimizer:
+  type: adam
+  lr: 0.008
+  beta1: 0.9
+  beta2: 0.999
+  eps: 1.0e-8
+
+training:
+  T: 500
+  seed: 42
+
+rewrites:
+  rewrite_times: [0.25, 0.5, 0.75]
+  ema_alpha: 0.999
+  lora_freeze_frac: 0.5
+  checkpoint_staleness: 50
+
+lipschitz:
+  n_samples: 10
+  eps: 1.0e-4
+  sample_every: 10
+
+delta_scaling:
+  scales: [0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1]

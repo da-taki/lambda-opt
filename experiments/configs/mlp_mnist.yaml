@@ -1,0 +1,37 @@
+# Small MLP on MNIST
+# Small enough for near-exact Hessian (Lanczos with high k)
+# Bridges quadratic theory ↔ real neural net experiments
+model:
+  type: mlp
+  dataset: mnist
+  hidden_sizes: [64, 32]
+  num_classes: 10
+  hessian_k: 50
+  hessian_lanczos_iters: 200
+
+optimizer:
+  type: adam
+  lr: 0.001
+  beta1: 0.9
+  beta2: 0.999
+  eps: 1.0e-8
+
+training:
+  T: 1000
+  batch_size: 256
+  seed: 42
+  deterministic: true
+
+rewrites:
+  rewrite_times: [0.25, 0.5, 0.75]
+  ema_alpha: 0.999
+  lora_freeze_frac: 0.3
+  checkpoint_staleness: 100
+
+lipschitz:
+  n_samples: 5
+  eps: 1.0e-4
+  sample_every: 50
+
+delta_scaling:
+  scales: [0.001, 0.005, 0.01, 0.05, 0.1]

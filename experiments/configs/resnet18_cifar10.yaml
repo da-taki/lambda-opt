@@ -1,0 +1,36 @@
+# Real neural network: ResNet-18 / CIFAR-10
+# Hessian eigenvalues estimated via Lanczos (top-20)
+# Tests whether a priori bound generalizes beyond quadratics
+model:
+  type: resnet18
+  dataset: cifar10
+  num_classes: 10
+  hessian_k: 20
+  hessian_lanczos_iters: 100
+
+optimizer:
+  type: adam
+  lr: 0.001
+  beta1: 0.9
+  beta2: 0.999
+  eps: 1.0e-8
+
+training:
+  T: 2000
+  batch_size: 128
+  seed: 42
+  deterministic: true
+
+rewrites:
+  rewrite_times: [0.25, 0.5, 0.75]
+  ema_alpha: 0.999
+  lora_freeze_frac: 0.3
+  checkpoint_staleness: 200
+
+lipschitz:
+  n_samples: 5
+  eps: 1.0e-4
+  sample_every: 100
+
+delta_scaling:
+  scales: [0.001, 0.005, 0.01, 0.05, 0.1]
