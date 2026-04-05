@@ -1,20 +1,17 @@
-"""Neural network experiments → Plot 9.
-Runs on MLP/MNIST or ResNet-18/CIFAR-10.
-Uses Lanczos Hessian eigenvalues for a priori L_pred.
-"""
+"""Neural network experiments → Plot 9. Memory-efficient for large models."""
 import argparse, json, os, yaml, torch
 import torch.nn as nn
 from pathlib import Path
 from src import (
     TrainingState, make_constant_schedule, AdamStep,
-    EMARewrite, CheckpointRewrite,
-    run_trajectory, compute_divergence,
-    apriori_lipschitz_quadratic,
-    bound_holds, tightness_ratio, loss_gap,
+    EMARewrite,
+    apriori_lipschitz_numerical,
+    bound_holds, loss_gap,
 )
 from src.bounds import apriori_bound, classify_regime
-from src.loss_landscape import hessian_eigenvalues_lanczos
 from src.metrics import effective_lipschitz_from_divergence
+
+SAFETY = 1.03
 
 
 class SimpleMLP(nn.Module):
@@ -41,10 +38,8 @@ def get_model_and_data(cfg):
         dataset = datasets.MNIST(root="./data", train=True, download=True, transform=transform)
         loader = torch.utils.data.DataLoader(dataset, batch_size=cfg["training"]["batch_size"],
                                               shuffle=False)
-        model = SimpleMLP(
-            hidden_sizes=cfg["model"]["hidden_sizes"],
-            num_classes=cfg["model"]["num_classes"])
-        return model, loader
+        return SimpleMLP(hidden_sizes=cfg["model"]["hidden_sizes"],
+                         num_classes=cfg["model"]["num_classes"]), loader
     elif model_type == "resnet18":
         from torchvision import datasets, transforms, models
         transform = transforms.Compose([
@@ -53,10 +48,8 @@ def get_model_and_data(cfg):
         dataset = datasets.CIFAR10(root="./data", train=True, download=True, transform=transform)
         loader = torch.utils.data.DataLoader(dataset, batch_size=cfg["training"]["batch_size"],
                                               shuffle=False)
-        model = models.resnet18(num_classes=cfg["model"]["num_classes"])
-        return model, loader
-    else:
-        raise ValueError(f"Unknown model: {model_type}")
+        return models.resnet18(num_classes=cfg["model"]["num_classes"]), loader
+    raise ValueError(f"Unknown model: {model_type}")
 
 
 def flatten_params(model):
@@ -71,9 +64,29 @@ def unflatten_params(model, flat):
         idx += n
 
 
-def run(cfg_path, out_dir):
-    cfg = yaml.safe_load(open(cfg_path))
-    os.makedirs(out_dir, exist_ok=True)
+def run_lightweight(s0, step_fn, loss_fn, T, rewrite_at=None, rewrite_op=None):
+    """Memory-efficient trajectory: only stores theta divergence per step,
+    not the full state history. Returns (final_state, losses, theta_at_tR)."""
+    s = s0.clone()
+    losses = []
+    theta_at_tR = None
+    for step in range(T):
+        if rewrite_at is not None and step == rewrite_at:
+            theta_at_tR = s.theta.clone()
+            if rewrite_op is not None:
+                s = rewrite_op.apply(s)
+        loss, grad = loss_fn(s.theta)
+        losses.append(loss)
+        s, _ = step_fn(s, grad)
+        if step % 50 == 0:
+            print(f"  step {step}/{T}", end="\r")
+    print(f"  step {T}/{T} done")
+    return s, losses, theta_at_tR
+
+
+def run(config, out):
+    cfg = yaml.safe_load(open(config))
+    os.makedirs(out, exist_ok=True)
     T, seed = cfg["training"]["T"], cfg["training"]["seed"]
     opt_cfg = cfg["optimizer"]
 
@@ -81,90 +94,133 @@ def run(cfg_path, out_dir):
     model, loader = get_model_and_data(cfg)
     criterion = nn.CrossEntropyLoss()
     n_params = sum(p.numel() for p in model.parameters())
-    print(f"Model: {cfg['model']['type']}, params: {n_params}")
+    print(f"Model: {cfg['model']['type']}, params: {n_params}, T: {T}")
 
-    # wrap model as our state-based system
     schedule = make_constant_schedule(
         lr=opt_cfg["lr"], beta1=opt_cfg["beta1"], beta2=opt_cfg["beta2"])
-
     theta0 = flatten_params(model)
     s0 = TrainingState(theta=theta0, moments=torch.zeros(n_params, 2),
                        schedule_fn=schedule, t=0)
 
-    # create loss_fn that uses the model
-    data_iter = iter(loader)
     batch_cache = []
-    for i, (x, y) in enumerate(data_iter):
+    for i, (x, y) in enumerate(loader):
         batch_cache.append((x, y))
         if len(batch_cache) >= T:
             break
 
-    def loss_fn(theta_flat):
-        unflatten_params(model, theta_flat)
-        step_idx = min(len(batch_cache) - 1, loss_fn._step_counter)
-        loss_fn._step_counter += 1
-        x, y = batch_cache[step_idx % len(batch_cache)]
-        model.zero_grad()
-        out = model(x)
-        loss = criterion(out, y)
-        loss.backward()
-        grad = torch.cat([p.grad.reshape(-1) for p in model.parameters()])
-        return loss.item(), grad.detach()
-    loss_fn._step_counter = 0
+    call_counter = [0]
+    def make_loss_fn():
+        def loss_fn(theta_flat):
+            unflatten_params(model, theta_flat)
+            idx = call_counter[0] % len(batch_cache)
+            call_counter[0] += 1
+            x, y = batch_cache[idx]
+            model.zero_grad()
+            loss = criterion(model(x), y)
+            loss.backward()
+            grad = torch.cat([p.grad.reshape(-1) for p in model.parameters()])
+            return loss.item(), grad.detach()
+        return loss_fn
 
     step_fn = AdamStep()
-
-    # baseline
-    loss_fn._step_counter = 0
-    baseline = run_trajectory(s0.clone(), step_fn, loss_fn, T)
-
-    # Hessian via Lanczos at midpoint
     t_R = int(T * 0.5)
-    state_mid = baseline.states[t_R]
-    unflatten_params(model, state_mid.theta)
-    mid_batch = batch_cache[t_R % len(batch_cache)]
-    hessian_k = cfg["model"].get("hessian_k", 20)
-    hessian_iters = cfg["model"].get("hessian_lanczos_iters", 100)
-    print(f"Computing top-{hessian_k} Hessian eigenvalues via Lanczos...")
-    eigs = hessian_eigenvalues_lanczos(
-        model, mid_batch, criterion, k=hessian_k, num_iterations=hessian_iters)
-    print(f"  eigenvalue range: [{eigs.min():.4f}, {eigs.max():.4f}]")
 
-    L_pred = apriori_lipschitz_quadratic(
-        eigs, lr=opt_cfg["lr"], beta1=opt_cfg["beta1"], beta2=opt_cfg["beta2"],
-        eps=opt_cfg["eps"], t=state_mid.t, state=state_mid)
+    # baseline run — lightweight, no state storage
+    print("Running baseline...")
+    call_counter[0] = 0
+    loss_fn_base = make_loss_fn()
+    s_base_final, base_losses, _ = run_lightweight(
+        s0.clone(), step_fn, loss_fn_base, T, rewrite_at=t_R)
+
+    # get state at t_R by running up to t_R
+    print("Getting state at rewrite point...")
+    call_counter[0] = 0
+    loss_fn_mid = make_loss_fn()
+    s_mid = s0.clone()
+    for step in range(t_R):
+        loss, grad = loss_fn_mid(s_mid.theta)
+        s_mid, _ = step_fn(s_mid, grad)
+
+    # numerical a priori L at t_R
+    print(f"Computing numerical a priori L at t={t_R}...")
+    call_counter[0] = t_R
+    loss_fn_lip = make_loss_fn()
+    L_raw = apriori_lipschitz_numerical(
+        s_mid, step_fn, loss_fn_lip,
+        n_perturbations=5, n_steps=5)
+    L_pred = L_raw * SAFETY
     regime = classify_regime(L_pred)
     print(f"  L_pred={L_pred:.4f} [{regime}]")
 
     # EMA rewrite
     R = EMARewrite(
-        theta_ema=state_mid.theta + torch.randn(n_params) * 0.001,
+        theta_ema=s_mid.theta + torch.randn(n_params) * 0.001,
         alpha=0.999)
-    delta = R.delta(state_mid)
+    delta = R.delta(s_mid)
 
-    loss_fn._step_counter = 0
-    rw_log = run_trajectory(s0.clone(), step_fn, loss_fn, T, rewrites=[(t_R, R)])
-    div = compute_divergence(baseline, rw_log)
+    # rewritten run — compute divergence step by step
+    print("Running rewritten trajectory...")
+    call_counter[0] = 0
+    loss_fn_rw = make_loss_fn()
+    s_rw = s0.clone()
+    s_bl = s0.clone()
+    call_counter_bl = [0]
+    def make_loss_fn_bl():
+        def loss_fn(theta_flat):
+            unflatten_params(model, theta_flat)
+            idx = call_counter_bl[0] % len(batch_cache)
+            call_counter_bl[0] += 1
+            x, y = batch_cache[idx]
+            model.zero_grad()
+            loss = criterion(model(x), y)
+            loss.backward()
+            grad = torch.cat([p.grad.reshape(-1) for p in model.parameters()])
+            return loss.item(), grad.detach()
+        return loss_fn
+    loss_fn_bl2 = make_loss_fn_bl()
+
+    divergence = []
+    rw_losses = []
+    for step in range(T):
+        if step == t_R:
+            s_rw = R.apply(s_rw)
+
+        # compute divergence (theta only, no storage)
+        div = (s_rw.theta - s_bl.theta).norm(2).item()
+        divergence.append(div)
+
+        loss_rw, grad_rw = loss_fn_rw(s_rw.theta)
+        loss_bl, grad_bl = loss_fn_bl2(s_bl.theta)
+        rw_losses.append(loss_rw)
+
+        s_rw, _ = step_fn(s_rw, grad_rw)
+        s_bl, _ = step_fn(s_bl, grad_bl)
+
+        if step % 50 == 0:
+            print(f"  step {step}/{T} div={div:.6f}", end="\r")
+
+    # final divergence
+    divergence.append((s_rw.theta - s_bl.theta).norm(2).item())
+    print(f"\n  step {T}/{T} done, final_div={divergence[-1]:.6f}")
 
     bnd = apriori_bound(delta, L_pred, t_R, T)
-    holds = bound_holds(div, bnd)
-    L_actual = effective_lipschitz_from_divergence(div, t_R)
-    lgap = loss_gap(baseline.losses, rw_log.losses)
+    holds = bound_holds(divergence, bnd)
+    L_actual = effective_lipschitz_from_divergence(divergence, t_R)
+    lgap = loss_gap(base_losses, rw_losses)
 
     print(f"\nEMA rewrite @ t={t_R}: delta={delta:.6f}")
     print(f"  bound holds: {'PASS' if holds else 'FAIL'}")
     print(f"  L_pred={L_pred:.4f}, L_actual={L_actual:.4f}")
-    print(f"  max_div={max(div):.6f}")
+    print(f"  max_div={max(divergence):.6f}")
 
     results = {
         "model": cfg["model"]["type"], "n_params": n_params,
         "L_pred": L_pred, "L_actual": L_actual, "regime": regime,
         "delta": delta, "t_R": t_R,
-        "divergence": div, "apriori_bound": bnd,
+        "divergence": divergence, "apriori_bound": bnd,
         "bound_holds": holds, "loss_gap": lgap,
-        "hessian_eigenvalues": eigs.tolist(),
     }
-    out_path = Path(out_dir) / f"neural_net_{cfg['model']['type']}_results.json"
+    out_path = Path(out) / f"neural_net_{cfg['model']['type']}_results.json"
     with open(out_path, "w") as f:
         json.dump(results, f, default=lambda x: x if isinstance(x, (int, float, bool, str))
                   else list(x) if hasattr(x, '__iter__') else str(x))

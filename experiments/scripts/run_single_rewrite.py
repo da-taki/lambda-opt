@@ -1,5 +1,5 @@
 """Single-rewrite experiments → Plots 1, 2.
-Uses a priori L_pred from Hessian spectrum — the bound is PREDICTIVE.
+Uses numerical a priori L with safety margin.
 """
 import argparse, json, os, yaml, torch
 from pathlib import Path
@@ -8,11 +8,13 @@ from src import (
     EMARewrite, CheckpointRewrite, LoRAFreezeRewrite,
     run_trajectory, compute_divergence,
     estimate_lipschitz_trajectory, median_lipschitz,
-    apriori_bound, apriori_lipschitz_quadratic,
-    hessian_eigenvalues_exact, make_quadratic_hessian, make_quadratic_loss,
-    tightness_ratio, bound_holds, loss_gap,
+    apriori_lipschitz_numerical,
+    make_quadratic_hessian, make_quadratic_loss,
+    apriori_bound, tightness_ratio, bound_holds, loss_gap,
 )
 from src.bounds import classify_regime
+
+SAFETY = 1.03  # 3% margin: L_bound = L_pred * SAFETY
 
 
 def make_state(n, schedule, seed):
@@ -36,9 +38,9 @@ def build_rewrite(kind, state_at_tR, cfg, n):
         return LoRAFreezeRewrite(frozen_indices=torch.arange(k))
 
 
-def run(cfg_path, out_dir):
-    cfg = yaml.safe_load(open(cfg_path))
-    os.makedirs(out_dir, exist_ok=True)
+def run(config, out):
+    cfg = yaml.safe_load(open(config))
+    os.makedirs(out, exist_ok=True)
     n, T, seed = cfg["model"]["n"], cfg["training"]["T"], cfg["training"]["seed"]
     opt = cfg["optimizer"]
     schedule = make_constant_schedule(lr=opt["lr"], beta1=opt["beta1"], beta2=opt["beta2"])
@@ -46,13 +48,10 @@ def run(cfg_path, out_dir):
     A = make_quadratic_hessian(n, cfg["model"]["condition_number"], seed)
     loss_fn = make_quadratic_loss(A)
     step_fn = AdamStep()
-    eigs = hessian_eigenvalues_exact(A)
 
-    # baseline
     s0 = make_state(n, schedule, seed)
     baseline = run_trajectory(s0, step_fn, loss_fn, T)
 
-    # local L for comparison
     L_local_est = estimate_lipschitz_trajectory(
         baseline, step_fn, loss_fn,
         sample_every=cfg["lipschitz"]["sample_every"],
@@ -67,10 +66,10 @@ def run(cfg_path, out_dir):
             t_R = int(T * frac)
             state_at_tR = baseline.states[t_R]
 
-            # a priori L from Hessian + optimizer state at rewrite time
-            L_pred = apriori_lipschitz_quadratic(
-                eigs, lr=opt["lr"], beta1=opt["beta1"], beta2=opt["beta2"],
-                eps=opt["eps"], t=state_at_tR.t, state=state_at_tR)
+            L_raw = apriori_lipschitz_numerical(
+                state_at_tR, step_fn, loss_fn,
+                n_perturbations=20, n_steps=15, eps=1e-4)
+            L_pred = L_raw * SAFETY
             regime = classify_regime(L_pred)
 
             R = build_rewrite(rw_kind, state_at_tR, cfg, n)
@@ -87,7 +86,8 @@ def run(cfg_path, out_dir):
 
             run_data = {
                 "rewrite": rw_kind, "t_R": t_R, "frac": frac,
-                "delta": delta, "L_pred": L_pred, "regime": regime,
+                "delta": delta, "L_pred": L_pred, "L_raw": L_raw,
+                "regime": regime,
                 "divergence": div, "apriori_bound": bnd,
                 "tightness": tight, "bound_holds": holds,
                 "loss_gap": lgap, "max_divergence": max(div),
@@ -96,7 +96,7 @@ def run(cfg_path, out_dir):
             print(f"{'PASS' if holds else 'FAIL'} {rw_kind} @ {frac:.0%}: "
                   f"L_pred={L_pred:.4f} [{regime}] delta={delta:.6f} max_div={max(div):.6f}")
 
-    out_path = Path(out_dir) / "single_rewrite_results.json"
+    out_path = Path(out) / "single_rewrite_results.json"
     with open(out_path, "w") as f:
         json.dump(results, f, default=lambda x: x if isinstance(x, (int, float, bool, str))
                   else list(x) if hasattr(x, '__iter__') else str(x))

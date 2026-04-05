@@ -9,9 +9,9 @@ from src import (
 )
 
 
-def run(cfg_path, out_dir):
-    cfg = yaml.safe_load(open(cfg_path))
-    os.makedirs(out_dir, exist_ok=True)
+def run(config, out):
+    cfg = yaml.safe_load(open(config))
+    os.makedirs(out, exist_ok=True)
     n, T, seed = cfg["model"]["n"], cfg["training"]["T"], cfg["training"]["seed"]
     opt = cfg["optimizer"]
     schedule = make_constant_schedule(lr=opt["lr"], beta1=opt["beta1"], beta2=opt["beta2"])
@@ -53,7 +53,7 @@ def run(cfg_path, out_dir):
         "t_R": t_R, "scales": scales,
         "deltas": deltas, "divergence_at_T": div_at_T, "R2": r2,
     }
-    out_path = Path(out_dir) / "delta_scaling_results.json"
+    out_path = Path(out) / "delta_scaling_results.json"
     with open(out_path, "w") as f:
         json.dump(results, f)
     print(f"Saved -> {out_path}")

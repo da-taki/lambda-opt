@@ -1,0 +1,1 @@
+{"decls":{},"directImports":[["LambdaOpt.Defs",false,false,false],["LambdaOpt.LipschitzStep",false,false,false],["LambdaOpt.SingleRewrite",false,false,false],["LambdaOpt.Composition",false,false,false],["LambdaOpt.Decidable",false,false,false]],"module":"LambdaOpt","references":{},"version":5}

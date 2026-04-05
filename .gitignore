@@ -1,0 +1,52 @@
+# =========================
+# Python cache / bytecode
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+
+# =========================
+# Local datasets / downloads
+# =========================
+experiments/data/
+*.tar.gz
+*.zip
+*.gz
+
+# =========================
+# Model checkpoints / weights
+# =========================
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+
+# =========================
+# Temporary experiment outputs
+# =========================
+tmp/
+temp/
+*.tmp
+*.log
+
+# =========================
+# Jupyter / notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS / editor files
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

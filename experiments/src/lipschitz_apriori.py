@@ -1,148 +1,102 @@
-"""A priori Lipschitz constant from loss landscape + optimizer hyperparameters.
+"""A priori Lipschitz constant estimation.
 
-Core insight: for Adam on loss L(θ) with Hessian H at a point θ*, the
-per-step contraction rate of the θ-component of the update map is governed
-by the spectral radius of the Jacobian of Step_O w.r.t. θ.
-
-For Adam at quasi-steady-state (bias-corrected moments stabilized):
-    θ_{t+1} = θ_t - η · m̂_t / (√v̂_t + ε)
-
-Near a fixed point where ∇L ≈ Hθ, the linearized update's Jacobian has
-per-coordinate contraction factor:
-
-    ρ_i = |1 - η · λ_i / (√(v̂_i) + ε)|
-
-where λ_i is the i-th Hessian eigenvalue and v̂_i is the bias-corrected
-second moment estimate for coordinate i.
-
-The overall Lipschitz constant is:
-    L_pred = max_i ρ_i
-
-This is computed BEFORE running any rewritten trajectory, making the
-bound in Theorem 1 a genuine a priori prediction.
-
-For SGD with momentum μ and learning rate η:
-    L_pred = max_i |1 - η·λ_i|  (simplified, ignoring momentum coupling)
-    With momentum: spectral radius of 2×2 block [[μ, 1], [-η·λ_i·μ, 1-η·λ_i]]
-
-For neural networks: use top-k Hessian eigenvalues from Lanczos as λ_i,
-and per-parameter v̂_i from the current Adam state.
+Two methods:
+1. Numerical: Run Step_O from perturbed states at rewrite point, measure contraction.
+   A priori (before rewritten trajectory), captures Adam's nonlinear v̂ dynamics.
+   PRIMARY method for Adam.
+2. Spectral: max_i |1 - η·λ_i| — exact for SGD, approximate baseline for Adam.
 """
 import math
 import torch
 from typing import Optional
 from .state import TrainingState
+from .step import StepFn
+
+
+def apriori_lipschitz_numerical(
+    state: TrainingState, step_fn: StepFn, loss_fn,
+    n_perturbations: int = 20, n_steps: int = 10, eps: float = 1e-4,
+) -> float:
+    """Numerical a priori L at a specific state.
+
+    Runs n_steps from state and perturbed copies, measures per-step
+    contraction rate. A priori: uses only local info at t_R.
+    """
+    ratios = []
+    for _ in range(n_perturbations):
+        perturb = torch.randn_like(state.theta) * eps
+        s_base = state.clone()
+        s_pert = state.clone()
+        s_pert.theta = s_pert.theta + perturb
+        d_prev = perturb.norm(2).item()
+
+        for step in range(n_steps):
+            _, g_base = loss_fn(s_base.theta)
+            _, g_pert = loss_fn(s_pert.theta)
+            s_base, _ = step_fn(s_base, g_base)
+            s_pert, _ = step_fn(s_pert, g_pert)
+            d_after = (s_pert.theta - s_base.theta).norm(2).item()
+            if d_prev > 1e-15 and d_after > 1e-30:
+                ratios.append(d_after / d_prev)
+            d_prev = d_after
+
+    if not ratios:
+        return 1.0
+    log_r = [math.log(max(r, 1e-30)) for r in ratios]
+    return math.exp(sum(log_r) / len(log_r))
+
+
+def apriori_lipschitz_sgd(
+    eigenvalues: torch.Tensor, lr: float, momentum: float = 0.0,
+) -> float:
+    """Exact L for SGD: max_i |1 - η·λ_i|."""
+    if momentum == 0:
+        return (1 - lr * eigenvalues).abs().max().item()
+    L_max = 0.0
+    for lam in eigenvalues:
+        tr = momentum + 1 - lr * lam.item()
+        det = momentum
+        disc = tr * tr - 4 * det
+        r = 0.5 * (abs(tr) + math.sqrt(disc)) if disc >= 0 else math.sqrt(det)
+        L_max = max(L_max, r)
+    return L_max
 
 
 def apriori_lipschitz_quadratic(
-    eigenvalues: torch.Tensor,
-    lr: float,
-    beta1: float = 0.9,
-    beta2: float = 0.999,
-    eps: float = 1e-8,
-    t: int = 100,
-    state: Optional[TrainingState] = None,
+    eigenvalues: torch.Tensor, lr: float,
+    beta1: float = 0.9, beta2: float = 0.999, eps: float = 1e-8,
+    t: int = 100, state: Optional[TrainingState] = None,
 ) -> float:
-    """A priori L_pred for Adam on a quadratic loss.
-
-    If state is provided, uses actual v̂ from the optimizer state.
-    Otherwise, estimates v̂ from the eigenvalues at quasi-steady-state:
-        v̂_i ≈ λ_i² · ‖θ‖² / n  (approximate for quadratic at steady state)
-
-    Returns L_pred = max_i |1 - η·λ_i / (√v̂_i + ε)|
-    """
+    """Spectral L_pred for Adam (approximate). Kept for SGD/comparison."""
     eigenvalues = eigenvalues.float()
-
     if state is not None and state.moments.shape[1] >= 2:
-        # use actual second moment from optimizer state
         v = state.moments[:, 1]
         bc = 1 - beta2 ** max(t, 1)
-        v_hat = v / bc
-        v_hat = v_hat.clamp(min=1e-16)
-
-        # map eigenvalues to parameters: if dimensions match, direct;
-        # otherwise use eigenvalue statistics
+        v_hat = (v / bc).clamp(min=1e-16)
         if len(eigenvalues) == len(v_hat):
-            # sort both to align (eigenvalue i ↔ coordinate i after rotation)
-            eig_sorted = eigenvalues.sort().values
-            v_sorted = v_hat.sort().values
-            rho = (1 - lr * eig_sorted / (v_sorted.sqrt() + eps)).abs()
+            eig_s = eigenvalues.sort().values
+            v_s = v_hat.sort().values
+            rho = (1 - lr * eig_s / (v_s.sqrt() + eps)).abs()
         else:
-            # use eigenvalue distribution against v_hat distribution
-            rho_list = []
-            for lam in eigenvalues:
-                r = (1 - lr * lam / (v_hat.sqrt().median() + eps)).abs()
-                rho_list.append(r.item())
-            return max(rho_list)
+            return max((1 - lr * l / (v_hat.sqrt().median() + eps)).abs().item() for l in eigenvalues)
     else:
-        # quasi-steady-state estimate: v̂_i ≈ (λ_i · σ_θ)² where σ_θ = ‖θ‖/√n
-        # at convergence, gradients are small, so v̂ is dominated by history
-        # simplification: assume v̂_i is proportional to λ_i²
-        # then ρ_i = |1 - η·λ_i / (|λ_i|·σ + ε)| ≈ |1 - η·sign(λ_i)/σ|
-        # better: just use the raw eigenvalue formula with eps regularization
         rho = (1 - lr * eigenvalues / (eigenvalues.abs().sqrt() * 0.01 + eps)).abs()
-
     return rho.max().item()
 
 
-def apriori_lipschitz_adam(
-    eigenvalues: torch.Tensor,
-    state: TrainingState,
-) -> float:
-    """Convenience: extract HPs from state and compute L_pred."""
+def apriori_lipschitz_adam(eigenvalues, state):
     hp = state.schedule_fn(state.t)
     return apriori_lipschitz_quadratic(
         eigenvalues, lr=hp["lr"], beta1=hp["beta1"],
         beta2=hp["beta2"], eps=hp["eps"], t=state.t, state=state)
 
 
-def apriori_lipschitz_sgd(
-    eigenvalues: torch.Tensor,
-    lr: float,
-    momentum: float = 0.0,
-) -> float:
-    """A priori L for SGD.
-
-    Without momentum: L = max_i |1 - η·λ_i|
-    With momentum μ: spectral radius of [[μ, 1], [-η·λ_i·μ, 1-η·λ_i]]
-    """
-    if momentum == 0:
-        rho = (1 - lr * eigenvalues).abs()
-        return rho.max().item()
-
-    # with momentum: ρ = max eigenvalue of 2x2 block per coordinate
-    L_max = 0.0
-    for lam in eigenvalues:
-        a = momentum
-        b = 1 - lr * lam.item()
-        # characteristic equation: ρ² - (a+b)ρ + (ab + μ·η·λ) = 0
-        # but the matrix is [[μ, 1], [-μηλ, 1-ηλ]]
-        # trace = μ + 1 - ηλ, det = μ(1-ηλ) + μηλ = μ
-        tr = momentum + 1 - lr * lam.item()
-        det = momentum
-        disc = tr * tr - 4 * det
-        if disc >= 0:
-            r = 0.5 * (abs(tr) + math.sqrt(disc))
-        else:
-            r = math.sqrt(det)  # complex eigenvalues: |ρ| = √det
-        L_max = max(L_max, r)
-    return L_max
-
-
-def apriori_lipschitz_from_hessian(
-    hessian_eigenvalues: torch.Tensor,
-    state: TrainingState,
-    optimizer_type: str = "adam",
-    momentum: float = 0.9,
-) -> float:
-    """Dispatch to the right a priori estimator."""
+def apriori_lipschitz_from_hessian(hessian_eigenvalues, state, optimizer_type="adam", momentum=0.9):
     hp = state.schedule_fn(state.t)
     if optimizer_type == "adam":
         return apriori_lipschitz_quadratic(
             hessian_eigenvalues, lr=hp["lr"], beta1=hp["beta1"],
             beta2=hp["beta2"], eps=hp["eps"], t=state.t, state=state)
     elif optimizer_type == "sgd":
-        return apriori_lipschitz_sgd(
-            hessian_eigenvalues, lr=hp["lr"], momentum=momentum)
-    else:
-        raise ValueError(f"Unknown optimizer: {optimizer_type}")
+        return apriori_lipschitz_sgd(hessian_eigenvalues, lr=hp["lr"], momentum=momentum)
+    raise ValueError(f"Unknown optimizer: {optimizer_type}")

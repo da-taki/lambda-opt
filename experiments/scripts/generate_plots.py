@@ -121,9 +121,17 @@ def plot6(data, out):
             m = min(len(d), len(l))
             all_d.extend(d[:m]); all_l.extend(l[:m])
     if all_d:
-        ax.scatter(all_d, all_l, alpha=0.4, s=10, c="steelblue")
-        rho, _ = stats.spearmanr(all_d, all_l)
-        ax.set_title(f"Plot 6: Loss Gap vs θ-Divergence (ρ={rho:.3f})")
+        # filter out near-zero pairs that cause nan correlation
+        pairs = [(d, l) for d, l in zip(all_d, all_l) if d > 1e-10 and l > 1e-15]
+        if pairs:
+            fd, fl = zip(*pairs)
+            ax.scatter(fd, fl, alpha=0.4, s=10, c="steelblue")
+            rho, _ = stats.spearmanr(fd, fl)
+            import math
+            rho = rho if not math.isnan(rho) else 0.0
+            ax.set_title(f"Plot 6: Loss Gap vs θ-Divergence (ρ={rho:.3f})")
+        else:
+            ax.set_title("Plot 6: Loss Gap vs θ-Divergence")
     ax.set_xlabel("||Δθ||"); ax.set_ylabel("|ΔL|")
     fig.tight_layout()
     fig.savefig(Path(out) / "plot6_loss_correlation.pdf", dpi=150)
@@ -133,21 +141,23 @@ def plot6(data, out):
 def plot7(data, out):
     """Separation: contractive vs expansive side by side."""
     fig, axes = plt.subplots(1, 2, figsize=(12, 5))
-    for ax, key, title in [(axes[0], "contractive", "Safe (L<1)"),
-                            (axes[1], "expansive", "Dangerous (L>1)")]:
+    for ax, key, title in [(axes[0], "contractive", "Safe (Adam, L<1)"),
+                            (axes[1], "expansive", "Dangerous (SGD, L>1)")]:
         r = data[key]
         t_R = r["t_R"]
-        t = np.arange(t_R, len(r["divergence"]))
+        T_len = len(r["divergence"])
+        t = np.arange(t_R, T_len)
         div_post = r["divergence"][t_R:]
         bnd_post = r["apriori_bound"][t_R:]
         ax.semilogy(t, [max(d, 1e-15) for d in div_post], "b-", lw=2, label="D(t)")
         ax.semilogy(t, [max(b, 1e-15) for b in bnd_post], "r--", lw=2,
                     label=f"bound (L={r['L_pred']:.3f})")
-        grew = "↑ GREW" if r["divergence_grew"] else "↓ DECAYED"
-        ax.set_title(f"{title}: L_pred={r['L_pred']:.3f}\n{grew}", fontsize=11)
+        grew = "↑ GREW" if r.get("divergence_grew", False) else "↓ DECAYED"
+        opt_label = r.get("optimizer", "")
+        ax.set_title(f"{title}: L={r['L_pred']:.3f} [{opt_label}]\n{grew}", fontsize=11)
         ax.set_xlabel("step"); ax.legend(fontsize=8)
     axes[0].set_ylabel("||Δθ|| (log)")
-    fig.suptitle("Plot 7: SEPARATION — Same Rewrite, Different Regimes", fontsize=13, fontweight="bold")
+    fig.suptitle("Plot 7: SEPARATION — Same Loss, Same Rewrite, Different Optimizer", fontsize=12, fontweight="bold")
     fig.tight_layout()
     fig.savefig(Path(out) / "plot7_separation.pdf", dpi=150)
     plt.close()
@@ -200,31 +210,69 @@ def plot9(data, out):
     plt.close()
 
 
-def main(results_dir, out_dir):
-    os.makedirs(out_dir, exist_ok=True)
+def plot10(data, out):
+    """Checkpoint safety analysis: 3 scenarios side by side."""
+    scenarios = data["scenarios"]
+    n = len(scenarios)
+    fig, axes = plt.subplots(1, n, figsize=(6*n, 5))
+    if n == 1:
+        axes = [axes]
+    colors = {"stable recovery": "green", "mild drift": "orange", "divergence growth": "red"}
 
-    sr = load(results_dir, "single_rewrite_results.json")
+    for ax, (name, s) in zip(axes, scenarios.items()):
+        div = s["divergence"]
+        bnd = s["bound"]
+        t = np.arange(len(div))
+
+        ax.semilogy(t, [max(d, 1e-15) for d in div], "b-", lw=2, label="D(t)")
+        if max(bnd) > 0:
+            ax.semilogy(t, [max(b, 1e-15) for b in bnd], "r--", lw=1.5,
+                        label=f"bound (L={s['L_pred']:.3f})")
+
+        # color title by prediction correctness
+        mark = "CORRECT" if s["correct"] else "WRONG"
+        c = "green" if s["correct"] else "red"
+        title = f"{name}\npred: {s['prediction']}\nactual: {s['actual_outcome']} [{mark}]"
+        ax.set_title(title, fontsize=9, color=c)
+        ax.set_xlabel("steps after rewrite")
+        ax.legend(fontsize=7)
+
+    axes[0].set_ylabel("||Δθ|| (log)")
+    fig.suptitle("Plot 10: Checkpoint Safety Analysis — ResNet-18/CIFAR-10",
+                 fontsize=12, fontweight="bold")
+    fig.tight_layout()
+    fig.savefig(Path(out) / "plot10_checkpoint_safety.pdf", dpi=150)
+    plt.close()
+
+
+def main(results, out):
+    os.makedirs(out, exist_ok=True)
+
+    sr = load(results, "single_rewrite_results.json")
     if sr:
-        plot1(sr, out_dir); plot2(sr, out_dir)
-        plot4(sr, out_dir); plot6(sr, out_dir)
+        plot1(sr, out); plot2(sr, out)
+        plot4(sr, out); plot6(sr, out)
 
-    comp = load(results_dir, "composition_results.json")
-    if comp: plot3(comp, out_dir)
+    comp = load(results, "composition_results.json")
+    if comp: plot3(comp, out)
 
-    ds = load(results_dir, "delta_scaling_results.json")
-    if ds: plot5(ds, out_dir)
+    ds = load(results, "delta_scaling_results.json")
+    if ds: plot5(ds, out)
 
-    sep = load(results_dir, "separation_results.json")
-    if sep: plot7(sep, out_dir)
+    sep = load(results, "separation_results.json")
+    if sep: plot7(sep, out)
 
-    ap = load(results_dir, "apriori_vs_actual_results.json")
-    if ap: plot8(ap, out_dir)
+    ap = load(results, "apriori_vs_actual_results.json")
+    if ap: plot8(ap, out)
 
     for name in ["neural_net_mlp_results.json", "neural_net_resnet18_results.json"]:
-        nn_data = load(results_dir, name)
-        if nn_data: plot9(nn_data, out_dir)
+        nn_data = load(results, name)
+        if nn_data: plot9(nn_data, out)
 
-    print(f"Plots saved to {out_dir}/")
+    cs = load(results, "checkpoint_safety_results.json")
+    if cs: plot10(cs, out)
+
+    print(f"Plots saved to {out}/")
 
 
 if __name__ == "__main__":

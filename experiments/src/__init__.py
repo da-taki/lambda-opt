@@ -4,8 +4,9 @@ from .rewrites import EMARewrite, CheckpointRewrite, LoRAFreezeRewrite
 from .trajectory import run_trajectory, compute_divergence
 from .lipschitz_local import estimate_lipschitz_at_step, estimate_lipschitz_trajectory
 from .lipschitz_apriori import (
-    apriori_lipschitz_quadratic, apriori_lipschitz_adam,
-    apriori_lipschitz_from_hessian,
+    apriori_lipschitz_numerical,
+    apriori_lipschitz_sgd, apriori_lipschitz_quadratic,
+    apriori_lipschitz_adam, apriori_lipschitz_from_hessian,
 )
 from .loss_landscape import (
     hessian_eigenvalues_exact, hessian_eigenvalues_lanczos,
