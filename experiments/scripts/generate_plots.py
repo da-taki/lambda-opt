@@ -209,6 +209,48 @@ def plot9(data, out):
     fig.savefig(Path(out) / f"plot9_neural_{data['model']}.pdf", dpi=150)
     plt.close()
 
+def plot9c(data, out):
+    """Plot 9C: GPT-mini divergence vs a priori bound."""
+    fig, axes = plt.subplots(1, 2, figsize=(13, 4.5))
+
+    # Left: divergence vs bound (log scale)
+    ax = axes[0]
+    div = data["divergence"]
+    bnd = data["apriori_bound"]
+    t = np.arange(len(div))
+    ax.semilogy(t, [max(d, 1e-15) for d in div], "b-", lw=1.5, label="D(t)")
+    ax.semilogy(t, [max(b, 1e-15) for b in bnd], "r--", lw=1.5,
+                label=f"bound (L={data['L_pred']:.4f})")
+    ax.set_xlabel("steps after rewrite")
+    ax.set_ylabel("‖Δθ‖ (log)")
+    ax.set_title(
+        f"Plot 9C: GPT-mini ({data['n_params']:,} params)\n"
+        f"[{data['regime']}] L_pred={data['L_pred']:.4f}, L_actual={data['L_actual']:.4f}"
+    )
+    ax.legend(fontsize=8)
+    holds_str = "PASS ✓" if data["bound_holds"] else "FAIL ✗"
+    ax.text(0.98, 0.05, holds_str, transform=ax.transAxes,
+            ha="right", va="bottom", fontsize=10,
+            color="green" if data["bound_holds"] else "red", fontweight="bold")
+
+    # Right: loss gap over same window
+    ax2 = axes[1]
+    lgap = data["loss_gap"]
+    ax2.plot(np.arange(len(lgap)), lgap, "purple", lw=1.2, alpha=0.8)
+    ax2.set_xlabel("steps after rewrite")
+    ax2.set_ylabel("|ΔL|")
+    ax2.set_title(f"Plot 9C: Loss Gap (GPT-mini)\nδ={data['delta']:.4f}")
+
+    fig.suptitle(
+        f"GPT-mini / WikiText-2 — Transformer Checkpoint Safety\n"
+        f"vocab={data['vocab_size']}, d_model={data['d_model']}, "
+        f"layers={data['num_layers']}, heads={data['nhead']}",
+        fontsize=11
+    )
+    fig.tight_layout()
+    fig.savefig(Path(out) / "plot9c_transformer.pdf", dpi=150)
+    plt.close()
+    print(f"Saved plot9c_transformer.pdf")
 
 def plot10(data, out):
     """Checkpoint safety analysis: 3 scenarios side by side."""
@@ -271,6 +313,9 @@ def main(results, out):
 
     cs = load(results, "checkpoint_safety_results.json")
     if cs: plot10(cs, out)
+
+    gpt = load(results, "neural_net_gpt_mini_results.json")
+    if gpt: plot9c(gpt, out)
 
     print(f"Plots saved to {out}/")
 

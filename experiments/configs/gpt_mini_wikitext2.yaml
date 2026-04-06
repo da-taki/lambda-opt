@@ -1,0 +1,36 @@
+# GPT-mini / WikiText-2 character-level
+# ~3.2M parameters: 4 layers, 4 heads, d_model=128, seq_len=128
+# Small enough for GTX 1650 (4GB VRAM), large enough to be non-toy
+# Expected regime: boundary to mildly contractive (Adam, lr=1e-3)
+model:
+  type: gpt_mini
+  d_model: 128
+  nhead: 4
+  num_layers: 4
+  dim_feedforward: 512
+  seq_len: 128
+  dropout: 0.0        # determinism requires dropout off
+  dataset: wikitext2
+
+optimizer:
+  type: adam
+  lr: 0.001
+  beta1: 0.9
+  beta2: 0.999
+  eps: 1.0e-8
+
+training:
+  T: 200
+  batch_size: 16
+  seed: 42
+  deterministic: true
+
+rewrites:
+  rewrite_times: [0.5]
+  ema_alpha: 0.999
+
+lipschitz:
+  n_perturbations: 5
+  n_steps: 5
+  eps: 1.0e-4
+  safety_margin: 1.03
