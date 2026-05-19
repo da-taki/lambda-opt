@@ -1,13 +1,4 @@
-"""λOpt Bound Computations.
 
-Four bounds, from loosest to tightest:
-  1. worst_case_bound:    δ · L_local^(t−t_R)     — vacuous when L>1
-  2. apriori_bound:       δ · L_pred^(t−t_R)      — predictive, from Hessian
-  3. product_bound:       δ · ∏ L_i               — tightest, uses per-step data
-  4. compositional_bound: Σ_j δ_j · L_pred^(t−t_Rj)   — Thm 2 for multiple rewrites
-
-All use safe log-space arithmetic to avoid overflow.
-"""
 import math
 from typing import List
 
@@ -72,3 +63,8 @@ def classify_regime(L_pred: float) -> str:
         return "expansive"
     else:
         return "boundary"
+
+
+def is_vacuous(bound: List[float], threshold: float = 1e30) -> bool:
+    """A bound is vacuous if it ever exceeds `threshold` (overflow regime)."""
+    return any(b > threshold for b in bound)

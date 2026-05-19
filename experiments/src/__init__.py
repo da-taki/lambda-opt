@@ -14,6 +14,7 @@ from .loss_landscape import (
 )
 from .bounds import (
     worst_case_bound, apriori_bound, product_bound, compositional_bound,
+    is_vacuous,
 )
 from .metrics import (
     tightness_ratio, bound_holds, loss_gap,

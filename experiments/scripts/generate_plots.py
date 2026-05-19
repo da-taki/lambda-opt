@@ -1,4 +1,4 @@
-"""Generate all 9 λOpt plots."""
+
 import argparse, json, os
 import matplotlib
 matplotlib.use('Agg')
@@ -6,6 +6,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
 from scipy import stats
+from src.bounds import is_vacuous
+
+
+def bound_status(bound, holds):
+    if is_vacuous(bound):
+        return "VACUOUS", "orange"
+    return ("HOLDS", "green") if holds else ("VIOLATED", "red")
 
 
 def load(d, name):
@@ -203,7 +210,10 @@ def plot9(data, out):
     ax.semilogy(t, [max(b, 1e-15) for b in data["apriori_bound"][t_R:]], "r--", lw=1.5,
                 label=f"bound (L={data['L_pred']:.3f})")
     ax.set_xlabel("step"); ax.set_ylabel("||Δθ|| (log)")
+    status, scolor = bound_status(data["apriori_bound"], data["bound_holds"])
     ax.set_title(f"Plot 9: {data['model']} ({data['n_params']} params) [{data['regime']}]")
+    ax.text(0.98, 0.05, status, transform=ax.transAxes, ha="right", va="bottom",
+            fontsize=10, color=scolor, fontweight="bold")
     ax.legend()
     fig.tight_layout()
     fig.savefig(Path(out) / f"plot9_neural_{data['model']}.pdf", dpi=150)
@@ -228,10 +238,10 @@ def plot9c(data, out):
         f"[{data['regime']}] L_pred={data['L_pred']:.4f}, L_actual={data['L_actual']:.4f}"
     )
     ax.legend(fontsize=8)
-    holds_str = "PASS ✓" if data["bound_holds"] else "FAIL ✗"
-    ax.text(0.98, 0.05, holds_str, transform=ax.transAxes,
+    status, scolor = bound_status(data["apriori_bound"], data["bound_holds"])
+    ax.text(0.98, 0.05, status, transform=ax.transAxes,
             ha="right", va="bottom", fontsize=10,
-            color="green" if data["bound_holds"] else "red", fontweight="bold")
+            color=scolor, fontweight="bold")
 
     # Right: loss gap over same window
     ax2 = axes[1]

@@ -36,8 +36,10 @@ class CheckpointRewrite(Rewrite):
         self.stale_t = stale_t
 
     def apply(self, state: TrainingState) -> TrainingState:
+        sm = self.stale_moments.clone()
+        sm[:, 1] = sm[:, 1].clamp(min=0.0)  # v (2nd moment) must be >= 0
         return TrainingState(
-            theta=state.theta.clone(), moments=self.stale_moments.clone(),
+            theta=state.theta.clone(), moments=sm,
             schedule_fn=state.schedule_fn, t=self.stale_t)
 
     def delta(self, state: TrainingState) -> float:
