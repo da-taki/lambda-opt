@@ -1,0 +1,19 @@
+{
+  "total_scenarios": 16,
+  "predicted_dangerous": 12,
+  "predicted_safe": 4,
+  "actual_dangerous": 11,
+  "actual_safe": 5,
+  "false_positives": 1,
+  "false_negatives": 0,
+  "true_positives": 11,
+  "true_negatives": 4,
+  "specificity": 0.8,
+  "sensitivity": 1.0,
+  "total_benign_rows": 5,
+  "benign_predicted_safe": 4,
+  "benign_predicted_dangerous": 1,
+  "benign_actual_safe": 5,
+  "benign_actual_dangerous": 0,
+  "bound_failures": 1
+}

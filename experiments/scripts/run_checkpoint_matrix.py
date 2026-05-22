@@ -52,6 +52,7 @@ class Scenario:
     severity: str
     notes: str
     kind: str
+    expected_benign: bool = False
     moments: torch.Tensor | None = None
     theta: torch.Tensor | None = None
     schedule: object | None = None
@@ -185,6 +186,52 @@ def build_scenarios(args, resume_state, checkpoints, ema, base_schedule, n_param
     values = scenario_values(args)
     scenarios = []
 
+    scenarios.append(Scenario(
+        family="benign",
+        name="identity_noop_restore",
+        severity="none",
+        notes="No-op checkpoint restore; state and schedule unchanged",
+        kind="identity",
+        expected_benign=True,
+    ))
+    scenarios.append(Scenario(
+        family="benign",
+        name="exact_checkpoint_restore",
+        severity="matching_state",
+        notes="Restore checkpoint with matching optimizer state at resume",
+        kind="moments",
+        moments=resume_state.moments.clone(),
+        expected_benign=True,
+    ))
+    scenarios.append(Scenario(
+        family="benign",
+        name="scheduler_resume_no_mismatch",
+        severity="1x",
+        notes="Resume with identical learning-rate schedule",
+        kind="identity",
+        expected_benign=True,
+    ))
+    scenarios.append(Scenario(
+        family="benign",
+        name="ema_shadow_present_not_loaded",
+        severity="not_loaded",
+        notes="Synthetic EMA shadow exists but parameters are unchanged",
+        kind="identity",
+        expected_benign=True,
+    ))
+    mild_lr_schedule = make_constant_schedule(
+        lr=args.lr * 0.5, beta1=args.beta1, beta2=args.beta2, eps=args.eps
+    )
+    scenarios.append(Scenario(
+        family="benign",
+        name="mild_lr_decrease_0.5x",
+        severity="0.5x",
+        notes="Resume with a mild LR decrease; included as a specificity stress row",
+        kind="schedule",
+        schedule=mild_lr_schedule,
+        expected_benign=True,
+    ))
+
     for stale_by in values["stale_by"]:
         stale_step = max(0, args.pretrain_steps - stale_by)
         stale = checkpoints[stale_step]["moments"].clone()
@@ -259,6 +306,8 @@ def build_scenarios(args, resume_state, checkpoints, ema, base_schedule, n_param
 
 
 def apply_scenario(scenario, resume_state, base_schedule):
+    if scenario.kind == "identity":
+        return resume_state.clone(), 0.0
     if scenario.kind == "moments":
         rewrite = CheckpointRewrite(stale_moments=scenario.moments, stale_t=resume_state.t)
         new_state = rewrite.apply(resume_state)
@@ -368,6 +417,7 @@ def write_csv(path, rows):
         "regime", "predicted_safe", "predicted_dangerous",
         "actual_final_divergence", "actual_max_divergence",
         "final_loss_gap", "max_loss_gap", "actual_dangerous",
+        "expected_benign",
         "false_positive", "false_negative", "bound_holds",
         "max_bound_violation_ratio", "first_violation_step",
         "final_bound_ratio", "max_bound_ratio", "notes",
@@ -454,14 +504,32 @@ def plot_outputs(rows, curves, figure_dir):
 
 
 def summarize(rows):
+    actual_dangerous = sum(1 for row in rows if row["actual_dangerous"])
+    actual_safe = sum(1 for row in rows if not row["actual_dangerous"])
+    true_positives = sum(1 for row in rows if row["predicted_dangerous"] and row["actual_dangerous"])
+    true_negatives = sum(1 for row in rows if row["predicted_safe"] and not row["actual_dangerous"])
+    false_positives = sum(1 for row in rows if row["false_positive"])
+    false_negatives = sum(1 for row in rows if row["false_negative"])
+    benign_rows = [row for row in rows if row["expected_benign"]]
+    benign_actual_safe = sum(1 for row in benign_rows if not row["actual_dangerous"])
+    benign_predicted_safe = sum(1 for row in benign_rows if row["predicted_safe"])
     return {
         "total_scenarios": len(rows),
         "predicted_dangerous": sum(1 for row in rows if row["predicted_dangerous"]),
         "predicted_safe": sum(1 for row in rows if row["predicted_safe"]),
-        "actual_dangerous": sum(1 for row in rows if row["actual_dangerous"]),
-        "actual_safe": sum(1 for row in rows if not row["actual_dangerous"]),
-        "false_positives": sum(1 for row in rows if row["false_positive"]),
-        "false_negatives": sum(1 for row in rows if row["false_negative"]),
+        "actual_dangerous": actual_dangerous,
+        "actual_safe": actual_safe,
+        "false_positives": false_positives,
+        "false_negatives": false_negatives,
+        "true_positives": true_positives,
+        "true_negatives": true_negatives,
+        "specificity": true_negatives / actual_safe if actual_safe else None,
+        "sensitivity": true_positives / actual_dangerous if actual_dangerous else None,
+        "total_benign_rows": len(benign_rows),
+        "benign_predicted_safe": benign_predicted_safe,
+        "benign_predicted_dangerous": len(benign_rows) - benign_predicted_safe,
+        "benign_actual_safe": benign_actual_safe,
+        "benign_actual_dangerous": len(benign_rows) - benign_actual_safe,
         "bound_failures": sum(1 for row in rows if not row["bound_holds"]),
     }
 
@@ -524,7 +592,10 @@ def run(args):
             L_pred = L_pred_base
 
         regime = classify_regime(L_pred)
-        pred_danger, pred_final_bound = predict_dangerous(delta, L_pred, regime, args)
+        if scenario.kind == "identity" or (delta <= 1e-12 and scenario.kind != "schedule"):
+            pred_danger, pred_final_bound = False, 0.0
+        else:
+            pred_danger, pred_final_bound = predict_dangerous(delta, L_pred, regime, args)
 
         divergence, loss_gaps = run_post_trajectories(
             args, model, criterion, batches, step_fn, resume_state, scenario_state
@@ -548,6 +619,7 @@ def run(args):
             "final_loss_gap": loss_gaps[-1] if loss_gaps else 0.0,
             "max_loss_gap": max(loss_gaps) if loss_gaps else 0.0,
             "actual_dangerous": actual_danger,
+            "expected_benign": scenario.expected_benign,
             "false_positive": pred_danger and not actual_danger,
             "false_negative": (not pred_danger) and actual_danger,
             "bound_holds": holds,
@@ -604,6 +676,13 @@ def run(args):
             ),
         },
         "scenario_values": values,
+        "benign_rows": [
+            "identity_noop_restore",
+            "exact_checkpoint_restore",
+            "scheduler_resume_no_mismatch",
+            "ema_shadow_present_not_loaded",
+            "mild_lr_decrease_0.5x",
+        ],
     }
 
     output_dir = Path(args.output_dir)

@@ -1,0 +1,678 @@
+{
+  "rows": [
+    {
+      "scenario_family": "benign",
+      "scenario_name": "identity_noop_restore",
+      "severity": "none",
+      "delta": 0.0,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": true,
+      "predicted_dangerous": false,
+      "actual_final_divergence": 0.0,
+      "actual_max_divergence": 0.0,
+      "final_loss_gap": 0.0,
+      "max_loss_gap": 0.0,
+      "actual_dangerous": false,
+      "expected_benign": true,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 0.0,
+      "max_bound_ratio": 0.0,
+      "notes": "No-op checkpoint restore; state and schedule unchanged; predicted_final_bound=0; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "benign",
+      "scenario_name": "exact_checkpoint_restore",
+      "severity": "matching_state",
+      "delta": 0.0,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": true,
+      "predicted_dangerous": false,
+      "actual_final_divergence": 0.0,
+      "actual_max_divergence": 0.0,
+      "final_loss_gap": 0.0,
+      "max_loss_gap": 0.0,
+      "actual_dangerous": false,
+      "expected_benign": true,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 0.0,
+      "max_bound_ratio": 0.0,
+      "notes": "Restore checkpoint with matching optimizer state at resume; predicted_final_bound=0; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "benign",
+      "scenario_name": "scheduler_resume_no_mismatch",
+      "severity": "1x",
+      "delta": 0.0,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": true,
+      "predicted_dangerous": false,
+      "actual_final_divergence": 0.0,
+      "actual_max_divergence": 0.0,
+      "final_loss_gap": 0.0,
+      "max_loss_gap": 0.0,
+      "actual_dangerous": false,
+      "expected_benign": true,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 0.0,
+      "max_bound_ratio": 0.0,
+      "notes": "Resume with identical learning-rate schedule; predicted_final_bound=0; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "benign",
+      "scenario_name": "ema_shadow_present_not_loaded",
+      "severity": "not_loaded",
+      "delta": 0.0,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": true,
+      "predicted_dangerous": false,
+      "actual_final_divergence": 0.0,
+      "actual_max_divergence": 0.0,
+      "final_loss_gap": 0.0,
+      "max_loss_gap": 0.0,
+      "actual_dangerous": false,
+      "expected_benign": true,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 0.0,
+      "max_bound_ratio": 0.0,
+      "notes": "Synthetic EMA shadow exists but parameters are unchanged; predicted_final_bound=0; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "benign",
+      "scenario_name": "mild_lr_decrease_0.5x",
+      "severity": "0.5x",
+      "delta": 0.0,
+      "L_pred": 1.6115181174744775,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 0.8274056315422058,
+      "actual_max_divergence": 0.8274056315422058,
+      "final_loss_gap": 0.011443614959716797,
+      "max_loss_gap": 0.011443614959716797,
+      "actual_dangerous": false,
+      "expected_benign": true,
+      "false_positive": true,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 0.0,
+      "max_bound_ratio": 0.0,
+      "notes": "Resume with a mild LR decrease; included as a specificity stress row; predicted_final_bound=0; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "stale_adam_moments",
+      "scenario_name": "stale_by_10",
+      "severity": "10",
+      "delta": 1532788.875,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 2.1183526515960693,
+      "actual_max_divergence": 2.1183526515960693,
+      "final_loss_gap": 0.040552616119384766,
+      "max_loss_gap": 0.040552616119384766,
+      "actual_dangerous": true,
+      "expected_benign": false,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 2.9679974784115474e-07,
+      "max_bound_ratio": 3.6320828731096047e-07,
+      "notes": "Adam moments from step 0; requested stale_by=10; predicted_final_bound=7.13731e+06; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "stale_adam_moments",
+      "scenario_name": "stale_by_25",
+      "severity": "25",
+      "delta": 1532788.875,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 2.1183526515960693,
+      "actual_max_divergence": 2.1183526515960693,
+      "final_loss_gap": 0.040552616119384766,
+      "max_loss_gap": 0.040552616119384766,
+      "actual_dangerous": true,
+      "expected_benign": false,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 2.9679974784115474e-07,
+      "max_bound_ratio": 3.6320828731096047e-07,
+      "notes": "Adam moments from step 0; requested stale_by=25; predicted_final_bound=7.13731e+06; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "moment_reset",
+      "scenario_name": "reset_m_only",
+      "severity": "m",
+      "delta": 27047.212890625,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 1.5630760192871094,
+      "actual_max_divergence": 1.5630760192871094,
+      "final_loss_gap": 0.3091866970062256,
+      "max_loss_gap": 0.3091866970062256,
+      "actual_dangerous": true,
+      "expected_benign": false,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 1.2410954610978252e-05,
+      "max_bound_ratio": 1.3328957239437017e-05,
+      "notes": "Reset first Adam moment only; predicted_final_bound=125943; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "moment_reset",
+      "scenario_name": "reset_v_only",
+      "severity": "v",
+      "delta": 1532550.25,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 884617728.0,
+      "actual_max_divergence": 884617728.0,
+      "final_loss_gap": 1440.4934084415436,
+      "max_loss_gap": 1440.4934084415436,
+      "actual_dangerous": true,
+      "expected_benign": false,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": false,
+      "max_bound_violation_ratio": 150.45343554000087,
+      "first_violation_step": 1,
+      "final_bound_ratio": 123.96198494256166,
+      "max_bound_ratio": 150.45343554000087,
+      "notes": "Reset second Adam moment only; predicted_final_bound=7.1362e+06; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "moment_reset",
+      "scenario_name": "reset_m_and_v",
+      "severity": "m+v",
+      "delta": 1532788.875,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 2.1183526515960693,
+      "actual_max_divergence": 2.1183526515960693,
+      "final_loss_gap": 0.040552616119384766,
+      "max_loss_gap": 0.040552616119384766,
+      "actual_dangerous": true,
+      "expected_benign": false,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 2.9679974784115474e-07,
+      "max_bound_ratio": 3.6320828731096047e-07,
+      "notes": "Reset both Adam moments; predicted_final_bound=7.13731e+06; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "scheduler_mismatch",
+      "scenario_name": "lr_2x",
+      "severity": "2x",
+      "delta": 0.0,
+      "L_pred": 3.102712161300316,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 1.6528911590576172,
+      "actual_max_divergence": 1.6528911590576172,
+      "final_loss_gap": 0.03053593635559082,
+      "max_loss_gap": 0.03053593635559082,
+      "actual_dangerous": true,
+      "expected_benign": false,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 0.0,
+      "max_bound_ratio": 0.0,
+      "notes": "State unchanged; resume schedule uses multiplied learning rate; predicted_final_bound=0; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "scheduler_mismatch",
+      "scenario_name": "lr_10x",
+      "severity": "10x",
+      "delta": 0.0,
+      "L_pred": 6.837782800363782,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 14.071359634399414,
+      "actual_max_divergence": 14.071359634399414,
+      "final_loss_gap": 0.06971573829650879,
+      "max_loss_gap": 0.06971573829650879,
+      "actual_dangerous": true,
+      "expected_benign": false,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 0.0,
+      "max_bound_ratio": 0.0,
+      "notes": "State unchanged; resume schedule uses multiplied learning rate; predicted_final_bound=0; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "ema_as_parameters",
+      "scenario_name": "ema_decay_0.9",
+      "severity": "0.9",
+      "delta": 3.607440948486328,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 4.050830364227295,
+      "actual_max_divergence": 4.050830364227295,
+      "final_loss_gap": 0.2554652690887451,
+      "max_loss_gap": 0.2554652690887451,
+      "actual_dangerous": true,
+      "expected_benign": false,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 0.24115286869333197,
+      "max_bound_ratio": 1.0,
+      "notes": "Synthetic EMA shadow loaded as model parameters; predicted_final_bound=16.7978; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "ema_as_parameters",
+      "scenario_name": "ema_decay_0.999",
+      "severity": "0.999",
+      "delta": 4.7997026443481445,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 5.172255039215088,
+      "actual_max_divergence": 5.172255039215088,
+      "final_loss_gap": 0.12424063682556152,
+      "max_loss_gap": 0.12424063682556152,
+      "actual_dangerous": true,
+      "expected_benign": false,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 0.2314265630096709,
+      "max_bound_ratio": 1.0,
+      "notes": "Synthetic EMA shadow loaded as model parameters; predicted_final_bound=22.3494; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "synthetic_lora_moment_freeze",
+      "scenario_name": "freeze_frac_0.25",
+      "severity": "0.25",
+      "delta": 1528955.0,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 1.7494111061096191,
+      "actual_max_divergence": 1.7494111061096191,
+      "final_loss_gap": 0.010522127151489258,
+      "max_loss_gap": 0.010522127151489258,
+      "actual_dangerous": true,
+      "expected_benign": false,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 2.457224191646693e-07,
+      "max_bound_ratio": 3.044134961956573e-07,
+      "notes": "Synthetic optimizer-row freezing, not real LoRA adapter training; predicted_final_bound=7.11946e+06; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    },
+    {
+      "scenario_family": "synthetic_lora_moment_freeze",
+      "scenario_name": "freeze_frac_1",
+      "severity": "1",
+      "delta": 1532788.875,
+      "L_pred": 2.157874568654165,
+      "regime": "expansive",
+      "predicted_safe": false,
+      "predicted_dangerous": true,
+      "actual_final_divergence": 2.1183526515960693,
+      "actual_max_divergence": 2.1183526515960693,
+      "final_loss_gap": 0.040552616119384766,
+      "max_loss_gap": 0.040552616119384766,
+      "actual_dangerous": true,
+      "expected_benign": false,
+      "false_positive": false,
+      "false_negative": false,
+      "bound_holds": true,
+      "max_bound_violation_ratio": 0.0,
+      "first_violation_step": null,
+      "final_bound_ratio": 2.9679974784115474e-07,
+      "max_bound_ratio": 3.6320828731096047e-07,
+      "notes": "Synthetic optimizer-row freezing, not real LoRA adapter training; predicted_final_bound=7.13731e+06; actual_dangerous iff final_divergence >= 1.0 or max_loss_gap >= 0.05"
+    }
+  ],
+  "curves": {
+    "benign/identity_noop_restore": {
+      "family": "benign",
+      "name": "identity_noop_restore",
+      "divergence": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "loss_gap": [
+        0.0,
+        0.0
+      ],
+      "bound": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "benign/exact_checkpoint_restore": {
+      "family": "benign",
+      "name": "exact_checkpoint_restore",
+      "divergence": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "loss_gap": [
+        0.0,
+        0.0
+      ],
+      "bound": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "benign/scheduler_resume_no_mismatch": {
+      "family": "benign",
+      "name": "scheduler_resume_no_mismatch",
+      "divergence": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "loss_gap": [
+        0.0,
+        0.0
+      ],
+      "bound": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "benign/ema_shadow_present_not_loaded": {
+      "family": "benign",
+      "name": "ema_shadow_present_not_loaded",
+      "divergence": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "loss_gap": [
+        0.0,
+        0.0
+      ],
+      "bound": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "benign/mild_lr_decrease_0.5x": {
+      "family": "benign",
+      "name": "mild_lr_decrease_0.5x",
+      "divergence": [
+        0.0,
+        0.4222008287906647,
+        0.8274056315422058
+      ],
+      "loss_gap": [
+        0.0,
+        0.011443614959716797
+      ],
+      "bound": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "stale_adam_moments/stale_by_10": {
+      "family": "stale_adam_moments",
+      "name": "stale_by_10",
+      "divergence": [
+        0.0,
+        1.2013354301452637,
+        2.1183526515960693
+      ],
+      "loss_gap": [
+        0.0,
+        0.040552616119384766
+      ],
+      "bound": [
+        1532788.875,
+        3307566.132478528,
+        7137312.841417229
+      ]
+    },
+    "stale_adam_moments/stale_by_25": {
+      "family": "stale_adam_moments",
+      "name": "stale_by_25",
+      "divergence": [
+        0.0,
+        1.2013354301452637,
+        2.1183526515960693
+      ],
+      "loss_gap": [
+        0.0,
+        0.040552616119384766
+      ],
+      "bound": [
+        1532788.875,
+        3307566.132478528,
+        7137312.841417229
+      ]
+    },
+    "moment_reset/reset_m_only": {
+      "family": "moment_reset",
+      "name": "reset_m_only",
+      "divergence": [
+        0.0,
+        0.7779378294944763,
+        1.5630760192871094
+      ],
+      "loss_gap": [
+        0.0,
+        0.3091866970062256
+      ],
+      "bound": [
+        27047.212890625,
+        58364.492849654795,
+        125943.25483266795
+      ]
+    },
+    "moment_reset/reset_v_only": {
+      "family": "moment_reset",
+      "name": "reset_v_only",
+      "divergence": [
+        0.0,
+        497557216.0,
+        884617728.0
+      ],
+      "loss_gap": [
+        0.0,
+        1440.4934084415436
+      ],
+      "bound": [
+        1532550.25,
+        3307051.209659583,
+        7136201.702561407
+      ]
+    },
+    "moment_reset/reset_m_and_v": {
+      "family": "moment_reset",
+      "name": "reset_m_and_v",
+      "divergence": [
+        0.0,
+        1.2013354301452637,
+        2.1183526515960693
+      ],
+      "loss_gap": [
+        0.0,
+        0.040552616119384766
+      ],
+      "bound": [
+        1532788.875,
+        3307566.132478528,
+        7137312.841417229
+      ]
+    },
+    "scheduler_mismatch/lr_2x": {
+      "family": "scheduler_mismatch",
+      "name": "lr_2x",
+      "divergence": [
+        0.0,
+        0.8444017171859741,
+        1.6528911590576172
+      ],
+      "loss_gap": [
+        0.0,
+        0.03053593635559082
+      ],
+      "bound": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "scheduler_mismatch/lr_10x": {
+      "family": "scheduler_mismatch",
+      "name": "lr_10x",
+      "divergence": [
+        0.0,
+        7.6008219718933105,
+        14.071359634399414
+      ],
+      "loss_gap": [
+        0.0,
+        0.06971573829650879
+      ],
+      "bound": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ema_as_parameters/ema_decay_0.9": {
+      "family": "ema_as_parameters",
+      "name": "ema_decay_0.9",
+      "divergence": [
+        3.607440948486328,
+        3.7856595516204834,
+        4.050830364227295
+      ],
+      "loss_gap": [
+        0.1180872917175293,
+        0.2554652690887451
+      ],
+      "bound": [
+        3.607440948486328,
+        7.784405080660307,
+        16.797769755659154
+      ]
+    },
+    "ema_as_parameters/ema_decay_0.999": {
+      "family": "ema_as_parameters",
+      "name": "ema_decay_0.999",
+      "divergence": [
+        4.7997026443481445,
+        4.921177387237549,
+        5.172255039215088
+      ],
+      "loss_gap": [
+        0.02168416976928711,
+        0.12424063682556152
+      ],
+      "bound": [
+        4.7997026443481445,
+        10.357156273341008,
+        22.34944412581951
+      ]
+    },
+    "synthetic_lora_moment_freeze/freeze_frac_0.25": {
+      "family": "synthetic_lora_moment_freeze",
+      "name": "freeze_frac_0.25",
+      "divergence": [
+        0.0,
+        1.0043493509292603,
+        1.7494111061096191
+      ],
+      "loss_gap": [
+        0.0,
+        0.010522127151489258
+      ],
+      "bound": [
+        1528955.0,
+        3299293.111116629,
+        7119460.699014454
+      ]
+    },
+    "synthetic_lora_moment_freeze/freeze_frac_1": {
+      "family": "synthetic_lora_moment_freeze",
+      "name": "freeze_frac_1",
+      "divergence": [
+        0.0,
+        1.2013354301452637,
+        2.1183526515960693
+      ],
+      "loss_gap": [
+        0.0,
+        0.040552616119384766
+      ],
+      "bound": [
+        1532788.875,
+        3307566.132478528,
+        7137312.841417229
+      ]
+    }
+  }
+}
