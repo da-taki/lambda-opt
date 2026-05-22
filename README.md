@@ -73,31 +73,17 @@ The same rewrite applied to Adam vs. SGD on identical loss landscapes produces q
 ```
 lambda-opt/
 ├── lean/
-│   ├── LambdaOpt/
-│   │   ├── Basic.lean          # Core definitions: TrainingConfig, RewriteOp, Trajectory
-│   │   ├── Theorem1.lean       # Single rewrite bound + proof
-│   │   ├── Theorem2.lean       # Sequential composition bound + proof
-│   │   ├── Theorem3.lean       # Decidability of ε-equivalence
-│   │   ├── LipschitzLemmas.lean # Auxiliary trajectory Lipschitz lemmas
-│   │   └── Instances.lean      # Decidable instances for rational arithmetic
-│   ├── lakefile.toml           # Lean 4 build config, Mathlib pinned
+│   ├── LambdaOpt/              # Core definitions and mechanized theorems
+│   ├── LambdaOpt.lean
+│   ├── lakefile.lean           # Lean 4 build config, Mathlib pinned
 │   └── lake-manifest.json
 ├── experiments/
-│   ├── quadratic/              # 3-regime quadratic loss experiments (contractive/boundary/expansive)
-│   ├── mlp_mnist/              # 52,650-param MLP on MNIST
-│   ├── resnet18_cifar10/       # 11.18M-param ResNet-18 on CIFAR-10
-│   ├── gptmini_wikitext2/      # 881K-param GPT-mini transformer on WikiText-2
-│   └── stochastic/             # Theorem 4 validation, 4 noise levels × 50 trials
-├── safety_case_study/
-│   └── checkpoint_safety.py    # Pre-resume workflow: stale moments, scheduler mismatch, EMA
-├── lipschitz_estimator/
-│   └── estimator.py            # Numerical a priori L_pred estimation (20 trials × 15 steps)
-├── results/
-│   ├── plots/                  # All 12 result plots (Figures 1–10, 9A/9B/9C)
-│   ├── summary.csv             # Full results table across all experiments
-│   └── stochastic/             # Per-noise-level divergence and bound curves
-├── tests/
-│   └── test_suite.py           # 33 unit tests (all pass)
+│   ├── src/                    # Training state, step rules, rewrites, bounds, metrics
+│   ├── scripts/                # Reproducible experiment entry points
+│   ├── configs/                # Quadratic, MLP, ResNet-18, GPT-mini configs
+│   ├── tests/                  # Lightweight Python tests
+│   ├── results/                # JSON/CSV experiment outputs
+│   └── figures/                # Generated plots
 └── README.md
 ```
 
@@ -118,30 +104,53 @@ Requires Lean 4.29.0 and Mathlib at the commit pinned in `lakefile.toml`. Instal
 ### Run experiments
 
 ```bash
-pip install torch torchvision numpy scipy matplotlib tqdm
+cd experiments/
+pip install -r requirements.txt
 
 # Quadratic loss validation (Theorems 1–3)
-python experiments/quadratic/run_all.py
+python scripts/run_single_rewrite.py
+python scripts/run_composition.py
+python scripts/run_delta_scaling.py
+python scripts/run_separation.py
+python scripts/run_apriori_vs_actual.py
 
 # Neural network experiments
-python experiments/mlp_mnist/train.py
-python experiments/resnet18_cifar10/train.py
-python experiments/gptmini_wikitext2/train.py
+python scripts/run_neural_net.py --config configs/mlp_mnist.yaml
+python scripts/run_neural_net.py --config configs/resnet18_cifar10.yaml
+python scripts/run_transformer.py --config configs/gpt_mini_wikitext2.yaml
 
 # Checkpoint safety case study
-python safety_case_study/checkpoint_safety.py
+python scripts/run_checkpoint_safety.py
 
 # Stochastic extension (Theorem 4)
-python experiments/stochastic/run_stochastic.py
+python scripts/run_stochastic_validation.py
 ```
 
-All experiments use fixed seeds (`torch.manual_seed(42)`, `numpy.random.seed(42)`). Hyperparameters are logged per-experiment. Full runtime on a single GPU: approximately 2–4 hours for all neural network experiments combined.
+### Additional diagnostic experiments
+
+The following scripts extend the empirical section with targeted diagnostics. They save CSV/JSON outputs under `experiments/results/<experiment>/` and figures under `experiments/figures/<experiment>/`.
+
+```bash
+cd experiments/
+
+python scripts/run_directional_delta.py
+python scripts/run_checkpoint_matrix.py
+python scripts/run_optimizer_comparison.py
+python scripts/run_bound_tightening_ablation.py
+python scripts/run_adam_noise_floor.py
+python scripts/run_checkpoint_lipschitz_fix.py
+python scripts/run_lipschitz_budget_ablation.py
+```
+
+The checkpoint matrix default uses ResNet-18 on synthetic CIFAR-shaped data for a CPU-friendly smoke benchmark; use `--full` for the full CIFAR-10 severity matrix. The checkpoint Lipschitz-fix script shows that severe `v` resets require estimating `L` at the rewritten state or using `max(L_clean, L_rewritten)`. The empirical-envelope bound in `run_bound_tightening_ablation.py` is diagnostic only, because it uses observed post-rewrite ratios. The Adam noise-floor script uses an unsafetied default `L` so that the stochastic floor `σ/(1-L)` remains defined.
+
+All experiments use fixed seeds by default. Hyperparameters are logged per-experiment. Full neural-network runs can be substantially slower than the quadratic defaults.
 
 ### Run tests
 
 ```bash
-python -m pytest tests/test_suite.py -v
-# Expected: 33/33 pass
+cd experiments/
+python -m pytest tests -q
 ```
 
 ---

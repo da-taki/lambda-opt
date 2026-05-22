@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "trials": 20,
+  "sigmas": [
+    0.001,
+    0.005,
+    0.01,
+    0.025,
+    0.05,
+    0.1
+  ],
+  "delta": 0.01,
+  "rewrite_step": 250,
+  "total_steps": 500,
+  "dimension": 10,
+  "condition_number": 10.0,
+  "lr": 0.001,
+  "beta1": 0.9,
+  "beta2": 0.999,
+  "eps": 1e-08,
+  "safety_margin": 1.0,
+  "lipschitz_perturbations": 10,
+  "lipschitz_steps": 8,
+  "lipschitz_eps": 0.0001,
+  "floor_window": 50,
+  "output_dir": "results/adam_noise_floor",
+  "figure_dir": "figures/adam_noise_floor",
+  "noise_scale_note": "sigma is per-coordinate gradient noise; divergence is L2 norm.",
+  "dimension_adjusted_note": "sqrt(dim) variants account for L2 aggregation of independent per-coordinate noise."
+}

@@ -1,0 +1,39 @@
+{
+  "mode": "small",
+  "model": "resnet18",
+  "dataset": "synthetic CIFAR-shaped FakeData for small/default mode",
+  "seed": 42,
+  "pretrain_steps": 4,
+  "post_steps": 2,
+  "batch_size": 2,
+  "lr": 0.001,
+  "beta1": 0.9,
+  "beta2": 0.999,
+  "eps": 1e-08,
+  "safety_margin": 1.08,
+  "L_pred_base": 2.157874568654165,
+  "danger_definition": {
+    "actual_dangerous": "final_divergence >= danger_divergence_threshold or max_loss_gap >= danger_loss_gap_threshold",
+    "danger_divergence_threshold": 1.0,
+    "danger_loss_gap_threshold": 0.05,
+    "predicted_dangerous": "regime == expansive or delta * L_pred^post_steps >= danger_divergence_threshold"
+  },
+  "scenario_values": {
+    "stale_by": [
+      10,
+      25
+    ],
+    "lr_multipliers": [
+      2.0,
+      10.0
+    ],
+    "ema_decays": [
+      0.9,
+      0.999
+    ],
+    "freeze_fracs": [
+      0.25,
+      1.0
+    ]
+  }
+}

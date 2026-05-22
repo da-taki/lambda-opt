@@ -1,5 +1,5 @@
 from .state import TrainingState, make_constant_schedule, make_cosine_schedule
-from .step import AdamStep, SGDStep
+from .step import AdamStep, AdamWStep, RMSPropStep, SGDStep
 from .rewrites import EMARewrite, CheckpointRewrite, LoRAFreezeRewrite
 from .trajectory import run_trajectory, compute_divergence
 from .lipschitz_local import estimate_lipschitz_at_step, estimate_lipschitz_trajectory

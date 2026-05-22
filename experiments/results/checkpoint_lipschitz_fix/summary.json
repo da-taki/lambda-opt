@@ -1,0 +1,43 @@
+{
+  "total_scenarios": 11,
+  "bound_failures": {
+    "clean": 1,
+    "rewritten": 0,
+    "max": 0
+  },
+  "false_negatives": {
+    "clean": 0,
+    "rewritten": 0,
+    "max": 0
+  },
+  "reset_v_only": {
+    "scenario_family": "moment_reset",
+    "scenario_name": "reset_v_only",
+    "severity": "v",
+    "delta": 1532550.25,
+    "L_clean": 2.157874568654165,
+    "L_rewritten": 53999.74956342381,
+    "L_max": 53999.74956342381,
+    "bound_holds_clean": false,
+    "max_bound_ratio_clean": 150.45343554000087,
+    "first_violation_step_clean": 1,
+    "final_bound_clean": 7136201.702561407,
+    "bound_holds_rewritten": true,
+    "max_bound_ratio_rewritten": 0.006012243481557213,
+    "first_violation_step_rewritten": null,
+    "final_bound_rewritten": 4468875077979271.5,
+    "bound_holds_max": true,
+    "max_bound_ratio_max": 0.006012243481557213,
+    "first_violation_step_max": null,
+    "final_bound_max": 4468875077979271.5,
+    "actual_final_divergence": 884617728.0,
+    "actual_max_divergence": 884617728.0,
+    "final_loss_gap": 1440.4934084415436,
+    "max_loss_gap": 1440.4934084415436,
+    "actual_dangerous": true,
+    "false_negative_clean": false,
+    "false_negative_rewritten": false,
+    "false_negative_max": false,
+    "notes": "Reset second Adam moment only"
+  }
+}

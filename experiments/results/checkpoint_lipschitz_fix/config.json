@@ -1,0 +1,45 @@
+{
+  "seed": 42,
+  "pretrain_steps": 4,
+  "post_steps": 2,
+  "resume_step": null,
+  "batch_size": 2,
+  "lr": 0.001,
+  "beta1": 0.9,
+  "beta2": 0.999,
+  "eps": 1e-08,
+  "danger_loss_gap_threshold": 0.05,
+  "danger_divergence_threshold": 1.0,
+  "lipschitz_perturbations": 2,
+  "lipschitz_steps": 2,
+  "lipschitz_eps": 0.0001,
+  "safety_margin": 1.08,
+  "output_dir": "results/checkpoint_lipschitz_fix",
+  "figure_dir": "figures/checkpoint_lipschitz_fix",
+  "small": true,
+  "full": false,
+  "ema_decays": [
+    0.9,
+    0.999
+  ],
+  "dataset": "synthetic CIFAR-shaped FakeData for small/default mode",
+  "scenario_values": {
+    "stale_by": [
+      10,
+      25
+    ],
+    "lr_multipliers": [
+      2.0,
+      10.0
+    ],
+    "ema_decays": [
+      0.9,
+      0.999
+    ],
+    "freeze_fracs": [
+      0.25,
+      1.0
+    ]
+  },
+  "method_note": "clean uses L at clean resume state; rewritten uses L at corrupted state; max uses max(clean, rewritten)."
+}

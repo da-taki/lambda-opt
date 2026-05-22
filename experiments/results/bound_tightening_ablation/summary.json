@@ -1,0 +1,14 @@
+{
+  "methods": 5,
+  "valid_methods": [
+    "fixed_clean_L",
+    "fixed_rewritten_L",
+    "max_clean_rewritten_L",
+    "rolling_L",
+    "empirical_envelope_L"
+  ],
+  "tightest_valid_by_final_looseness": "fixed_rewritten_L",
+  "fixed_clean_L": 1.0368889491412847,
+  "fixed_rewritten_L": 1.0325756326906084,
+  "actual_delta": 0.029999999329447746
+}

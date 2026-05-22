@@ -1,0 +1,20 @@
+{
+  "sigmas": [
+    0.001,
+    0.005,
+    0.01,
+    0.025,
+    0.05,
+    0.1
+  ],
+  "trials": 20,
+  "L_pred": 0.9600823603160044,
+  "regime": "contractive",
+  "delta": 0.009999999776482582,
+  "eta_eff_mean": 0.13404417037963867,
+  "eta_eff_median": 0.016341181471943855,
+  "monotonic_empirical_floor": true,
+  "best_model_counts": {
+    "adam_adjusted_median_eta": 6
+  }
+}

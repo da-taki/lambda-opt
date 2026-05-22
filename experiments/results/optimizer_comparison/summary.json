@@ -1,0 +1,8 @@
+{
+  "total_optimizers": 5,
+  "bound_failures": 1,
+  "predicted_dangerous": 4,
+  "predicted_safe": 1,
+  "actual_dangerous": 2,
+  "actual_safe": 3
+}

@@ -1,0 +1,37 @@
+{
+  "seed": 42,
+  "perturbations": [
+    1,
+    3,
+    5,
+    10,
+    20,
+    50
+  ],
+  "steps": [
+    1,
+    3,
+    5,
+    10,
+    15,
+    25
+  ],
+  "repeats": 3,
+  "delta": 0.03,
+  "rewrite_step": 250,
+  "total_steps": 500,
+  "dimension": 10,
+  "condition_number": 10.0,
+  "lr": 0.001,
+  "beta1": 0.9,
+  "beta2": 0.999,
+  "eps": 1e-08,
+  "safety_margin": 1.08,
+  "lipschitz_eps": 0.0001,
+  "danger_divergence_threshold": 1.0,
+  "stability_tolerance": 0.1,
+  "output_dir": "results/lipschitz_budget_ablation",
+  "figure_dir": "figures/lipschitz_budget_ablation",
+  "actual_delta": 0.029999999329447746,
+  "L_actual": 0.9857944910995805
+}

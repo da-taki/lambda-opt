@@ -1,0 +1,20 @@
+{
+  "seed": 42,
+  "dimension": 10,
+  "condition_number": 100.0,
+  "lr": 0.021,
+  "target_delta": 0.01,
+  "direction": "random",
+  "rewrite_step": 100,
+  "total_steps": 200,
+  "safety_margin": 1.08,
+  "danger_divergence_threshold": 1.0,
+  "danger_loss_gap_threshold": 0.01,
+  "optimizers": [
+    "Adam",
+    "AdamW",
+    "SGD",
+    "SGD_momentum",
+    "RMSProp"
+  ]
+}

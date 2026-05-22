@@ -1,0 +1,10 @@
+{
+  "total_scenarios": 11,
+  "predicted_dangerous": 11,
+  "predicted_safe": 0,
+  "actual_dangerous": 11,
+  "actual_safe": 0,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "bound_failures": 1
+}

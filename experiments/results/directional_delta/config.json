@@ -1,0 +1,20 @@
+{
+  "seed": 42,
+  "dimension": 10,
+  "target_delta": 0.03,
+  "rewrite_step": 250,
+  "total_steps": 500,
+  "condition_number": 10.0,
+  "lr": 0.001,
+  "beta1": 0.9,
+  "beta2": 0.999,
+  "eps": 1e-08,
+  "safety_margin": 1.08,
+  "L_raw": 0.966606284842928,
+  "L_pred": 1.0439347876303624,
+  "regime": "expansive",
+  "trajectory_lag": 10,
+  "lag_step": 240,
+  "top_hessian_eigenvalue": 10.000000953674316,
+  "bottom_hessian_eigenvalue": 1.000001072883606
+}
