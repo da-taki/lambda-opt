@@ -1,0 +1,81 @@
+{
+  "total_rows": 840,
+  "context": {
+    "delta": 0.009999999776482582,
+    "L_actual": 0.9938105561960218,
+    "actual_dangerous": true,
+    "final_divergence": 0.0053747775964438915,
+    "max_divergence": 0.027362773194909096,
+    "final_loss_gap": 0.006117124110460281,
+    "max_loss_gap": 0.07262806594371796,
+    "margins": [
+      1.0,
+      1.03,
+      1.08,
+      1.15,
+      1.25,
+      1.5
+    ],
+    "perturbations": [
+      3,
+      5,
+      10,
+      20,
+      50
+    ],
+    "probe_steps": [
+      1,
+      3,
+      5,
+      10,
+      15,
+      25,
+      50
+    ]
+  },
+  "false_negatives": 374,
+  "bound_failures": 396,
+  "cheapest_configuration_fixing_false_negative_and_bound": {
+    "safety_margin": 1.5,
+    "perturbations": 3,
+    "probe_steps": 1,
+    "estimator_method": "clean_state_L",
+    "L_pred": 1.1148785933832777,
+    "L_raw": 0.7432523955888518,
+    "L_actual": 0.9938105561960218,
+    "bound_holds": true,
+    "max_bound_ratio": 0.9999999068677404,
+    "final_bound_ratio": 1.0176603087430958e-05,
+    "predicted_dangerous": true,
+    "actual_dangerous": true,
+    "false_negative": false,
+    "false_positive": false,
+    "runtime_seconds": 0.0019199999996999395
+  },
+  "by_method": {
+    "clean_state_L": {
+      "rows": 210,
+      "false_negatives": 101,
+      "bound_failures": 105,
+      "min_margin_fixing_false_negative": 1.03
+    },
+    "longer_horizon_L": {
+      "rows": 210,
+      "false_negatives": 69,
+      "bound_failures": 76,
+      "min_margin_fixing_false_negative": 1.03
+    },
+    "max_clean_rewritten_L": {
+      "rows": 210,
+      "false_negatives": 98,
+      "bound_failures": 104,
+      "min_margin_fixing_false_negative": 1.03
+    },
+    "rewritten_state_L": {
+      "rows": 210,
+      "false_negatives": 106,
+      "bound_failures": 111,
+      "min_margin_fixing_false_negative": 1.03
+    }
+  }
+}

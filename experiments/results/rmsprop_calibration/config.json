@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "delta": 0.01,
+  "rewrite_step": 100,
+  "total_steps": 200,
+  "dimension": 10,
+  "condition_number": 100.0,
+  "lr": 0.021,
+  "eps": 1e-08,
+  "rmsprop_alpha": 0.99,
+  "safety_margins": "1.0,1.03,1.08,1.15,1.25,1.5",
+  "perturbations": "3,5,10,20,50",
+  "probe_steps": "1,3,5,10,15,25,50",
+  "longer_horizon_extra": 10,
+  "lipschitz_eps": 0.0001,
+  "danger_loss_gap_threshold": 0.01,
+  "danger_divergence_threshold": 1.0,
+  "output_dir": "results/rmsprop_calibration",
+  "figure_dir": "figures/rmsprop_calibration",
+  "small": false
+}
