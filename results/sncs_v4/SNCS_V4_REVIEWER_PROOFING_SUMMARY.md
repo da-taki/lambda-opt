@@ -5,7 +5,7 @@
 ## 1. Repo branch / 2. Commit
 
 * Branch: `sncs-v4-reviewer-experiments`
-* Commit: `(pending commit)`
+* Commit: `be223f820ce10c3d1ba03019fea3e78a142d3a57`
 
 ## 3. Exact commands run
 
@@ -26,11 +26,11 @@ python scripts/run_sncs_v4_make_summary.py
 
 ## 4. Test results
 
-`pytest -q`: 43 passed (experiments/tests)
+`pytest -q`: 43 passed (python -m pytest experiments/tests -q)
 
 ## 5. Lean build result
 
-(Mathlib provisioning in progress; see lean_build_status.md)
+PASSED -- lake build: 3292 jobs, 0 errors, 0 sorry (Theorems 1-3 + new stepwise_product_bound). See lean_build_status.md.
 
 ## 6. Experiments completed
 

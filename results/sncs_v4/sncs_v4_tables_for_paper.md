@@ -109,4 +109,4 @@ Auto-generated from `results/sncs_v4/*.json`. > **Honesty note.** All `L` values
 | Theorem 2 (composition) | Composition.lean | two_rewrite_bound | yes |
 | Theorem 3 (decidability) | Decidable.lean | epsilon_equivalence_iff_bound | yes |
 | Theorem 4 (noise floor) | (none) | - | no (empirical) |
-| Step-varying product bound | StepwiseProduct.lean | stepwise_product_bound | see summary |
+| Step-varying product bound | StepwiseProduct.lean | stepwise_product_bound | yes (3292 jobs) |
