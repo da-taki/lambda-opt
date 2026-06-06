@@ -198,3 +198,52 @@ Under review at *Springer Machine Learning*
 All experiments are fully reproducible from this repository. Fixed seeds, logged hyperparameters, and the Lean 4 build environment (version 4.29.0, Mathlib commit in `lake-manifest.json`) together guarantee bit-for-bit reproducibility of all reported results.
 
 If anything doesn't reproduce, open an issue.
+
+---
+
+## SNCS v4 Reviewer-Proofing Experiments
+
+The `scripts/` directory (top level) and `results/sncs_v4/` hold a suite of
+reviewer-proofing experiments added on the `sncs-v4-reviewer-experiments` branch.
+They stress-test the analyzer against simpler baselines, quantify coverage and
+runtime, ablate the displacement metric, sweep thresholds, and probe the honesty
+limits of the sampled-L estimator. Each experiment writes **CSV + JSON +
+Markdown** into `results/sncs_v4/`, and every Markdown file documents the setup,
+exact command, metrics, failures, and limitations.
+
+> **Honesty note.** `L` is estimated by finite sampling of perturbation
+> directions. It is an *empirical* estimate, not a proof certificate; decisions
+> labelled `certified_safe` are *analyzer* decisions. See
+> `results/sncs_v4/lipschitz_sampling_stress.md` for the quantified gap.
+
+Shared infrastructure lives in `scripts/sncs_v4_common.py` (the four diagnostics
+— quadratic, MNIST MLP, ResNet-18/CIFAR-10, GPT-mini — the 12 canonical
+checkpoint-rewrite scenarios, the five metric variants, and the repaired
+analyzer). The repaired analyzer uses a theta-commensurate displacement and
+`L = max(L_clean, L_rewritten)`.
+
+```bash
+# from the repo root, with the project venv active and PYTHONPATH=experiments
+python scripts/run_sncs_v4_baseline_comparison.py          # Exp 1: baselines
+python scripts/run_sncs_v4_certification_coverage.py        # Exp 2: coverage
+python scripts/run_sncs_v4_stepwise_bound_comparison.py     # Exp 3: step-varying bound
+python scripts/run_sncs_v4_multiseed_validation.py          # Exp 4: multiple seeds
+python scripts/run_sncs_v4_cifar10_checkpoint_matrix.py     # Exp 5: real CIFAR-10 matrix
+python scripts/run_sncs_v4_runtime_overhead.py              # Exp 6: runtime overhead
+python scripts/run_sncs_v4_metric_ablation.py               # Exp 7: metric repair ablation
+python scripts/run_sncs_v4_threshold_sensitivity.py         # Exp 8: threshold/ROC sweep
+python scripts/run_sncs_v4_lipschitz_sampling_stress.py     # Exp 9: sampled-L stress
+python scripts/run_sncs_v4_make_summary.py                  # Exp 11: tables + summary
+```
+
+Experiment 10 (Lean theorem mapping) is documented in
+`results/sncs_v4/lean_theorem_mapping.md`, with a candidate step-varying product
+bound in `lean/LambdaOpt/StepwiseProduct.lean`
+(statement also in `results/sncs_v4/lean_stepwise_todo.md`). The headline summary
+and manuscript-ready tables are in
+`results/sncs_v4/SNCS_V4_REVIEWER_PROOFING_SUMMARY.md` and
+`results/sncs_v4/sncs_v4_tables_for_paper.md`.
+
+ResNet-18 and GPT-mini runs default to small CPU-budget configurations (real data,
+short horizons), clearly labelled "LIMITED" in their outputs; scale them up with
+the documented CLI flags on a GPU host.

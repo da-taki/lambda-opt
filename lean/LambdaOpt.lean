@@ -3,3 +3,4 @@ import LambdaOpt.LipschitzStep
 import LambdaOpt.SingleRewrite
 import LambdaOpt.Composition
 import LambdaOpt.Decidable
+import LambdaOpt.StepwiseProduct

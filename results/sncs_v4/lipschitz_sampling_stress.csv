@@ -1,0 +1,433 @@
+model,dataset,seed,scenario,direction_type,probe_trials,probe_steps,L_estimate,actual_growth,missed_worst_case,bound_holds,runtime_seconds
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,random,1,15,1.6834995371156714,2569.4181294736222,True,False,0.005845600000611739
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,random,3,15,1.6515766346864036,2569.4181294736222,True,False,0.017281599999478203
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,random,5,15,1.655395697510325,3164.95419769681,True,False,0.028935299998920527
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,random,10,15,1.6398905198345572,3164.95419769681,True,False,0.05939370000123745
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,random,20,15,1.6497450037958092,5160.430800147993,False,False,0.1182489999991958
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,random,50,15,1.6420596028795131,5160.430800147993,False,False,0.29193429999941145
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,gradient_aligned,1,15,1.6086306364109932,862.3411959504645,True,False,0.006649300001299707
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,gradient_aligned,3,15,1.6149950019462571,997.8602333617945,True,False,0.017758099998900434
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,gradient_aligned,5,15,1.6176421792615943,1076.9090328469476,True,False,0.029425299999275012
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,gradient_aligned,10,15,1.6210930104270787,1076.9090328469476,True,False,0.05909570000039821
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,gradient_aligned,20,15,1.620717463396402,1131.0454743724395,True,False,0.11918949999926554
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,gradient_aligned,50,15,1.620440371483966,1131.0454743724395,True,False,0.2950688999990234
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,trajectory_aligned,1,15,1.708777886296346,2777.8363929584734,True,False,0.0060296999999991385
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,trajectory_aligned,3,15,1.7108328666544428,2871.4559207560883,True,False,0.01862770000116143
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,trajectory_aligned,5,15,1.712130115556023,2957.2219403597014,True,False,0.030421399998886045
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,trajectory_aligned,10,15,1.7126613276750007,2957.2219403597014,True,False,0.06085510000048089
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,trajectory_aligned,20,15,1.7126648326947003,2957.2219403597014,True,False,0.12228080000022601
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,trajectory_aligned,50,15,1.712417110348097,2964.0824351466595,True,False,0.30188690000068163
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,top_hessian,1,15,1.6766961721193683,1962.5270862444743,True,False,0.005923999999140506
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,top_hessian,3,15,1.678099816424828,1999.7248558723709,True,False,0.01777140000012878
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,top_hessian,5,15,1.6779202602163492,1999.7248558723709,True,False,0.029560299999502604
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,top_hessian,10,15,1.678181125485958,1999.7248558723709,True,False,0.059215699999185745
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,top_hessian,20,15,1.677838788609623,1999.7248558723709,True,False,0.1182606999991549
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,top_hessian,50,15,1.6776161596079393,2013.2284349690124,True,False,0.2949378000012075
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,adam_denom_sensitive,1,15,1.6544745739478974,1494.5774157907929,True,False,0.005856700001459103
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,adam_denom_sensitive,3,15,1.6597320223340932,1641.9791395394727,True,False,0.01773680000042077
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,adam_denom_sensitive,5,15,1.663090906288912,1794.8598123021168,True,False,0.029405400000541704
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,adam_denom_sensitive,10,15,1.6651690827785448,1794.8598123021168,True,False,0.059271300000546034
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,adam_denom_sensitive,20,15,1.6650673734184964,1818.228856957944,True,False,0.11844870000095398
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,adam_denom_sensitive,50,15,1.6646509507232616,1818.228856957944,True,False,0.29637410000032105
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,schedule_time,1,15,1.6063799675011325,908.0973496959923,True,False,0.006055699999706121
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,schedule_time,3,15,1.5973353917662345,908.0973496959923,True,False,0.017960799999855226
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,schedule_time,5,15,1.5952292056299477,908.0973496959923,True,False,0.0299020999991626
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,schedule_time,10,15,1.5936612113871818,908.0973496959923,True,False,0.059278200000335346
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,schedule_time,20,15,1.5941084266610606,908.0973496959923,True,False,0.11918239999977231
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,reset_second_moment,schedule_time,50,15,1.5950628927392105,947.0732805312264,True,False,0.29713900000024296
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,random,1,15,1.2659229187841772,2.7715137678796067,True,True,0.005912700000408222
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,random,3,15,1.285160361866745,2.99468061813988,True,True,0.017479300000559306
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,random,5,15,1.2640628523445996,3.003704088894162,True,True,0.029375500000242027
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,random,10,15,1.2532905513541164,4.132191844915141,True,False,0.05840689999968163
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,random,20,15,1.2476948604332259,4.132191844915141,True,False,0.11638230000062322
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,random,50,15,1.2513715490867854,4.950323095290358,False,False,0.29160940000110713
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,gradient_aligned,1,15,1.2130973740702005,3.136705393668019,True,False,0.005841899999722955
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,gradient_aligned,3,15,1.2151970812266506,3.1519926839327037,True,False,0.017789199999242555
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,gradient_aligned,5,15,1.2153844999756611,3.1519926839327037,True,False,0.02957099999912316
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,gradient_aligned,10,15,1.2150683785279226,3.1519926839327037,True,False,0.059428799999295734
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,gradient_aligned,20,15,1.2168547104628298,3.1541149777430886,True,False,0.11719519999860495
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,gradient_aligned,50,15,1.2169634911196978,3.154253431191641,True,False,0.2941705000012007
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,trajectory_aligned,1,15,1.0770829869715495,2.9696791639538254,True,False,0.006444200000260025
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,trajectory_aligned,3,15,1.1000100246786364,3.1480127501435318,True,False,0.018077400000038324
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,trajectory_aligned,5,15,1.105851467037642,3.1480127501435318,True,False,0.030327200000101584
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,trajectory_aligned,10,15,1.1002996718274696,3.1958770051733745,True,False,0.06086709999908635
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,trajectory_aligned,20,15,1.1063040270436115,3.2204377760821727,True,False,0.12128599999959988
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,trajectory_aligned,50,15,1.0999933709818406,3.2204377760821727,True,False,0.30275540000002366
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,top_hessian,1,15,1.3149851358190994,3.3329212715900405,True,True,0.0072660999994695885
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,top_hessian,3,15,1.3159447625155363,3.340609921714332,True,True,0.01780979999966803
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,top_hessian,5,15,1.3167390938910297,3.361836218917563,True,True,0.029760400000668596
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,top_hessian,10,15,1.3164410243165428,3.366045797061168,True,True,0.06050370000048133
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,top_hessian,20,15,1.3169215207789313,3.41712194146973,True,True,0.11783380000088073
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,top_hessian,50,15,1.3166371922875388,3.4792791999647843,True,True,0.29702759999963746
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,adam_denom_sensitive,1,15,1.336210533955271,3.5244282643311813,True,True,0.006005600000207778
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,adam_denom_sensitive,3,15,1.3336426394680903,3.5244282643311813,True,True,0.01905839999926684
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,adam_denom_sensitive,5,15,1.3333630664313798,3.5244282643311813,True,True,0.0296939999989263
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,adam_denom_sensitive,10,15,1.333112918600117,3.5244282643311813,True,True,0.06090870000116411
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,adam_denom_sensitive,20,15,1.3325788492433819,3.537988903436762,True,True,0.12145190000046568
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,adam_denom_sensitive,50,15,1.332620666407244,3.591347576505787,True,True,0.300159899999926
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,schedule_time,1,15,1.065723598053753,2.6399389636222055,True,False,0.005931800000325893
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,schedule_time,3,15,1.0907541461392842,3.5360883971948223,True,False,0.017740999999659834
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,schedule_time,5,15,1.1007993192714767,3.5360883971948223,True,False,0.02987329999996291
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,schedule_time,10,15,1.0972562041136957,3.5360883971948223,True,False,0.05953579999913927
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,schedule_time,20,15,1.1070883243312923,3.5360883971948223,True,False,0.11778290000074776
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,severe_lr_increase,schedule_time,50,15,1.0984305875077873,3.5360883971948223,True,False,0.29797270000017306
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,random,1,15,0.9377935345855172,1.123312392254903,True,False,0.005788500000562635
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,random,3,15,0.9434200382752856,1.123312392254903,True,False,0.017586799998753122
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,random,5,15,0.9371902043436227,1.131347971583016,True,False,0.0292803999982425
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,random,10,15,0.9442621486938605,1.1752330994054456,True,False,0.05810919999930775
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,random,20,15,0.9453456206647942,1.214889950075759,True,False,0.11751230000118085
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,random,50,15,0.9446796310522847,1.2949841498259453,True,False,0.2915576000013971
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,gradient_aligned,1,15,0.9612117369037398,1.055391866697673,True,False,0.0059350999999878695
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,gradient_aligned,3,15,0.9612508676058646,1.055391866697673,True,False,0.017662800000834977
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,gradient_aligned,5,15,0.9609717741679009,1.055391866697673,True,False,0.02953210000123363
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,gradient_aligned,10,15,0.9608058568371274,1.055391866697673,True,False,0.05897469999945315
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,gradient_aligned,20,15,0.960903950846374,1.0603577545571818,True,False,0.1177838999992673
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,gradient_aligned,50,15,0.9609482731346349,1.0686153379725711,True,False,0.29914300000018557
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,trajectory_aligned,1,15,0.9293086519893213,0.9731177988313223,True,False,0.0064020000008895295
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,trajectory_aligned,3,15,0.9297556107241495,0.9922844317413351,True,False,0.01885709999987739
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,trajectory_aligned,5,15,0.9289162782926081,0.9922844317413351,True,False,0.033155099999930826
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,trajectory_aligned,10,15,0.9293387739740844,0.9922844317413351,True,False,0.0617882999995345
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,trajectory_aligned,20,15,0.9292046088201467,0.9922844317413351,True,False,0.12616559999878518
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,trajectory_aligned,50,15,0.9291802716378981,0.9922844317413351,True,False,0.305100700001276
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,top_hessian,1,15,0.9450911756697017,1.329324007041731,True,False,0.006144199998743716
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,top_hessian,3,15,0.9460209757575121,1.329324007041731,True,False,0.017893600001116283
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,top_hessian,5,15,0.9461129225052426,1.329324007041731,True,False,0.029688299999179435
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,top_hessian,10,15,0.9457796985096052,1.3596642665656098,True,False,0.05999530000008235
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,top_hessian,20,15,0.9457833805367952,1.38040971453644,True,False,0.12065210000037041
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,top_hessian,50,15,0.9458930902487939,1.38040971453644,True,False,0.29578400000173133
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,adam_denom_sensitive,1,15,0.9329020738431659,2.1262748070323716,True,False,0.005952899999101646
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,adam_denom_sensitive,3,15,0.9338964703417558,2.2093724923768256,True,False,0.01788519999900018
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,adam_denom_sensitive,5,15,0.9336965862455414,2.2144873576209996,True,False,0.029978299999129376
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,adam_denom_sensitive,10,15,0.9337429318583839,2.2144873576209996,True,False,0.059467200000653975
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,adam_denom_sensitive,20,15,0.9336749344549028,2.267221990785768,False,False,0.11892099999931816
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,adam_denom_sensitive,50,15,0.9335450989980693,2.3387266526506214,False,False,0.3007830999995349
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,schedule_time,1,15,0.9286911767356246,1.0001768193184708,True,False,0.006064299999707146
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,schedule_time,3,15,0.9281383180022141,1.0001768193184708,True,False,0.018361899999945308
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,schedule_time,5,15,0.9289303332608772,1.0001768193184708,True,False,0.030810299998847768
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,schedule_time,10,15,0.928566767934834,1.0001768193184708,True,False,0.059488599999895087
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,schedule_time,20,15,0.9286985470558679,1.0057105970956883,True,False,0.11887539999952423
+quadratic,"synthetic_quadratic(n=20,kappa=30)",0,stale_adam_moments,schedule_time,50,15,0.9287109538043509,1.0057105970956883,True,False,0.29605029999947874
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,random,1,15,1.57828798451318,640.0968575431596,True,False,0.005908500001169159
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,random,3,15,1.6353153849145194,1793.269560339336,True,False,0.017351999998936662
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,random,5,15,1.6280470528180775,1793.269560339336,True,False,0.02923670000018319
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,random,10,15,1.586208540691925,1793.269560339336,True,False,0.05775629999880039
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,random,20,15,1.5658288622333092,2139.983827292045,True,False,0.11616310000135854
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,random,50,15,1.5785131636608958,2506.0839094012285,True,False,0.2907404999987193
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,gradient_aligned,1,15,1.4403322640310086,193.4537899190877,True,False,0.005810500000734464
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,gradient_aligned,3,15,1.4723016399255677,309.3588282913125,True,False,0.018125500000678585
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,gradient_aligned,5,15,1.4641883710622137,309.3588282913125,True,False,0.029333299999052542
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,gradient_aligned,10,15,1.4592115235390697,309.3588282913125,True,False,0.05921119999948132
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,gradient_aligned,20,15,1.4622221884170106,323.6851922981076,True,False,0.11764579999908165
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,gradient_aligned,50,15,1.459860092244098,340.5843016117338,True,False,0.2926747000001342
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,trajectory_aligned,1,15,1.733793011847555,2690.8925855443454,False,False,0.0059909000010520685
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,trajectory_aligned,3,15,1.7316172490111572,2690.8925855443454,False,False,0.018040299999483977
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,trajectory_aligned,5,15,1.7326443329373056,2721.0754843514155,False,False,0.030290099999547238
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,trajectory_aligned,10,15,1.7327992395497156,2721.0754843514155,False,False,0.060158800000863266
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,trajectory_aligned,20,15,1.732696941249754,2721.0754843514155,False,False,0.12169030000040948
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,trajectory_aligned,50,15,1.7327631933910133,2763.977716651648,False,False,0.3047421999999642
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,top_hessian,1,15,1.7158264831442958,2200.565829659945,True,False,0.00596390000100655
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,top_hessian,3,15,1.7127914118924137,2200.565829659945,True,False,0.017591499999980442
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,top_hessian,5,15,1.7129735271871425,2200.565829659945,True,False,0.03331549999893468
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,top_hessian,10,15,1.7136975372568157,2200.565829659945,True,False,0.05812719999994442
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,top_hessian,20,15,1.7136353056784799,2221.4513214377234,True,False,0.11666549999972631
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,top_hessian,50,15,1.7137884821564253,2229.729798139465,True,False,0.2945249000003969
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,adam_denom_sensitive,1,15,1.5387667808967551,512.1792237207866,True,False,0.005827299999509705
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,adam_denom_sensitive,3,15,1.519373427253091,512.1792237207866,True,False,0.017824800001108088
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,adam_denom_sensitive,5,15,1.5240103738603694,521.7291919066611,True,False,0.02924899999925401
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,adam_denom_sensitive,10,15,1.5273956082586562,521.7291919066611,True,False,0.058840700001383084
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,adam_denom_sensitive,20,15,1.526085234705561,521.7291919066611,True,False,0.11966840000059165
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,adam_denom_sensitive,50,15,1.5268432950470312,545.4135078884116,True,False,0.3131544000007125
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,schedule_time,1,15,1.5449604782387405,526.7676844155169,True,False,0.005929400000241003
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,schedule_time,3,15,1.5584147391448675,649.207298019033,True,False,0.017801899999540183
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,schedule_time,5,15,1.5541046841704904,649.207298019033,True,False,0.02948169999945094
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,schedule_time,10,15,1.5519086299049465,649.207298019033,True,False,0.05947130000095058
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,schedule_time,20,15,1.5531277654134368,653.2875613499666,True,False,0.118222600000081
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,reset_second_moment,schedule_time,50,15,1.5524263970493013,660.9521973210651,True,False,0.29797060000055353
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,random,1,15,1.2534610046810204,3.0362625820529145,True,True,0.005769200000941055
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,random,3,15,1.176094829902239,3.204845900303727,True,False,0.017520100000183447
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,random,5,15,1.1728985098179252,3.204845900303727,True,False,0.02892969999993511
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,random,10,15,1.1946348824810638,3.204845900303727,True,False,0.05818120000003546
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,random,20,15,1.1948191636761898,3.2178234990297474,True,False,0.1172337999996671
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,random,50,15,1.1819563780826023,3.343810470030512,True,False,0.288564899999983
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,gradient_aligned,1,15,0.9823954221580642,1.2808363272218763,True,False,0.006042299999535317
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,gradient_aligned,3,15,1.0228061534129838,1.8624180641119272,True,False,0.017500699999800418
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,gradient_aligned,5,15,1.0268493331823922,1.8624180641119272,True,False,0.029637999999977183
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,gradient_aligned,10,15,1.0166463728208477,1.8624180641119272,True,False,0.05886810000083642
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,gradient_aligned,20,15,1.0134982548828464,1.8624180641119272,True,False,0.11792550000063784
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,gradient_aligned,50,15,1.017301785798096,1.9710831900337882,True,False,0.2944220999997924
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,trajectory_aligned,1,15,1.109263568292694,2.045994642779653,True,False,0.0059762999990198296
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,trajectory_aligned,3,15,1.06222182664725,2.045994642779653,True,False,0.018061900000247988
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,trajectory_aligned,5,15,1.0630163283831089,2.045994642779653,True,False,0.030631200001153047
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,trajectory_aligned,10,15,1.0699016808783193,2.045994642779653,True,False,0.061037400000714115
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,trajectory_aligned,20,15,1.070745118362145,2.045994642779653,True,False,0.12081730000136304
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,trajectory_aligned,50,15,1.0732465631588533,2.278064826191631,True,False,0.3028909000004205
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,top_hessian,1,15,1.090034219549126,1.964573566941212,True,False,0.005977099999654456
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,top_hessian,3,15,1.1165216207608453,2.351419391800335,True,False,0.0182332000003953
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,top_hessian,5,15,1.1193979938591736,2.351419391800335,True,False,0.029294500000105472
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,top_hessian,10,15,1.11527372377428,2.351419391800335,True,False,0.0584911000005377
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,top_hessian,20,15,1.1168430080575338,2.351419391800335,True,False,0.1186983000006876
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,top_hessian,50,15,1.1144660114715366,2.4443757264131927,True,False,0.2936802999993233
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,adam_denom_sensitive,1,15,1.332305482962514,3.4800935251615353,False,True,0.006063900000299327
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,adam_denom_sensitive,3,15,1.3334097528927848,3.5626293710771217,False,True,0.01774460000160616
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,adam_denom_sensitive,5,15,1.3331266972182716,3.5626293710771217,False,True,0.030005000000528526
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,adam_denom_sensitive,10,15,1.3327145500124733,3.5626293710771217,False,True,0.0584433000003628
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,adam_denom_sensitive,20,15,1.3328201258192343,3.5626293710771217,False,True,0.11955999999918276
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,adam_denom_sensitive,50,15,1.3326810146911816,3.5626293710771217,False,True,0.29693390000102227
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,schedule_time,1,15,0.9712757653029208,1.350196945261724,True,False,0.005940099999861559
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,schedule_time,3,15,1.0178431903253142,1.957799163728112,True,False,0.018237000000226544
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,schedule_time,5,15,1.0229447511556817,1.957799163728112,True,False,0.029133600000932347
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,schedule_time,10,15,1.0104795171974048,1.957799163728112,True,False,0.05878589999883843
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,schedule_time,20,15,1.0054408814430948,1.957799163728112,True,False,0.11839450000115903
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,severe_lr_increase,schedule_time,50,15,1.0107575498211103,2.041016506713516,True,False,0.29813839999951597
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,random,1,15,0.9393651923081529,1.114557078499957,True,False,0.005834900000991183
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,random,3,15,0.939488381337596,1.1180012845169702,True,False,0.01807800000096904
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,random,5,15,0.9509240707765011,1.1180012845169702,True,False,0.02894209999976738
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,random,10,15,0.9540584891521584,1.1180012845169702,True,False,0.05779470000015863
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,random,20,15,0.9512314492906022,1.1180012845169702,True,False,0.11589099999946484
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,random,50,15,0.9494123102561981,1.3945485970535016,True,False,0.2922328999993624
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,gradient_aligned,1,15,0.9727887516864369,0.983413508324969,True,False,0.00585500000124739
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,gradient_aligned,3,15,0.9734377562556022,0.9841055974307138,True,False,0.01747840000098222
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,gradient_aligned,5,15,0.9733941277130638,0.9843202381857544,True,False,0.02888639999946463
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,gradient_aligned,10,15,0.9732978677722467,0.9843202381857544,True,False,0.057993899999928544
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,gradient_aligned,20,15,0.9733842555662937,0.9845136331440251,True,False,0.11989220000032219
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,gradient_aligned,50,15,0.9734908048328932,0.9845212728997129,True,False,0.29640850000032515
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,trajectory_aligned,1,15,0.9539890387368044,0.9753408331480996,True,False,0.006126500000391388
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,trajectory_aligned,3,15,0.9538860415779291,0.9753408331480996,True,False,0.0181336999994528
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,trajectory_aligned,5,15,0.953386335831291,0.9753408331480996,True,False,0.0298875999997108
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,trajectory_aligned,10,15,0.9542726300071115,0.9757321341584755,True,False,0.060062399999878835
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,trajectory_aligned,20,15,0.954111119065046,0.9757321341584755,True,False,0.1201930999995966
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,trajectory_aligned,50,15,0.9542785077049106,0.9759826436379675,True,False,0.3030295999997179
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,top_hessian,1,15,0.9485444035866559,1.1588244706185962,True,False,0.006116299999121111
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,top_hessian,3,15,0.9487776842068024,1.160128443056392,True,False,0.017574000001332024
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,top_hessian,5,15,0.9494536080104171,1.160128443056392,True,False,0.02931420000095386
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,top_hessian,10,15,0.9489869227501125,1.162490811080283,True,False,0.05857579999974405
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,top_hessian,20,15,0.9490138384748517,1.1681720242093072,True,False,0.11666349999904924
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,top_hessian,50,15,0.9488518775156117,1.1705882405851644,True,False,0.29159920000165584
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,adam_denom_sensitive,1,15,0.9429420742832894,1.6856537218717336,False,False,0.005850099998497171
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,adam_denom_sensitive,3,15,0.9431563377493705,1.7013725336934822,False,False,0.01792589999968186
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,adam_denom_sensitive,5,15,0.9429496480552948,1.7391266655092856,False,False,0.029426500001136446
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,adam_denom_sensitive,10,15,0.9430210768937507,1.7391266655092856,False,False,0.059014700000261655
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,adam_denom_sensitive,20,15,0.9430350444358869,1.7476223412880956,False,False,0.11797800000022107
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,adam_denom_sensitive,50,15,0.9431408397758659,1.7476223412880956,False,False,0.29805490000035206
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,schedule_time,1,15,0.9512726311467868,0.9730221309170363,True,False,0.006025700000463985
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,schedule_time,3,15,0.9513489883605397,0.9758732149801784,True,False,0.017934900000909693
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,schedule_time,5,15,0.951916728915913,0.9758732149801784,True,False,0.029845900000509573
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,schedule_time,10,15,0.9509586710456089,0.9758732149801784,True,False,0.05902159999823198
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,schedule_time,20,15,0.9511392568857491,0.9760787625284708,True,False,0.11771349999980885
+quadratic,"synthetic_quadratic(n=20,kappa=30)",1,stale_adam_moments,schedule_time,50,15,0.9509688498175215,0.9760787625284708,True,False,0.29509069999949133
+mnist_mlp,real MNIST train split,0,reset_second_moment,random,1,5,17.236279805579816,1478275.7941803252,True,False,0.019621000001279754
+mnist_mlp,real MNIST train split,0,reset_second_moment,random,3,5,19.785143400754478,2218030.307747135,True,False,0.0588977999996132
+mnist_mlp,real MNIST train split,0,reset_second_moment,random,5,5,19.61346939395998,3931151.565825617,True,False,0.10195219999877736
+mnist_mlp,real MNIST train split,0,reset_second_moment,random,10,5,17.73667295363943,3931151.565825617,True,False,0.2080045999991853
+mnist_mlp,real MNIST train split,0,reset_second_moment,random,20,5,18.413480994778148,3997584.9827942555,True,False,0.4175207999996928
+mnist_mlp,real MNIST train split,0,reset_second_moment,random,50,5,18.294909765331095,3997584.9827942555,True,False,1.029151799999454
+mnist_mlp,real MNIST train split,0,reset_second_moment,gradient_aligned,1,5,15.35164215410435,809762.6873684144,True,False,0.0230357999989792
+mnist_mlp,real MNIST train split,0,reset_second_moment,gradient_aligned,3,5,18.785721037442194,1918021.2886876683,True,False,0.06560170000011567
+mnist_mlp,real MNIST train split,0,reset_second_moment,gradient_aligned,5,5,19.00722523190452,4006137.491340264,True,False,0.11272680000001856
+mnist_mlp,real MNIST train split,0,reset_second_moment,gradient_aligned,10,5,17.48287874926213,4006137.491340264,True,False,0.22008330000062415
+mnist_mlp,real MNIST train split,0,reset_second_moment,gradient_aligned,20,5,18.130537743452916,4006137.491340264,True,False,0.4472973000010825
+mnist_mlp,real MNIST train split,0,reset_second_moment,gradient_aligned,50,5,18.108392279759048,5333642.547068564,True,False,1.087615200000073
+mnist_mlp,real MNIST train split,0,reset_second_moment,trajectory_aligned,1,5,17.373525505012793,1535785.5720493873,True,False,0.022492099998999038
+mnist_mlp,real MNIST train split,0,reset_second_moment,trajectory_aligned,3,5,19.985210552562396,2771374.0749097634,True,False,0.06621930000073917
+mnist_mlp,real MNIST train split,0,reset_second_moment,trajectory_aligned,5,5,19.733086595706634,3958879.5287997285,True,False,0.11403450000034354
+mnist_mlp,real MNIST train split,0,reset_second_moment,trajectory_aligned,10,5,17.74185039337853,3958879.5287997285,True,False,0.2209432999989076
+mnist_mlp,real MNIST train split,0,reset_second_moment,trajectory_aligned,20,5,18.375137188130807,3972995.7058350635,True,False,0.44660600000133854
+mnist_mlp,real MNIST train split,0,reset_second_moment,trajectory_aligned,50,5,18.24967650767045,3972995.7058350635,True,False,1.1461843000015506
+mnist_mlp,real MNIST train split,0,reset_second_moment,top_hessian,1,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,reset_second_moment,top_hessian,3,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,reset_second_moment,top_hessian,5,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,reset_second_moment,top_hessian,10,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,reset_second_moment,top_hessian,20,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,reset_second_moment,top_hessian,50,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,reset_second_moment,adam_denom_sensitive,1,5,20.463021372110223,3555769.5573086254,True,False,0.02207060000000638
+mnist_mlp,real MNIST train split,0,reset_second_moment,adam_denom_sensitive,3,5,20.845180270895217,3555769.5573086254,True,False,0.059201199999733944
+mnist_mlp,real MNIST train split,0,reset_second_moment,adam_denom_sensitive,5,5,20.218659134295823,3914421.3026144467,True,False,0.1066276999990805
+mnist_mlp,real MNIST train split,0,reset_second_moment,adam_denom_sensitive,10,5,18.307795286433677,3914421.3026144467,True,False,0.2154525999994803
+mnist_mlp,real MNIST train split,0,reset_second_moment,adam_denom_sensitive,20,5,18.87586961754748,3916479.4072367083,True,False,0.41059820000009495
+mnist_mlp,real MNIST train split,0,reset_second_moment,adam_denom_sensitive,50,5,18.68294622898984,3916479.4072367083,True,False,1.0528080000003683
+mnist_mlp,real MNIST train split,0,reset_second_moment,schedule_time,1,5,17.77642969690873,1596889.9211564,True,False,0.021410900000773836
+mnist_mlp,real MNIST train split,0,reset_second_moment,schedule_time,3,5,20.531823225967237,3396605.0202136366,True,False,0.05803670000022976
+mnist_mlp,real MNIST train split,0,reset_second_moment,schedule_time,5,5,20.459467423276568,3913691.341780095,True,False,0.09708500000124332
+mnist_mlp,real MNIST train split,0,reset_second_moment,schedule_time,10,5,18.715231129232706,5413300.268555079,True,False,0.2148140000008425
+mnist_mlp,real MNIST train split,0,reset_second_moment,schedule_time,20,5,19.349735861460243,5798315.010759397,False,False,0.42568369999935385
+mnist_mlp,real MNIST train split,0,reset_second_moment,schedule_time,50,5,19.00987648346509,5849884.606618765,False,False,1.0378893999986758
+mnist_mlp,real MNIST train split,0,severe_lr_increase,random,1,5,6.4599084741660615,2229.452338511026,True,True,0.019248699998570373
+mnist_mlp,real MNIST train split,0,severe_lr_increase,random,3,5,6.542548356297507,4194.117003521709,False,True,0.057713099999091355
+mnist_mlp,real MNIST train split,0,severe_lr_increase,random,5,5,6.538701725673092,4194.117003521709,False,True,0.10256339999978081
+mnist_mlp,real MNIST train split,0,severe_lr_increase,random,10,5,6.57878099942562,4194.117003521709,False,True,0.20314580000012938
+mnist_mlp,real MNIST train split,0,severe_lr_increase,random,20,5,6.569164289529522,4194.117003521709,False,True,0.4071925000007468
+mnist_mlp,real MNIST train split,0,severe_lr_increase,random,50,5,6.572514641712412,4194.123197755397,False,True,1.0906740999998874
+mnist_mlp,real MNIST train split,0,severe_lr_increase,gradient_aligned,1,5,6.459828559756842,2229.910088958764,True,True,0.023523800000475603
+mnist_mlp,real MNIST train split,0,severe_lr_increase,gradient_aligned,3,5,6.542017205133751,4191.760228668802,False,True,0.0681559999993624
+mnist_mlp,real MNIST train split,0,severe_lr_increase,gradient_aligned,5,5,6.538389131595135,4191.760228668802,False,True,0.11176259999956528
+mnist_mlp,real MNIST train split,0,severe_lr_increase,gradient_aligned,10,5,6.578843183983424,4191.760228668802,False,True,0.22729470000012952
+mnist_mlp,real MNIST train split,0,severe_lr_increase,gradient_aligned,20,5,6.569295684355996,4192.125328109389,False,True,0.47618710000097053
+mnist_mlp,real MNIST train split,0,severe_lr_increase,gradient_aligned,50,5,6.572581409688759,4192.477570586795,False,True,1.180797099999836
+mnist_mlp,real MNIST train split,0,severe_lr_increase,trajectory_aligned,1,5,6.45991248745179,2229.4488980417195,True,True,0.021594499999991967
+mnist_mlp,real MNIST train split,0,severe_lr_increase,trajectory_aligned,3,5,6.542549635065279,4194.302977184121,False,True,0.06648710000081337
+mnist_mlp,real MNIST train split,0,severe_lr_increase,trajectory_aligned,5,5,6.5387055246628885,4194.302977184121,False,True,0.11950380000052974
+mnist_mlp,real MNIST train split,0,severe_lr_increase,trajectory_aligned,10,5,6.578790774617344,4194.302977184121,False,True,0.22352689999934228
+mnist_mlp,real MNIST train split,0,severe_lr_increase,trajectory_aligned,20,5,6.569170355749122,4194.302977184121,False,True,0.45051169999896956
+mnist_mlp,real MNIST train split,0,severe_lr_increase,trajectory_aligned,50,5,6.5725196273310065,4194.302977184121,False,True,1.1215441999993345
+mnist_mlp,real MNIST train split,0,severe_lr_increase,top_hessian,1,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,severe_lr_increase,top_hessian,3,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,severe_lr_increase,top_hessian,5,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,severe_lr_increase,top_hessian,10,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,severe_lr_increase,top_hessian,20,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,severe_lr_increase,top_hessian,50,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,severe_lr_increase,adam_denom_sensitive,1,5,6.459905547959051,2229.4381560048073,True,True,0.018413399999190005
+mnist_mlp,real MNIST train split,0,severe_lr_increase,adam_denom_sensitive,3,5,6.542361905159924,4196.213604398696,False,True,0.06220170000051439
+mnist_mlp,real MNIST train split,0,severe_lr_increase,adam_denom_sensitive,5,5,6.538588598150223,4196.213604398696,False,True,0.12514069999997446
+mnist_mlp,real MNIST train split,0,severe_lr_increase,adam_denom_sensitive,10,5,6.57872441426446,4196.213604398696,False,True,0.2160385999995924
+mnist_mlp,real MNIST train split,0,severe_lr_increase,adam_denom_sensitive,20,5,6.569107170788078,4196.213604398696,False,True,0.3970186999995349
+mnist_mlp,real MNIST train split,0,severe_lr_increase,adam_denom_sensitive,50,5,6.572470485525191,4196.216025043277,False,True,1.0391650999990816
+mnist_mlp,real MNIST train split,0,severe_lr_increase,schedule_time,1,5,6.45990207410633,2229.345295392523,True,True,0.01946930000121938
+mnist_mlp,real MNIST train split,0,severe_lr_increase,schedule_time,3,5,6.542358949354352,4196.252906999164,False,True,0.05972459999975399
+mnist_mlp,real MNIST train split,0,severe_lr_increase,schedule_time,5,5,6.538586863814345,4196.252906999164,False,True,0.10764460000063991
+mnist_mlp,real MNIST train split,0,severe_lr_increase,schedule_time,10,5,6.578711104862079,4196.252906999164,False,True,0.20089740000003076
+mnist_mlp,real MNIST train split,0,severe_lr_increase,schedule_time,20,5,6.569087244282296,4196.252906999164,False,True,0.4116415999997116
+mnist_mlp,real MNIST train split,0,severe_lr_increase,schedule_time,50,5,6.572439980355471,4196.253822951936,False,True,1.0246592000003147
+mnist_mlp,real MNIST train split,0,stale_adam_moments,random,1,5,4.274969663048637,283.5010063741028,True,True,0.02252740000039921
+mnist_mlp,real MNIST train split,0,stale_adam_moments,random,3,5,4.336287935395187,545.8056344148172,False,True,0.05548180000005232
+mnist_mlp,real MNIST train split,0,stale_adam_moments,random,5,5,4.35109508698102,545.8056344148172,False,True,0.09770930000013323
+mnist_mlp,real MNIST train split,0,stale_adam_moments,random,10,5,4.343688269133893,545.8056344148172,False,True,0.20129890000134765
+mnist_mlp,real MNIST train split,0,stale_adam_moments,random,20,5,4.338238004742435,545.8056344148172,False,True,0.4006074000008084
+mnist_mlp,real MNIST train split,0,stale_adam_moments,random,50,5,4.340952631969298,545.8068416227909,False,True,1.0176338000001124
+mnist_mlp,real MNIST train split,0,stale_adam_moments,gradient_aligned,1,5,4.275462312566021,283.6754969624334,True,True,0.020440199999939068
+mnist_mlp,real MNIST train split,0,stale_adam_moments,gradient_aligned,3,5,4.336238978337686,545.6395212565288,False,True,0.061808800001017516
+mnist_mlp,real MNIST train split,0,stale_adam_moments,gradient_aligned,5,5,4.351080478278481,545.6395212565288,False,True,0.10301540000000386
+mnist_mlp,real MNIST train split,0,stale_adam_moments,gradient_aligned,10,5,4.343737560335142,545.6395212565288,False,True,0.2092268000014883
+mnist_mlp,real MNIST train split,0,stale_adam_moments,gradient_aligned,20,5,4.3382331714174915,545.6660154197953,False,True,0.4368134000014834
+mnist_mlp,real MNIST train split,0,stale_adam_moments,gradient_aligned,50,5,4.340923681384554,545.7560855929123,False,True,1.057054099999732
+mnist_mlp,real MNIST train split,0,stale_adam_moments,trajectory_aligned,1,5,4.274879973529319,283.4101219319294,True,True,0.025100200000451878
+mnist_mlp,real MNIST train split,0,stale_adam_moments,trajectory_aligned,3,5,4.336283237360178,545.7997955455115,False,True,0.06714609999835375
+mnist_mlp,real MNIST train split,0,stale_adam_moments,trajectory_aligned,5,5,4.35108939033056,545.7997955455115,False,True,0.11077889999978652
+mnist_mlp,real MNIST train split,0,stale_adam_moments,trajectory_aligned,10,5,4.343682464489068,545.7997955455115,False,True,0.22021540000059758
+mnist_mlp,real MNIST train split,0,stale_adam_moments,trajectory_aligned,20,5,4.33823502716741,545.8372248796447,False,True,0.45567360000131885
+mnist_mlp,real MNIST train split,0,stale_adam_moments,trajectory_aligned,50,5,4.340949862588881,545.8372248796447,False,True,1.125519199998962
+mnist_mlp,real MNIST train split,0,stale_adam_moments,top_hessian,1,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,stale_adam_moments,top_hessian,3,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,stale_adam_moments,top_hessian,5,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,stale_adam_moments,top_hessian,10,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,stale_adam_moments,top_hessian,20,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,stale_adam_moments,top_hessian,50,5,,,,,0.0
+mnist_mlp,real MNIST train split,0,stale_adam_moments,adam_denom_sensitive,1,5,4.274975365681163,283.49919360577326,True,True,0.020786900000530295
+mnist_mlp,real MNIST train split,0,stale_adam_moments,adam_denom_sensitive,3,5,4.336443705021188,546.0149362229928,False,True,0.05908120000094641
+mnist_mlp,real MNIST train split,0,stale_adam_moments,adam_denom_sensitive,5,5,4.351189645256329,546.0149362229928,False,True,0.09789319999981672
+mnist_mlp,real MNIST train split,0,stale_adam_moments,adam_denom_sensitive,10,5,4.343737093940431,546.0149362229928,False,True,0.21346210000046995
+mnist_mlp,real MNIST train split,0,stale_adam_moments,adam_denom_sensitive,20,5,4.338286696276613,546.014993275196,False,True,0.39979910000147356
+mnist_mlp,real MNIST train split,0,stale_adam_moments,adam_denom_sensitive,50,5,4.340992318080307,546.0152217424859,False,True,1.0111393999995926
+mnist_mlp,real MNIST train split,0,stale_adam_moments,schedule_time,1,5,4.274998868355452,283.51121166807434,True,True,0.01984660000016447
+mnist_mlp,real MNIST train split,0,stale_adam_moments,schedule_time,3,5,4.3364450094431035,545.9440612763659,False,True,0.060166500001287204
+mnist_mlp,real MNIST train split,0,stale_adam_moments,schedule_time,5,5,4.351189094702557,545.9440612763659,False,True,0.09950500000013562
+mnist_mlp,real MNIST train split,0,stale_adam_moments,schedule_time,10,5,4.343702986381956,545.9440612763659,False,True,0.20493879999958153
+mnist_mlp,real MNIST train split,0,stale_adam_moments,schedule_time,20,5,4.338270253988379,545.9440612763659,False,True,0.4300349000004644
+mnist_mlp,real MNIST train split,0,stale_adam_moments,schedule_time,50,5,4.340965341377142,545.9441084083024,False,True,1.0375986999988527
+mnist_mlp,real MNIST train split,1,reset_second_moment,random,1,5,17.325612658536254,591257.8350658237,True,False,0.01998760000060429
+mnist_mlp,real MNIST train split,1,reset_second_moment,random,3,5,18.144591758370527,1815486.7807403055,True,False,0.06273229999897012
+mnist_mlp,real MNIST train split,1,reset_second_moment,random,5,5,18.551077682211,2763589.1451980467,True,False,0.10047730000042066
+mnist_mlp,real MNIST train split,1,reset_second_moment,random,10,5,19.053048266416827,2763589.1451980467,True,False,0.20271649999995134
+mnist_mlp,real MNIST train split,1,reset_second_moment,random,20,5,18.942325913212752,2763589.1451980467,True,False,0.4150311999983387
+mnist_mlp,real MNIST train split,1,reset_second_moment,random,50,5,19.477903807914853,3705078.1269975677,True,False,1.0223192000012205
+mnist_mlp,real MNIST train split,1,reset_second_moment,gradient_aligned,1,5,17.545184085281505,871196.31107077,True,False,0.01946440000028815
+mnist_mlp,real MNIST train split,1,reset_second_moment,gradient_aligned,3,5,18.34857612752406,1900470.9342404027,True,False,0.06467039999915869
+mnist_mlp,real MNIST train split,1,reset_second_moment,gradient_aligned,5,5,18.628856889499236,2347657.126926201,True,False,0.11567470000045432
+mnist_mlp,real MNIST train split,1,reset_second_moment,gradient_aligned,10,5,19.062968466646915,2574531.2455703067,True,False,0.280450700000074
+mnist_mlp,real MNIST train split,1,reset_second_moment,gradient_aligned,20,5,19.017290368590984,4241477.463105764,False,False,0.46404980000079377
+mnist_mlp,real MNIST train split,1,reset_second_moment,gradient_aligned,50,5,19.39274384498337,4241477.463105764,False,False,1.0881220000010217
+mnist_mlp,real MNIST train split,1,reset_second_moment,trajectory_aligned,1,5,17.326763017943417,590849.1665374335,True,False,0.023194900000817142
+mnist_mlp,real MNIST train split,1,reset_second_moment,trajectory_aligned,3,5,17.990171170477286,1866616.6823085714,True,False,0.06774200000108976
+mnist_mlp,real MNIST train split,1,reset_second_moment,trajectory_aligned,5,5,18.465096311579057,2582822.187904579,True,False,0.11819769999965501
+mnist_mlp,real MNIST train split,1,reset_second_moment,trajectory_aligned,10,5,19.24026251738289,2602750.846668889,True,False,0.21831480000037118
+mnist_mlp,real MNIST train split,1,reset_second_moment,trajectory_aligned,20,5,19.058342631768554,2602750.846668889,True,False,0.44681690000106755
+mnist_mlp,real MNIST train split,1,reset_second_moment,trajectory_aligned,50,5,19.440077987883665,2639932.0914759743,True,False,1.150374799999554
+mnist_mlp,real MNIST train split,1,reset_second_moment,top_hessian,1,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,reset_second_moment,top_hessian,3,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,reset_second_moment,top_hessian,5,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,reset_second_moment,top_hessian,10,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,reset_second_moment,top_hessian,20,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,reset_second_moment,top_hessian,50,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,reset_second_moment,adam_denom_sensitive,1,5,17.324473503950884,586520.1134950793,True,False,0.01976439999998547
+mnist_mlp,real MNIST train split,1,reset_second_moment,adam_denom_sensitive,3,5,17.947779887602213,1700564.6181551882,True,False,0.062368200000491925
+mnist_mlp,real MNIST train split,1,reset_second_moment,adam_denom_sensitive,5,5,18.416402105733436,2371618.997461564,True,False,0.10047139999915089
+mnist_mlp,real MNIST train split,1,reset_second_moment,adam_denom_sensitive,10,5,18.821068320223354,2454414.8874431886,True,False,0.21285379999972065
+mnist_mlp,real MNIST train split,1,reset_second_moment,adam_denom_sensitive,20,5,18.795544454831557,2454414.8874431886,True,False,0.4162450000003446
+mnist_mlp,real MNIST train split,1,reset_second_moment,adam_denom_sensitive,50,5,19.27423795578476,2457452.859991602,True,False,1.0253316999987874
+mnist_mlp,real MNIST train split,1,reset_second_moment,schedule_time,1,5,17.327565074858885,586700.9501850822,True,False,0.02101109999966866
+mnist_mlp,real MNIST train split,1,reset_second_moment,schedule_time,3,5,18.035951752358397,1640860.750163327,True,False,0.05818560000079742
+mnist_mlp,real MNIST train split,1,reset_second_moment,schedule_time,5,5,18.4822876617447,2295242.1284873923,True,False,0.10471569999936037
+mnist_mlp,real MNIST train split,1,reset_second_moment,schedule_time,10,5,18.926920388510876,3265276.469356801,True,False,0.20814819999941392
+mnist_mlp,real MNIST train split,1,reset_second_moment,schedule_time,20,5,18.850948194626053,3265276.469356801,True,False,0.49591980000150215
+mnist_mlp,real MNIST train split,1,reset_second_moment,schedule_time,50,5,19.355246311659627,3265276.469356801,True,False,1.175412900000083
+mnist_mlp,real MNIST train split,1,severe_lr_increase,random,1,5,6.470964641708846,2285.136191159784,True,True,0.021261300000332994
+mnist_mlp,real MNIST train split,1,severe_lr_increase,random,3,5,6.591924965832074,3911.0405106442176,False,True,0.055090100000597886
+mnist_mlp,real MNIST train split,1,severe_lr_increase,random,5,5,6.563400192663141,3911.0405106442176,False,True,0.09965320000083011
+mnist_mlp,real MNIST train split,1,severe_lr_increase,random,10,5,6.587452794008013,3911.0405106442176,False,True,0.19885899999826506
+mnist_mlp,real MNIST train split,1,severe_lr_increase,random,20,5,6.58535693850282,3911.0405106442176,False,True,0.4063845000000583
+mnist_mlp,real MNIST train split,1,severe_lr_increase,random,50,5,6.583113479197713,3911.0405106442176,False,True,1.008410799999183
+mnist_mlp,real MNIST train split,1,severe_lr_increase,gradient_aligned,1,5,6.470990069122763,2284.3683343040675,True,True,0.023637100000996725
+mnist_mlp,real MNIST train split,1,severe_lr_increase,gradient_aligned,3,5,6.591976613331373,3911.497393715537,False,True,0.06651289999899745
+mnist_mlp,real MNIST train split,1,severe_lr_increase,gradient_aligned,5,5,6.563419518393545,3911.497393715537,False,True,0.10374229999979434
+mnist_mlp,real MNIST train split,1,severe_lr_increase,gradient_aligned,10,5,6.587667790584073,3911.497393715537,False,True,0.21309130000008736
+mnist_mlp,real MNIST train split,1,severe_lr_increase,gradient_aligned,20,5,6.585346107084755,3911.497393715537,False,True,0.44016349999947124
+mnist_mlp,real MNIST train split,1,severe_lr_increase,gradient_aligned,50,5,6.582962057979208,3911.497393715537,False,True,1.0941630999986955
+mnist_mlp,real MNIST train split,1,severe_lr_increase,trajectory_aligned,1,5,6.4706931469499125,2282.750578802232,True,True,0.02315900000030524
+mnist_mlp,real MNIST train split,1,severe_lr_increase,trajectory_aligned,3,5,6.591816091891051,3910.977112464439,False,True,0.06551290000061272
+mnist_mlp,real MNIST train split,1,severe_lr_increase,trajectory_aligned,5,5,6.563331932618935,3910.977112464439,False,True,0.11402199999974982
+mnist_mlp,real MNIST train split,1,severe_lr_increase,trajectory_aligned,10,5,6.58741872936228,3910.977112464439,False,True,0.21633039999869652
+mnist_mlp,real MNIST train split,1,severe_lr_increase,trajectory_aligned,20,5,6.5852290860724585,3910.98297869461,False,True,0.44795820000035746
+mnist_mlp,real MNIST train split,1,severe_lr_increase,trajectory_aligned,50,5,6.583050173262537,3911.052512314554,False,True,1.128255599998738
+mnist_mlp,real MNIST train split,1,severe_lr_increase,top_hessian,1,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,severe_lr_increase,top_hessian,3,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,severe_lr_increase,top_hessian,5,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,severe_lr_increase,top_hessian,10,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,severe_lr_increase,top_hessian,20,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,severe_lr_increase,top_hessian,50,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,severe_lr_increase,adam_denom_sensitive,1,5,6.470962330105945,2285.129634648693,True,True,0.02075440000044182
+mnist_mlp,real MNIST train split,1,severe_lr_increase,adam_denom_sensitive,3,5,6.591923594002748,3911.028941571016,False,True,0.059479200001078425
+mnist_mlp,real MNIST train split,1,severe_lr_increase,adam_denom_sensitive,5,5,6.563399076704893,3911.028941571016,False,True,0.10929249999935564
+mnist_mlp,real MNIST train split,1,severe_lr_increase,adam_denom_sensitive,10,5,6.587451998796097,3911.028941571016,False,True,0.19312820000050124
+mnist_mlp,real MNIST train split,1,severe_lr_increase,adam_denom_sensitive,20,5,6.585359606677181,3911.028941571016,False,True,0.4052605999986554
+mnist_mlp,real MNIST train split,1,severe_lr_increase,adam_denom_sensitive,50,5,6.583114369660548,3911.03064896028,False,True,1.0244736000004195
+mnist_mlp,real MNIST train split,1,severe_lr_increase,schedule_time,1,5,6.470985644862963,2285.1104984105664,True,True,0.019768800000747433
+mnist_mlp,real MNIST train split,1,severe_lr_increase,schedule_time,3,5,6.591917948606994,3911.0393320088665,False,True,0.06477000000086264
+mnist_mlp,real MNIST train split,1,severe_lr_increase,schedule_time,5,5,6.563396968360711,3911.0393320088665,False,True,0.10729459999856772
+mnist_mlp,real MNIST train split,1,severe_lr_increase,schedule_time,10,5,6.587441511527784,3911.0393320088665,False,True,0.19422379999923578
+mnist_mlp,real MNIST train split,1,severe_lr_increase,schedule_time,20,5,6.585339300445428,3911.0393320088665,False,True,0.41427889999977197
+mnist_mlp,real MNIST train split,1,severe_lr_increase,schedule_time,50,5,6.583097449959936,3911.040158790561,False,True,1.0880830999994942
+mnist_mlp,real MNIST train split,1,stale_adam_moments,random,1,5,4.252807438327608,299.35269441450185,True,True,0.02022219999889785
+mnist_mlp,real MNIST train split,1,stale_adam_moments,random,3,5,4.353435750841334,515.0194970944916,False,True,0.058946900000591995
+mnist_mlp,real MNIST train split,1,stale_adam_moments,random,5,5,4.394478080605524,515.0194970944916,False,True,0.09425010000086331
+mnist_mlp,real MNIST train split,1,stale_adam_moments,random,10,5,4.389042109759848,515.0194970944916,False,True,0.24984760000006645
+mnist_mlp,real MNIST train split,1,stale_adam_moments,random,20,5,4.3824284905486826,515.0194970944916,False,True,0.413099899998997
+mnist_mlp,real MNIST train split,1,stale_adam_moments,random,50,5,4.381195874718052,515.0195722594133,False,True,1.0292166999988694
+mnist_mlp,real MNIST train split,1,stale_adam_moments,gradient_aligned,1,5,4.252869206438955,299.4717733219004,True,True,0.02167369999915536
+mnist_mlp,real MNIST train split,1,stale_adam_moments,gradient_aligned,3,5,4.353404615845105,515.0457974249658,False,True,0.06309880000117118
+mnist_mlp,real MNIST train split,1,stale_adam_moments,gradient_aligned,5,5,4.394431795545232,515.0457974249658,False,True,0.11107560000164085
+mnist_mlp,real MNIST train split,1,stale_adam_moments,gradient_aligned,10,5,4.389030795035594,515.0457974249658,False,True,0.21679000000040105
+mnist_mlp,real MNIST train split,1,stale_adam_moments,gradient_aligned,20,5,4.38244333533361,515.074296343838,False,True,0.43490339999880234
+mnist_mlp,real MNIST train split,1,stale_adam_moments,gradient_aligned,50,5,4.3812159355329445,515.074296343838,False,True,1.1430000999989716
+mnist_mlp,real MNIST train split,1,stale_adam_moments,trajectory_aligned,1,5,4.252767711906531,299.3166986541955,True,True,0.02574049999930139
+mnist_mlp,real MNIST train split,1,stale_adam_moments,trajectory_aligned,3,5,4.353430905266273,515.0083565054265,False,True,0.07660740000028454
+mnist_mlp,real MNIST train split,1,stale_adam_moments,trajectory_aligned,5,5,4.394482875624004,515.0083565054265,False,True,0.13343300000087766
+mnist_mlp,real MNIST train split,1,stale_adam_moments,trajectory_aligned,10,5,4.38905109036567,515.0083565054265,False,True,0.28169160000106785
+mnist_mlp,real MNIST train split,1,stale_adam_moments,trajectory_aligned,20,5,4.382478493853049,515.0083565054265,False,True,0.6335376999995788
+mnist_mlp,real MNIST train split,1,stale_adam_moments,trajectory_aligned,50,5,4.3812225846590644,515.0083565054265,False,True,1.3759086999998544
+mnist_mlp,real MNIST train split,1,stale_adam_moments,top_hessian,1,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,stale_adam_moments,top_hessian,3,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,stale_adam_moments,top_hessian,5,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,stale_adam_moments,top_hessian,10,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,stale_adam_moments,top_hessian,20,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,stale_adam_moments,top_hessian,50,5,,,,,0.0
+mnist_mlp,real MNIST train split,1,stale_adam_moments,adam_denom_sensitive,1,5,4.252804125837997,299.34991276491667,True,True,0.021711499999582884
+mnist_mlp,real MNIST train split,1,stale_adam_moments,adam_denom_sensitive,3,5,4.353436237059562,515.0176337904744,False,True,0.06253800000013143
+mnist_mlp,real MNIST train split,1,stale_adam_moments,adam_denom_sensitive,5,5,4.394479309738591,515.0176337904744,False,True,0.10151939999923343
+mnist_mlp,real MNIST train split,1,stale_adam_moments,adam_denom_sensitive,10,5,4.389042761312835,515.0176337904744,False,True,0.2054530999994313
+mnist_mlp,real MNIST train split,1,stale_adam_moments,adam_denom_sensitive,20,5,4.382429337337249,515.0176337904744,False,True,0.4542301999990741
+mnist_mlp,real MNIST train split,1,stale_adam_moments,adam_denom_sensitive,50,5,4.381196156167245,515.0177457687398,False,True,1.0290869000000384
+mnist_mlp,real MNIST train split,1,stale_adam_moments,schedule_time,1,5,4.252792252728559,299.25391519260626,True,True,0.02002389999870502
+mnist_mlp,real MNIST train split,1,stale_adam_moments,schedule_time,3,5,4.35337716170392,515.0286244973404,False,True,0.05657439999959024
+mnist_mlp,real MNIST train split,1,stale_adam_moments,schedule_time,5,5,4.394431695590677,515.0286244973404,False,True,0.09847240000090096
+mnist_mlp,real MNIST train split,1,stale_adam_moments,schedule_time,10,5,4.389037327813505,515.0286244973404,False,True,0.2051394000009168
+mnist_mlp,real MNIST train split,1,stale_adam_moments,schedule_time,20,5,4.382424908442227,515.0286244973404,False,True,0.4080317999996623
+mnist_mlp,real MNIST train split,1,stale_adam_moments,schedule_time,50,5,4.3811925739568425,515.0286244973404,False,True,1.051400399999693

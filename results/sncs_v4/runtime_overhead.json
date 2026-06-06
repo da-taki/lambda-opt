@@ -1,0 +1,236 @@
+{
+  "rows": [
+    {
+      "model": "mnist_mlp",
+      "dataset": "real MNIST train split",
+      "parameter_count": 52650,
+      "device": "cpu",
+      "probe_trials": 1,
+      "probe_steps": 1,
+      "runtime_seconds": 0.0044928999996045604,
+      "memory_mb_if_available": 0.632,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.5012; t_step=2.3ms; resume_post_window=0.070s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "mnist_mlp",
+      "dataset": "real MNIST train split",
+      "parameter_count": 52650,
+      "device": "cpu",
+      "probe_trials": 3,
+      "probe_steps": 1,
+      "runtime_seconds": 0.014444000000366941,
+      "memory_mb_if_available": 0.632,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.4519; t_step=2.3ms; resume_post_window=0.070s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "mnist_mlp",
+      "dataset": "real MNIST train split",
+      "parameter_count": 52650,
+      "device": "cpu",
+      "probe_trials": 5,
+      "probe_steps": 5,
+      "runtime_seconds": 0.09818530000120518,
+      "memory_mb_if_available": 0.632,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.5284; t_step=2.3ms; resume_post_window=0.070s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "mnist_mlp",
+      "dataset": "real MNIST train split",
+      "parameter_count": 52650,
+      "device": "cpu",
+      "probe_trials": 10,
+      "probe_steps": 10,
+      "runtime_seconds": 0.40362609999829147,
+      "memory_mb_if_available": 0.632,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.3735; t_step=2.3ms; resume_post_window=0.070s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "mnist_mlp",
+      "dataset": "real MNIST train split",
+      "parameter_count": 52650,
+      "device": "cpu",
+      "probe_trials": 20,
+      "probe_steps": 15,
+      "runtime_seconds": 1.1972788000002765,
+      "memory_mb_if_available": 0.632,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.2995; t_step=2.3ms; resume_post_window=0.070s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "resnet18",
+      "dataset": "real CIFAR-10 train split (first 256 images)",
+      "parameter_count": 11181642,
+      "device": "cpu",
+      "probe_trials": 1,
+      "probe_steps": 1,
+      "runtime_seconds": 1.80660429999989,
+      "memory_mb_if_available": 134.18,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.9940; t_step=754.1ms; resume_post_window=6.033s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "resnet18",
+      "dataset": "real CIFAR-10 train split (first 256 images)",
+      "parameter_count": 11181642,
+      "device": "cpu",
+      "probe_trials": 3,
+      "probe_steps": 1,
+      "runtime_seconds": 4.887528600000223,
+      "memory_mb_if_available": 134.18,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.9685; t_step=754.1ms; resume_post_window=6.033s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "resnet18",
+      "dataset": "real CIFAR-10 train split (first 256 images)",
+      "parameter_count": 11181642,
+      "device": "cpu",
+      "probe_trials": 5,
+      "probe_steps": 5,
+      "runtime_seconds": 35.40250120000019,
+      "memory_mb_if_available": 134.18,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.6073; t_step=754.1ms; resume_post_window=6.033s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "resnet18",
+      "dataset": "real CIFAR-10 train split (first 256 images)",
+      "parameter_count": 11181642,
+      "device": "cpu",
+      "probe_trials": 10,
+      "probe_steps": 10,
+      "runtime_seconds": 140.96816699999908,
+      "memory_mb_if_available": 134.18,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.4060; t_step=754.1ms; resume_post_window=6.033s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "resnet18",
+      "dataset": "real CIFAR-10 train split (first 256 images)",
+      "parameter_count": 11181642,
+      "device": "cpu",
+      "probe_trials": 20,
+      "probe_steps": 15,
+      "runtime_seconds": 412.9341703000009,
+      "memory_mb_if_available": 134.18,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.3171; t_step=754.1ms; resume_post_window=6.033s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "gpt_mini",
+      "dataset": "WikiText-2 char-level (vocab=112, first 200k chars)",
+      "parameter_count": 85312,
+      "device": "cpu",
+      "probe_trials": 1,
+      "probe_steps": 1,
+      "runtime_seconds": 0.03333039999961329,
+      "memory_mb_if_available": 1.024,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.9296; t_step=10.3ms; resume_post_window=0.083s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "gpt_mini",
+      "dataset": "WikiText-2 char-level (vocab=112, first 200k chars)",
+      "parameter_count": 85312,
+      "device": "cpu",
+      "probe_trials": 3,
+      "probe_steps": 1,
+      "runtime_seconds": 0.0683123999988311,
+      "memory_mb_if_available": 1.024,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.8904; t_step=10.3ms; resume_post_window=0.083s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "gpt_mini",
+      "dataset": "WikiText-2 char-level (vocab=112, first 200k chars)",
+      "parameter_count": 85312,
+      "device": "cpu",
+      "probe_trials": 5,
+      "probe_steps": 5,
+      "runtime_seconds": 0.6138936000006652,
+      "memory_mb_if_available": 1.024,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.6085; t_step=10.3ms; resume_post_window=0.083s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "gpt_mini",
+      "dataset": "WikiText-2 char-level (vocab=112, first 200k chars)",
+      "parameter_count": 85312,
+      "device": "cpu",
+      "probe_trials": 10,
+      "probe_steps": 10,
+      "runtime_seconds": 2.350237799999377,
+      "memory_mb_if_available": 1.024,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.4000; t_step=10.3ms; resume_post_window=0.083s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    },
+    {
+      "model": "gpt_mini",
+      "dataset": "WikiText-2 char-level (vocab=112, first 200k chars)",
+      "parameter_count": 85312,
+      "device": "cpu",
+      "probe_trials": 20,
+      "probe_steps": 15,
+      "runtime_seconds": 6.180026200001521,
+      "memory_mb_if_available": 1.024,
+      "decision": "flagged_dangerous",
+      "notes": "L_pred=1.3117; t_step=10.3ms; resume_post_window=0.083s; memory is estimated state-tensor size (theta+m+v, fp32), not RSS"
+    }
+  ],
+  "per_model_step": {
+    "mnist_mlp": {
+      "t_step": 0.002343539999856148,
+      "n_params": 52650,
+      "post_steps": 30,
+      "dataset": "real MNIST train split"
+    },
+    "resnet18": {
+      "t_step": 0.7540957599998365,
+      "n_params": 11181642,
+      "post_steps": 8,
+      "dataset": "real CIFAR-10 train split (first 256 images)"
+    },
+    "gpt_mini": {
+      "t_step": 0.010339739999835729,
+      "n_params": 85312,
+      "post_steps": 8,
+      "dataset": "WikiText-2 char-level (vocab=112, first 200k chars)"
+    }
+  },
+  "skipped": {},
+  "config": {
+    "models": [
+      "mnist_mlp",
+      "resnet18",
+      "gpt_mini"
+    ],
+    "budgets": [
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        20,
+        15
+      ]
+    ],
+    "device": "cpu",
+    "seed": 0
+  }
+}

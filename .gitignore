@@ -37,6 +37,10 @@ tmp/
 temp/
 *.tmp
 *.log
+*.orig
+*.bak-*
+scripts/_scratch_*.py
+*_log.txt
 
 # =========================
 # Jupyter / notebooks
