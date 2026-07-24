@@ -178,16 +178,15 @@ The framework has zero false negatives across all tested failure scenarios. Cons
 
 ## Paper
 
-**λOpt: A Mechanized Calculus for Semantic Safety of Optimizer-State Rewrites**  
-Taknoor Singh — Independent Research, Patiala, Punjab, India  
-Under review at *Springer Machine Learning*
+**λOpt: A Mechanized Calculus for Semantic Safety of Optimizer-State Rewrites**
+
+This repository accompanies the λOpt manuscript. Author, affiliation, and venue
+details are intentionally omitted for anonymous review.
 
 ```
-@misc{singh2025lambdaopt,
-  title     = {λOpt: A Mechanized Calculus for Semantic Safety of Optimizer-State Rewrites},
-  author    = {Singh, Taknoor},
-  year      = {2025},
-  note      = {Under review, Springer Machine Learning}
+@misc{lambdaopt,
+  title = {λOpt: A Mechanized Calculus for Semantic Safety of Optimizer-State Rewrites},
+  note  = {Author and venue omitted for anonymous review}
 }
 ```
 
@@ -201,48 +200,52 @@ If anything doesn't reproduce, open an issue.
 
 ---
 
-## SNCS v4 Reviewer-Proofing Experiments
+## Supplementary Diagnostic Experiments
 
-The `scripts/` directory (top level) and `results/sncs_v4/` hold a suite of
-reviewer-proofing experiments added on the `sncs-v4-reviewer-experiments` branch.
-They stress-test the analyzer against simpler baselines, quantify coverage and
-runtime, ablate the displacement metric, sweep thresholds, and probe the honesty
-limits of the sampled-L estimator. Each experiment writes **CSV + JSON +
-Markdown** into `results/sncs_v4/`, and every Markdown file documents the setup,
-exact command, metrics, failures, and limitations.
+The top-level `scripts/` directory and `results/review_experiments/` hold a suite
+of supplementary diagnostic experiments. They stress-test the analyzer against
+simpler baselines, quantify coverage and runtime, ablate the displacement metric,
+sweep thresholds, and probe the honesty limits of the sampled-L estimator. Each
+experiment writes **CSV + JSON + Markdown** into `results/review_experiments/`,
+and every Markdown file documents the setup, exact command, metrics, failures,
+and limitations.
 
-> **Honesty note.** `L` is estimated by finite sampling of perturbation
-> directions. It is an *empirical* estimate, not a proof certificate; decisions
-> labelled `certified_safe` are *analyzer* decisions. See
-> `results/sncs_v4/lipschitz_sampling_stress.md` for the quantified gap.
+> **Honesty note.** The sampled `L` values reported here are estimated by finite
+> sampling of perturbation directions. They are *diagnostic empirical estimates*,
+> not formal certificates: a sampled `L` does not carry an a-priori worst-case
+> guarantee, and decisions labelled `certified_safe` are *analyzer* decisions
+> resting on that estimate — not the mechanized theorems. Only Theorems 1–3
+> (`lean/`) are formal certificates. See
+> `results/review_experiments/lipschitz_sampling_stress.md` for the quantified
+> gap between sampled directions and structured worst-case directions.
 
-Shared infrastructure lives in `scripts/sncs_v4_common.py` (the four diagnostics
-— quadratic, MNIST MLP, ResNet-18/CIFAR-10, GPT-mini — the 12 canonical
-checkpoint-rewrite scenarios, the five metric variants, and the repaired
-analyzer). The repaired analyzer uses a theta-commensurate displacement and
-`L = max(L_clean, L_rewritten)`.
+Shared infrastructure lives in `scripts/review_experiments_common.py` (the four
+diagnostics — quadratic, MNIST MLP, ResNet-18/CIFAR-10, GPT-mini — the 12
+canonical checkpoint-rewrite scenarios, the five metric variants, and the
+repaired analyzer). The repaired analyzer uses a theta-commensurate displacement
+and `L = max(L_clean, L_rewritten)`.
 
 ```bash
 # from the repo root, with the project venv active and PYTHONPATH=experiments
-python scripts/run_sncs_v4_baseline_comparison.py          # Exp 1: baselines
-python scripts/run_sncs_v4_certification_coverage.py        # Exp 2: coverage
-python scripts/run_sncs_v4_stepwise_bound_comparison.py     # Exp 3: step-varying bound
-python scripts/run_sncs_v4_multiseed_validation.py          # Exp 4: multiple seeds
-python scripts/run_sncs_v4_cifar10_checkpoint_matrix.py     # Exp 5: real CIFAR-10 matrix
-python scripts/run_sncs_v4_runtime_overhead.py              # Exp 6: runtime overhead
-python scripts/run_sncs_v4_metric_ablation.py               # Exp 7: metric repair ablation
-python scripts/run_sncs_v4_threshold_sensitivity.py         # Exp 8: threshold/ROC sweep
-python scripts/run_sncs_v4_lipschitz_sampling_stress.py     # Exp 9: sampled-L stress
-python scripts/run_sncs_v4_make_summary.py                  # Exp 11: tables + summary
+python scripts/run_baseline_comparison.py          # Exp 1: baselines
+python scripts/run_decision_coverage.py            # Exp 2: decision coverage
+python scripts/run_stepwise_bound_comparison.py    # Exp 3: step-varying bound
+python scripts/run_multiseed_validation.py         # Exp 4: multiple seeds
+python scripts/run_cifar10_checkpoint_matrix.py    # Exp 5: real CIFAR-10 matrix
+python scripts/run_runtime_overhead.py             # Exp 6: runtime overhead
+python scripts/run_metric_ablation.py              # Exp 7: metric repair ablation
+python scripts/run_threshold_sensitivity.py        # Exp 8: threshold/ROC sweep
+python scripts/run_lipschitz_sampling_stress.py    # Exp 9: sampled-L stress
+python scripts/run_make_summary.py                 # Exp 11: tables + summary
 ```
 
 Experiment 10 (Lean theorem mapping) is documented in
-`results/sncs_v4/lean_theorem_mapping.md`, with a candidate step-varying product
-bound in `lean/LambdaOpt/StepwiseProduct.lean`
-(statement also in `results/sncs_v4/lean_stepwise_todo.md`). The headline summary
-and manuscript-ready tables are in
-`results/sncs_v4/SNCS_V4_REVIEWER_PROOFING_SUMMARY.md` and
-`results/sncs_v4/sncs_v4_tables_for_paper.md`.
+`results/review_experiments/lean_theorem_mapping.md`, with a candidate
+step-varying product bound in `lean/LambdaOpt/StepwiseProduct.lean`
+(statement also in `results/review_experiments/lean_stepwise_todo.md`). The
+headline summary and manuscript-ready tables are in
+`results/review_experiments/REVIEW_EXPERIMENT_SUMMARY.md` and
+`results/review_experiments/tables_for_paper.md`.
 
 ResNet-18 and GPT-mini runs default to small CPU-budget configurations (real data,
 short horizons), clearly labelled "LIMITED" in their outputs; scale them up with

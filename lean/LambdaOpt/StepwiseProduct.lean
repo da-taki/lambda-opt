@@ -1,5 +1,5 @@
 /-
-  Step-varying product bound (SNCS v4 addition).
+  Step-varying product bound (supplementary addition).
 
   Generalises Theorem 1 (single Lipschitz constant L, giving D ≤ L^k·δ) to the
   case where each step j has its own Lipschitz constant L_j:
@@ -7,7 +7,7 @@
       dist(composeSteps f x k, composeSteps f y k) ≤ (∏_{j<k} L_j) · dist x y
 
   This is the formal backing for the practical step-varying bound used in the
-  SNCS v4 stepwise-bound experiment. It uses only stable Mathlib API.
+  stepwise-bound experiment. It uses only stable Mathlib API.
 -/
 import Mathlib.Topology.MetricSpace.Lipschitz
 import Mathlib.Tactic

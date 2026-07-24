@@ -1,4 +1,4 @@
 # Top-level convenience pointer. The canonical pinned list is in
 # experiments/requirements.txt (torch, torchvision, numpy, scipy, matplotlib,
-# pyyaml, pytest). The SNCS v4 reviewer-proofing scripts use the same deps.
+# pyyaml, pytest). The supplementary review-experiment scripts use the same deps.
 -r experiments/requirements.txt
