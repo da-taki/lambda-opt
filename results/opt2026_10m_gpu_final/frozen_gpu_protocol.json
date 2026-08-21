@@ -1,0 +1,44 @@
+{
+  "development_seed": 1051,
+  "forbidden_seed_overlap": [
+    201,
+    202,
+    203,
+    221,
+    222,
+    223,
+    231,
+    232,
+    233,
+    801,
+    901,
+    902,
+    903,
+    951,
+    1001,
+    1002,
+    1003
+  ],
+  "heldout_seeds": [
+    1101,
+    1102,
+    1103
+  ],
+  "rewrite_families": [
+    "exact_restore",
+    "benign_nonzero",
+    "reset_m",
+    "reset_v",
+    "stale_m",
+    "stale_v",
+    "stale_mv",
+    "model_current_optimizer_stale",
+    "step_counter_mismatch",
+    "scheduler_mismatch",
+    "optimizer_reset"
+  ],
+  "stale_age": 25,
+  "stale_age_translation": "unchanged from final 1.298M campaign; absolute 25-step stale severity preserved",
+  "task_recovery": "validation-loss gap <= 0.05 for 3 consecutive evaluations within 20 steps",
+  "tau_formula": "tau = 0.10 * (||theta_checkpoint||_2 + 1e-12)"
+}

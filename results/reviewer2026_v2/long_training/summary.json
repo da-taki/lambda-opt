@@ -1,0 +1,5 @@
+{
+  "status": "NOT_COMPLETED",
+  "technical_failure": "FROZEN_PROTOCOL.json was written and hashed before results, but the three-seed 3000-step mature-state training campaign plus H=100 rewrite suite was not run in this execution window. No long-training row results were generated.",
+  "timestamp_utc": "2026-08-21T22:04:49.290347+00:00"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "FN": 5,
+    "FP": 1,
+    "TN": 20,
+    "TP": 7,
+    "delayed_T_tau_gt10_count": 3,
+    "maximum_T_tau": 18,
+    "seed": 1101,
+    "sensitivity": 0.583,
+    "spearman_parameter_divergence_perplexity_damage": 0.938,
+    "spearman_parameter_divergence_validation_loss_damage": 0.927,
+    "specificity": 0.952,
+    "task_nonrecovered_rows": 12,
+    "tau_divergent_rows": 8,
+    "total_rows": 33
+  },
+  {
+    "FN": 8,
+    "FP": 1,
+    "TN": 16,
+    "TP": 8,
+    "delayed_T_tau_gt10_count": 3,
+    "maximum_T_tau": 17,
+    "seed": 1102,
+    "sensitivity": 0.5,
+    "spearman_parameter_divergence_perplexity_damage": 0.928,
+    "spearman_parameter_divergence_validation_loss_damage": 0.936,
+    "specificity": 0.941,
+    "task_nonrecovered_rows": 16,
+    "tau_divergent_rows": 9,
+    "total_rows": 33
+  },
+  {
+    "FN": 8,
+    "FP": 1,
+    "TN": 17,
+    "TP": 7,
+    "delayed_T_tau_gt10_count": 3,
+    "maximum_T_tau": 16,
+    "seed": 1103,
+    "sensitivity": 0.467,
+    "spearman_parameter_divergence_perplexity_damage": 0.931,
+    "spearman_parameter_divergence_validation_loss_damage": 0.939,
+    "specificity": 0.944,
+    "task_nonrecovered_rows": 15,
+    "tau_divergent_rows": 8,
+    "total_rows": 33
+  }
+]

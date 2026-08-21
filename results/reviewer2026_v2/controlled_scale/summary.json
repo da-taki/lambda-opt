@@ -1,0 +1,5 @@
+{
+  "status": "NOT_COMPLETED",
+  "technical_failure": "FROZEN_PROTOCOL.json was written and hashed before results, but the three-size x three-seed x three-checkpoint x eleven-family H=100 campaign was not run in this execution window. No controlled-scale row results were generated.",
+  "timestamp_utc": "2026-08-21T22:04:49.288711+00:00"
+}

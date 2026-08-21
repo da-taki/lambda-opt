@@ -1,0 +1,246 @@
+{
+  "created_utc": "2026-08-21T22:05:41.965040+00:00",
+  "files": [
+    {
+      "bytes": 64055,
+      "path": "results\\reviewer2026_v2\\alternative_metrics_v2.csv",
+      "sha256": "2b5533abfa33f9f7f3880aafc878027d16486d4c9239d7e20de6672dab2d2ce8"
+    },
+    {
+      "bytes": 5937,
+      "path": "results\\reviewer2026_v2\\alternative_metrics_v2.json",
+      "sha256": "da194d85f3825b3d7ccfba55e354bbdc088ca283e09d352baee11c55717910eb"
+    },
+    {
+      "bytes": 199,
+      "path": "results\\reviewer2026_v2\\alternative_metrics_v2.md",
+      "sha256": "b4d44ed4bafff3799fe318c9ca005dc637d916588090c5ab39aed845dc7fa406"
+    },
+    {
+      "bytes": 1190,
+      "path": "results\\reviewer2026_v2\\control_distributions_v2.json",
+      "sha256": "feb83328d9e9f1dc2ba5cb64607d26763ad2c91145bec93c01654df8d818b62e"
+    },
+    {
+      "bytes": 122311,
+      "path": "results\\reviewer2026_v2\\delayed_mechanism_cases.json",
+      "sha256": "99ae228dce1ccddd531fd9bb99cfa27e9ee8e3654cbd0c159d7034c1622217fa"
+    },
+    {
+      "bytes": 711353,
+      "path": "results\\reviewer2026_v2\\delayed_mechanism_steps.csv",
+      "sha256": "4746a517042900e39bb6be5b5c4b9f761dddae4e4f494b5cc053dbd68d03911a"
+    },
+    {
+      "bytes": 907,
+      "path": "results\\reviewer2026_v2\\delayed_mechanism_summary.md",
+      "sha256": "e97fa94dc77a001146fe9a8fb1f432b4621753f023107affa206f13a5cd25562"
+    },
+    {
+      "bytes": 433,
+      "path": "results\\reviewer2026_v2\\h100_family_summary.csv",
+      "sha256": "a2d9713a4c69d2fbff098fc629458e768a4d38bbf0f4d7820a5c334c1305ec52"
+    },
+    {
+      "bytes": 1207,
+      "path": "results\\reviewer2026_v2\\h100_latency_histogram.json",
+      "sha256": "01fbb19c82807fd0d20f8487ca8b09c3870ad81ea867db33a217912a53f3dcae"
+    },
+    {
+      "bytes": 902000,
+      "path": "results\\reviewer2026_v2\\h100_rows.csv",
+      "sha256": "f4fa76de1c4f8dca2d685a978007c8db32fb6eb4dcbd704db8cad865c2e8fc3d"
+    },
+    {
+      "bytes": 1372583,
+      "path": "results\\reviewer2026_v2\\h100_rows.json",
+      "sha256": "531dc04f036ef23da9b2afe30fbe7cdb6b6eeb2197ff939c33a51b2c0145af13"
+    },
+    {
+      "bytes": 413,
+      "path": "results\\reviewer2026_v2\\h100_summary.json",
+      "sha256": "ba75db012c270f00d22a47f807b19b840c84a08fd578f543298769abdafc5e79"
+    },
+    {
+      "bytes": 324,
+      "path": "results\\reviewer2026_v2\\h100_summary.md",
+      "sha256": "feb5d9c31187628158641a60f106a7e7406bfb729695dbda7c7000248dca666d"
+    },
+    {
+      "bytes": 4082807,
+      "path": "results\\reviewer2026_v2\\h100_trajectory_steps.csv",
+      "sha256": "ed3fdab41f29d57fcc9bfe18d24dc32a706d0664648dc3e3d1288c4dca3ef850"
+    },
+    {
+      "bytes": 127,
+      "path": "results\\reviewer2026_v2\\multi_future_frozen_schedule_seeds.json",
+      "sha256": "2b84939432a13c58db4ab1a6ce62390b45986dffaa532904a4aa5b61e523f5fd"
+    },
+    {
+      "bytes": 6819,
+      "path": "results\\reviewer2026_v2\\multi_future_rows.csv",
+      "sha256": "5c87b906eb5ea45ae396ad3bc9938de41926c8249d90b96199d92725db4e2af0"
+    },
+    {
+      "bytes": 3348,
+      "path": "results\\reviewer2026_v2\\multi_future_summary.json",
+      "sha256": "eafbc2c98c3a886791dfeda13b5d2cc6feceb8019a509f13fb5213209d25ea54"
+    },
+    {
+      "bytes": 482,
+      "path": "results\\reviewer2026_v2\\multi_future_summary.md",
+      "sha256": "e582c28eaa820c7f920f28f5e859f8ea780aabc03bd2cf9fd7ffaa29420e4dce"
+    },
+    {
+      "bytes": 492,
+      "path": "results\\reviewer2026_v2\\original_h20_delayed_verification.json",
+      "sha256": "2a1d1f994f44d823463e487af7ae441adc8b38f22bd1bf8283cfeff150ed7b4f"
+    },
+    {
+      "bytes": 954,
+      "path": "results\\reviewer2026_v2\\PROVENANCE.json",
+      "sha256": "8e60a0d7d8a238b15a9491f030167bf923d1820a57fcece745a2afc720c5ddd4"
+    },
+    {
+      "bytes": 891,
+      "path": "results\\reviewer2026_v2\\REVIEWER_EXPERIMENT_COMPLETION.md",
+      "sha256": "c1910b4cd1a5bc1525c6997e5ced0324667f56bd23cfc92bb821ea5846b35d11"
+    },
+    {
+      "bytes": 6551,
+      "path": "results\\reviewer2026_v2\\roc_pr_robustness.json",
+      "sha256": "3c89c4b21aff8757239c0c3a26e882f62afcd3ee65c12e21f7fd4d2690a18277"
+    },
+    {
+      "bytes": 381,
+      "path": "results\\reviewer2026_v2\\task_threshold_sweep_v2.csv",
+      "sha256": "bec5e47fcb094709538fbfacae1d6c1b2abef2bc24892c8722583264c6b71467"
+    },
+    {
+      "bytes": 2234,
+      "path": "results\\reviewer2026_v2\\task_threshold_sweep_v2.json",
+      "sha256": "339df21214a6ecae6110c26b8d3fea8bcdb48b89cac34fea76aa2cc5f4d39f68"
+    },
+    {
+      "bytes": 1053,
+      "path": "results\\reviewer2026_v2\\validation_protocol.json",
+      "sha256": "d93a9764d5c2509a7cdcf32efaa7393f8b02e0aab8da32217e79521dd2188674"
+    },
+    {
+      "bytes": 490,
+      "path": "results\\reviewer2026_v2\\validation_protocol.md",
+      "sha256": "58a8d797455b295c607e65f770c4f02f8e8cd92880e3646de160ac4fe4402f83"
+    },
+    {
+      "bytes": 153,
+      "path": "results\\reviewer2026_v2\\verification_report_v2.json",
+      "sha256": "5753d3710df90bf7660db56ef4eeda6b6ba75872cae58b89549014e4a2ca51d7"
+    },
+    {
+      "bytes": 190,
+      "path": "results\\reviewer2026_v2\\controlled_scale\\BLOCKER.json",
+      "sha256": "610b2534a8608d81c845dd1de52a3e13c5975e9f6de27f89b3f69dc0b6d20ab1"
+    },
+    {
+      "bytes": 1402,
+      "path": "results\\reviewer2026_v2\\controlled_scale\\FROZEN_PROTOCOL.json",
+      "sha256": "4cd56b2b9998e0440480ee47a5a093ada4bafce75ed97dcdddeb2f0df4def534"
+    },
+    {
+      "bytes": 84,
+      "path": "results\\reviewer2026_v2\\controlled_scale\\FROZEN_PROTOCOL.sha256.json",
+      "sha256": "9c878b5eda10ada71ca38c33460618daaa62b2b193a27eb624d6a2e78997ee05"
+    },
+    {
+      "bytes": 320,
+      "path": "results\\reviewer2026_v2\\controlled_scale\\RUN_LOG.md",
+      "sha256": "451a0de182f9dab09e51f1163446a787c7e864a2e546620cc4f5d2745c46d940"
+    },
+    {
+      "bytes": 132,
+      "path": "results\\reviewer2026_v2\\controlled_scale\\STATUS.md",
+      "sha256": "e0fa4757f2d3392c86ad5dacab8658f6e81bfa2dba1917da43a822d89a4dfb24"
+    },
+    {
+      "bytes": 346,
+      "path": "results\\reviewer2026_v2\\controlled_scale\\summary.json",
+      "sha256": "9d99effa010d9e12b0262dbe1970cb350ec27462f0d6951b56a3eb725be6d7bf"
+    },
+    {
+      "bytes": 191,
+      "path": "results\\reviewer2026_v2\\long_training\\BLOCKER.json",
+      "sha256": "9f9ffe4f404f8509a5d074ee98e1053ab7c3a62ec01b454bea125a3a90017342"
+    },
+    {
+      "bytes": 708,
+      "path": "results\\reviewer2026_v2\\long_training\\FROZEN_PROTOCOL.json",
+      "sha256": "e4de7cc3ef8e1b2fa78c9f8c8492a82aab40a29ee09f1f695062381e0465c61c"
+    },
+    {
+      "bytes": 84,
+      "path": "results\\reviewer2026_v2\\long_training\\FROZEN_PROTOCOL.sha256.json",
+      "sha256": "20a778ff11983e237ea72391188f3015e44fc147bf6192dc071ad185ea07051c"
+    },
+    {
+      "bytes": 320,
+      "path": "results\\reviewer2026_v2\\long_training\\RUN_LOG.md",
+      "sha256": "b2d3733d42c7cac3938d8f2d89eec72d8b1434c83ab4c92625c6772b32d45ac8"
+    },
+    {
+      "bytes": 133,
+      "path": "results\\reviewer2026_v2\\long_training\\STATUS.md",
+      "sha256": "16d689f4e2149b662efe79542bb177534ffa85565f20732e1a6daf0aef7fb6ec"
+    },
+    {
+      "bytes": 346,
+      "path": "results\\reviewer2026_v2\\long_training\\summary.json",
+      "sha256": "68c4262c62cf5dfac0ff436ba80b1e9ecdb7c33d4c2a074fb95148f1677bf7b0"
+    },
+    {
+      "bytes": 104231,
+      "path": "results\\reviewer2026_v2\\plots\\gpu_seed1101_ckpt150_optimizer_reset_mechanism.png",
+      "sha256": "f9428204a4d7ac9bbffdca39a62f6fbcccba1ce9c51e5560e56d43911d9758af"
+    },
+    {
+      "bytes": 105516,
+      "path": "results\\reviewer2026_v2\\plots\\gpu_seed1101_ckpt300_optimizer_reset_mechanism.png",
+      "sha256": "17829ec44692143d17417cec54a534f79fd48d072b32670704fbab2d0ef7227b"
+    },
+    {
+      "bytes": 112048,
+      "path": "results\\reviewer2026_v2\\plots\\gpu_seed1101_ckpt75_optimizer_reset_mechanism.png",
+      "sha256": "d5a55b252b2b3d38a71366879ac7782c0e1e64654c11adf308323fd8ec9c4f1d"
+    },
+    {
+      "bytes": 106079,
+      "path": "results\\reviewer2026_v2\\plots\\gpu_seed1102_ckpt150_optimizer_reset_mechanism.png",
+      "sha256": "95458802b1cfa452aa8b6b81f3bcdd21e7a939caa5188cafbe6141a8d270d919"
+    },
+    {
+      "bytes": 104427,
+      "path": "results\\reviewer2026_v2\\plots\\gpu_seed1102_ckpt300_optimizer_reset_mechanism.png",
+      "sha256": "8a3eafff480b805b23b1b1180bd959a96ae1bef129161251a6082d6f2297e5d0"
+    },
+    {
+      "bytes": 111525,
+      "path": "results\\reviewer2026_v2\\plots\\gpu_seed1102_ckpt75_optimizer_reset_mechanism.png",
+      "sha256": "649aef26a9beb77d159c8b41b5c700a85c7565c49e1f7ff1063b53396ef5e093"
+    },
+    {
+      "bytes": 104238,
+      "path": "results\\reviewer2026_v2\\plots\\gpu_seed1103_ckpt150_optimizer_reset_mechanism.png",
+      "sha256": "77ff0f8a43686d0cf1e3771de48432ebc558248042da3746aee46ea28e8d1ae5"
+    },
+    {
+      "bytes": 103478,
+      "path": "results\\reviewer2026_v2\\plots\\gpu_seed1103_ckpt300_optimizer_reset_mechanism.png",
+      "sha256": "55456a96406d4acfc937240dce0f88cb9a5a7f8782a801cdca93e18b74755428"
+    },
+    {
+      "bytes": 107301,
+      "path": "results\\reviewer2026_v2\\plots\\gpu_seed1103_ckpt75_optimizer_reset_mechanism.png",
+      "sha256": "435d41b8e812a4279e7a364396e0be4701c4958bb80d4db1a6d13e1325770481"
+    }
+  ],
+  "source_commit": "0a00294f29dd50a913aba2cafc0b678ff9751149"
+}

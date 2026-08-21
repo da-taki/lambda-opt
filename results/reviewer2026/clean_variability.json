@@ -1,0 +1,10 @@
+{
+  "all_control_max_gap": 0.0003102620442705373,
+  "benign_nonzero_max_gap": 0.0003102620442705373,
+  "controls_used": [
+    "exact_restore",
+    "benign_nonzero"
+  ],
+  "exact_restore_max_gap": 0.0,
+  "note": "Frozen campaign contains exact-restore and benign-nonzero controls, not repeated clean-vs-clean evaluation replicates."
+}

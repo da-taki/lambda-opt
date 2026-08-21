@@ -1,0 +1,319 @@
+{
+  "command": "C:\\Users\\Asus\\Desktop\\Profitlo Projects\\Lambda_Opt\\.venv-gpu\\Scripts\\python.exe scripts/make_reviewer2026_results.py",
+  "created_utc": "2026-08-21T17:45:28.635116+00:00",
+  "git_commit": "9cb41fa2cbf9261718fd91c82dbf12f56851eb77",
+  "hardware": {
+    "cpu_model": "AMD Ryzen 5 4600H with Radeon Graphics",
+    "cuda_available": true,
+    "free_disk_space_after_setup": [
+      {
+        "Free": 61092265984,
+        "Name": "C",
+        "Root": "C:\\",
+        "Used": 174523092992
+      }
+    ],
+    "free_disk_space_before_setup": [
+      {
+        "Free": 61092265984,
+        "Name": "C",
+        "Root": "C:\\",
+        "Used": 174523092992
+      }
+    ],
+    "gpu_capability": [
+      7,
+      5
+    ],
+    "gpu_name": "NVIDIA GeForce GTX 1650",
+    "nvidia_smi": {
+      "available_vram_mib": 3669,
+      "driver_version": "572.70",
+      "gpu_name": "NVIDIA GeForce GTX 1650",
+      "raw": "NVIDIA GeForce GTX 1650, 4096, 269, 3669, 572.70",
+      "total_vram_mib": 4096,
+      "used_vram_mib": 269
+    },
+    "os": "Windows-11-10.0.26200-SP0",
+    "pip_cache": "Package index page cache location (pip v23.3+): c:\\users\\asus\\appdata\\local\\pip\\cache\\http-v2\nPackage index page cache location (older pips): c:\\users\\asus\\appdata\\local\\pip\\cache\\http\nPackage index page cache size: 1.9 MB\nNumber of HTTP files: 6\nLocally built wheels location: c:\\users\\asus\\appdata\\local\\pip\\cache\\wheels\nLocally built wheels size: 0 bytes\nNumber of locally built wheels: 0",
+    "python": "3.14.4",
+    "python_executable": "python.exe",
+    "system_ram_bytes": 7968432128,
+    "torch_cuda_version": "12.8",
+    "torch_version": "2.11.0+cu128",
+    "total_vram_bytes": 4294639616,
+    "venv_gpu_size_bytes": 4860975195
+  },
+  "result_file_hashes": [
+    {
+      "bytes": 64131,
+      "path": "results\\reviewer2026\\all_tau_divergent_trajectories.png",
+      "sha256": "505516ab478bcc868fa0d0ae852885fcd220000b02b5c6180cbfcbfe53370b28"
+    },
+    {
+      "bytes": 10376,
+      "path": "results\\reviewer2026\\alternative_metrics.csv",
+      "sha256": "f6c849ba2fe3d8e5c95d6cdf6e4de901bc6efed4a08d6b6eed88b8e512ddde95"
+    },
+    {
+      "bytes": 369,
+      "path": "results\\reviewer2026\\alternative_metrics.json",
+      "sha256": "5b244a89cc29a15e6ac885af87de99a96c916937d81d239cb9e3f9e1d138243e"
+    },
+    {
+      "bytes": 286,
+      "path": "results\\reviewer2026\\alternative_metric_analysis.md",
+      "sha256": "fc1a7f1c31af96cfa19ced5f11f191793e9cb3262f2da1056027d699fafa787d"
+    },
+    {
+      "bytes": 30094,
+      "path": "results\\reviewer2026\\alternative_metric_comparison.png",
+      "sha256": "ab36684b57a9ec6a51050c2056daf107ccbeea0a87fc63b621894c54dfafe5d3"
+    },
+    {
+      "bytes": 493,
+      "path": "results\\reviewer2026\\BASELINE_VERIFICATION.md",
+      "sha256": "ed0d2299bbe4afddf5b38078e87067a9a11771cae41fa47ebe54af8b4bf9c50d"
+    },
+    {
+      "bytes": 342,
+      "path": "results\\reviewer2026\\clean_variability.json",
+      "sha256": "eeb38122ea400f8291e33c7b8e6993f05f5f7d7950c8235e4aa4758f25e2702c"
+    },
+    {
+      "bytes": 1521,
+      "path": "results\\reviewer2026\\correlation_robustness.csv",
+      "sha256": "32992c5fcd8f2581bacc88d3899af6cdd1090bde9b0b0453924caffe8eb2f54d"
+    },
+    {
+      "bytes": 4885,
+      "path": "results\\reviewer2026\\correlation_robustness.json",
+      "sha256": "13549e51114d9ab3d7def86cd41003614e72473d6743266f0ee1167bb30e9331"
+    },
+    {
+      "bytes": 299,
+      "path": "results\\reviewer2026\\correlation_robustness.md",
+      "sha256": "33b63533da6feec53a5057cedb7fac64c2f5526acfe99b679793617cee567b65"
+    },
+    {
+      "bytes": 15567,
+      "path": "results\\reviewer2026\\delayed_cases.csv",
+      "sha256": "cb68bfcd8c070c195636682cbaed4dd6a7c5e3b86f2debdab0e359486917ec52"
+    },
+    {
+      "bytes": 24855,
+      "path": "results\\reviewer2026\\delayed_cases.json",
+      "sha256": "cbfbda84d06ca432a2b4b3a36f148eb7ae04783074739a01e1df075329c6439e"
+    },
+    {
+      "bytes": 32198,
+      "path": "results\\reviewer2026\\delayed_mechanism_steps.csv",
+      "sha256": "108ce185ecaec6ac45de34105ba49023ef60d17681d812a0eae81d4e457d2710"
+    },
+    {
+      "bytes": 570,
+      "path": "results\\reviewer2026\\delayed_mechanism_summary.json",
+      "sha256": "c6b3cc7d4aab68cb7df5da5704d5e41896305602de1f8054a119ef6822fee057"
+    },
+    {
+      "bytes": 200,
+      "path": "results\\reviewer2026\\delayed_mechanism_summary.md",
+      "sha256": "373923678a858b245d6b291ec06738f05e24bb068485c12f29ec68118b6ab5dc"
+    },
+    {
+      "bytes": 118,
+      "path": "results\\reviewer2026\\extended_horizon_rows.csv",
+      "sha256": "a2927dbe2c61f99b694b5993b96eade8aab9e67b0f1ce4010182a0de7f251d0d"
+    },
+    {
+      "bytes": 137,
+      "path": "results\\reviewer2026\\extended_horizon_summary.json",
+      "sha256": "269fe98a03be6d6597c8d3000b211ca118a6f28972dce2e9956da6c2ece09669"
+    },
+    {
+      "bytes": 108,
+      "path": "results\\reviewer2026\\extended_horizon_summary.md",
+      "sha256": "0ac9df6dd086e022a33819b6c40f5aaac297395984fd52f62d433113cc34bccc"
+    },
+    {
+      "bytes": 118,
+      "path": "results\\reviewer2026\\future_schedule_rows.csv",
+      "sha256": "a2927dbe2c61f99b694b5993b96eade8aab9e67b0f1ce4010182a0de7f251d0d"
+    },
+    {
+      "bytes": 137,
+      "path": "results\\reviewer2026\\future_schedule_summary.json",
+      "sha256": "269fe98a03be6d6597c8d3000b211ca118a6f28972dce2e9956da6c2ece09669"
+    },
+    {
+      "bytes": 107,
+      "path": "results\\reviewer2026\\future_schedule_summary.md",
+      "sha256": "f2cffc8d651b29e2b1f0b329dc83ac2c6de1c16a65da6c4902ed69461dd90512"
+    },
+    {
+      "bytes": 2545,
+      "path": "results\\reviewer2026\\latency_grid.csv",
+      "sha256": "a29d71ce55aad597f031fef95fe91d81f7c7b5864bf36fa27820a15e23791a7a"
+    },
+    {
+      "bytes": 235,
+      "path": "results\\reviewer2026\\latency_histogram.json",
+      "sha256": "83e8dd26a8346fc759ce89b59fd9877134a088bee4d473fb1485192d2e4a63fa"
+    },
+    {
+      "bytes": 272,
+      "path": "results\\reviewer2026\\latency_verification.md",
+      "sha256": "96a74cecc0bb10dee3ebaaf317403d0d34b62272c100b62feb53742a19e0c1c2"
+    },
+    {
+      "bytes": 2947,
+      "path": "results\\reviewer2026\\model_regime_configs.json",
+      "sha256": "1581e6eab851e9049168db7c1ba9419e8ace8944eaa5e5ccfc4cf22726b4fecf"
+    },
+    {
+      "bytes": 535,
+      "path": "results\\reviewer2026\\model_selection_provenance.md",
+      "sha256": "4c2404cf69f068d70268510106a57a5e440de013e7dac7d05606f3594e5a9ece"
+    },
+    {
+      "bytes": 151,
+      "path": "results\\reviewer2026\\parameter_metric_metrics.json",
+      "sha256": "478792286c668d2fe7a3f16b72750dca3eb57903cb9017c15738c3cab01815c2"
+    },
+    {
+      "bytes": 8746,
+      "path": "results\\reviewer2026\\parameter_metric_pr.csv",
+      "sha256": "1f40b06a6ca5906b736efd398bfd1f4c680fd8f313d31a9346d87a6914e9fe9c"
+    },
+    {
+      "bytes": 32474,
+      "path": "results\\reviewer2026\\parameter_metric_pr.png",
+      "sha256": "ffa1acd0d883aa1c5479a7feaa91e471fb46cf9a2299834af8a7a9102176c9b2"
+    },
+    {
+      "bytes": 8746,
+      "path": "results\\reviewer2026\\parameter_metric_roc.csv",
+      "sha256": "1f40b06a6ca5906b736efd398bfd1f4c680fd8f313d31a9346d87a6914e9fe9c"
+    },
+    {
+      "bytes": 33036,
+      "path": "results\\reviewer2026\\parameter_metric_roc.png",
+      "sha256": "10727dbabe02ffca42a984ad04224b3166ab49b8aa4130ec4f4c838082550bdf"
+    },
+    {
+      "bytes": 33206,
+      "path": "results\\reviewer2026\\parameter_threshold_tradeoff.png",
+      "sha256": "1ee125dae0fb75b44e29010b28ef07e875a40edc8e530b3be678f0ac9fca0e5b"
+    },
+    {
+      "bytes": 389,
+      "path": "results\\reviewer2026\\per_seed_statistics.csv",
+      "sha256": "c28d2a67c4f37de5799197367fc4224b760f72ca27438e36c1e17962d285516f"
+    },
+    {
+      "bytes": 1264,
+      "path": "results\\reviewer2026\\per_seed_statistics.json",
+      "sha256": "7735a5c7d18b4330a2dafd2404e83fab9af8f621977f85af5d5b5cc74c9a873d"
+    },
+    {
+      "bytes": 2826,
+      "path": "results\\reviewer2026\\provenance.json",
+      "sha256": "08a90a6ae81e6853972c4db55a4bcd0ea146a272a1abc792bd02dd6c4afe1937"
+    },
+    {
+      "bytes": 1050,
+      "path": "results\\reviewer2026\\quantization_recipe.json",
+      "sha256": "b5b7b5d000c6df366bb406a61006489e6e9c834240c263ce9a894f43d6a574fb"
+    },
+    {
+      "bytes": 2891,
+      "path": "results\\reviewer2026\\rewrite_severities.csv",
+      "sha256": "2326dc3b82d2c759f6e0e0be475448c3a263efbff388412a126ea5773d4b45eb"
+    },
+    {
+      "bytes": 7791,
+      "path": "results\\reviewer2026\\rewrite_severities.json",
+      "sha256": "f49a551f678d3e1571e15035f7a66db9d4b4bf3343d5da6164414fbc6c93ab28"
+    },
+    {
+      "bytes": 959,
+      "path": "results\\reviewer2026\\rewrite_severities.md",
+      "sha256": "41b39196633b5e26158bccbccf1fd71ca5ff76cbf8162b58b86aa39b432af098"
+    },
+    {
+      "bytes": 1475,
+      "path": "results\\reviewer2026\\roundtrip_cases.csv",
+      "sha256": "7bca04faab4a4d29bddd0ebd53915fcf6a85fc4246b953bfcb1d44c9eafc7b5b"
+    },
+    {
+      "bytes": 3483,
+      "path": "results\\reviewer2026\\roundtrip_cases.json",
+      "sha256": "ccb01656f457daa4e0e7b4a9b4f61086cbd9c0e73154fda817453a445fad975b"
+    },
+    {
+      "bytes": 137,
+      "path": "results\\reviewer2026\\roundtrip_cases.md",
+      "sha256": "556e84a1db10ae448704f99b53d95d163a27daffd47b3c76175f576fbde7cc7c"
+    },
+    {
+      "bytes": 728,
+      "path": "results\\reviewer2026\\task_metric_definition.md",
+      "sha256": "78108ee187151eb00a018fcfdd6a67729e3edb2c4d000b1e7ff20b4818e4833f"
+    },
+    {
+      "bytes": 213,
+      "path": "results\\reviewer2026\\task_threshold_sweep.csv",
+      "sha256": "dea704b70dd1cc38dd9ef2878f5314336a1c20da35023b00281310aeceec8343"
+    },
+    {
+      "bytes": 1190,
+      "path": "results\\reviewer2026\\task_threshold_sweep.json",
+      "sha256": "0bc123ea9da7300cd7a80d258ffca91764d55c37ed57a8efb247c81793cd1ed6"
+    },
+    {
+      "bytes": 50168,
+      "path": "results\\reviewer2026\\trajectory_delayed.png",
+      "sha256": "40b39401ff6331760945d59da5df697045b5af56bfc8acd1f194e826fc4a49ae"
+    },
+    {
+      "bytes": 49638,
+      "path": "results\\reviewer2026\\trajectory_immediate.png",
+      "sha256": "7f42f197f4db697c38d9fa2686daaea61659ed8d7f57135fa820bc6ac07e1a7e"
+    },
+    {
+      "bytes": 178695,
+      "path": "results\\reviewer2026\\trajectory_rows.csv",
+      "sha256": "2d9f6e5db260dc9729bc56fdaa1073a238b0af9001450170519f25285ed41755"
+    },
+    {
+      "bytes": 311,
+      "path": "results\\reviewer2026\\trajectory_selection.json",
+      "sha256": "53abb1a23543f9f135b1347115794dbbbd068263f0fabd0ea111488655d6b72e"
+    },
+    {
+      "bytes": 44946,
+      "path": "results\\reviewer2026\\trajectory_threshold_false_negative.png",
+      "sha256": "95bbdf5f45f8d12f545830a1a258f3826dcae2dbea5af842f13d1925b43b7c55"
+    },
+    {
+      "bytes": 196,
+      "path": "results\\reviewer2026\\controlled_scale\\BLOCKER.json",
+      "sha256": "e5b6cccb238baeaee698d0cadbd8b87a67086d48b88f7b96aa20a197056176f6"
+    },
+    {
+      "bytes": 148,
+      "path": "results\\reviewer2026\\controlled_scale\\STATUS.md",
+      "sha256": "0a42d78434398172b0ff3a6ee20079bef1bcc577f4a95ccc5312e2c7da682b10"
+    },
+    {
+      "bytes": 151,
+      "path": "results\\reviewer2026\\long_training\\BLOCKER.json",
+      "sha256": "3a83d11b611a0372c46c761c848f12c9b74df8fcfaa5f250dc7454237c81f708"
+    },
+    {
+      "bytes": 170,
+      "path": "results\\reviewer2026\\long_training\\STATUS.md",
+      "sha256": "7a431a069970363474d8a7fa940d9e1ab794aeefde7cf79688220869a7adc424"
+    }
+  ]
+}

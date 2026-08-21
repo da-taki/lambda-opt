@@ -1,0 +1,12 @@
+rewrite_family,rows,crossed_h100,crossed_after_20,task_nonrecovered_h20,task_nonrecovered_h100,median_T_tau,max_T_tau
+exact_restore,9,0,0,0,0,,
+benign_nonzero,9,0,0,0,0,,
+reset_m,9,0,0,3,2,,
+reset_v,9,9,0,9,9,1.0,1
+stale_m,9,0,0,5,0,,
+stale_v,9,7,0,4,3,1.0,1
+stale_mv,9,0,0,5,0,,
+model_current_optimizer_stale,9,0,0,5,2,,
+step_counter_mismatch,9,0,0,3,1,,
+scheduler_mismatch,9,0,0,0,0,,
+optimizer_reset,9,9,0,9,9,16.0,18

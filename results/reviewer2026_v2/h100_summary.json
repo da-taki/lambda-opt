@@ -1,0 +1,12 @@
+{
+  "crossed_after_20_from_h20_noncrossers": 0,
+  "crossed_h100": 25,
+  "delayed_families_after_20": [],
+  "h100_task_nonrecovered_rows": 26,
+  "h20_noncrossers": 74,
+  "h20_task_nonrecovered_later_recovered_by_h100": 17,
+  "h20_task_nonrecovered_rows": 43,
+  "latency_histogram_path": "results/reviewer2026_v2/h100_latency_histogram.json",
+  "optimizer_reset_only_delayed_family": true,
+  "rows": 99
+}
