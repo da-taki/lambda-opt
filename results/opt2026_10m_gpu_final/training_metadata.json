@@ -1,0 +1,38 @@
+[
+  {
+    "checkpoint_dir": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1101",
+    "dataset": "WikiText-2 cached char-level, first 500000 chars",
+    "mean_step_time_seconds": 0.04696929299995342,
+    "n_params": 19484864,
+    "peak_vram_bytes": 414451200,
+    "seed": 1101,
+    "tokens_per_second": 2703.8942229793824,
+    "total_training_wall_seconds": 18.077828800000134,
+    "train_loss_final": 2.642636299133301,
+    "vocab": 127
+  },
+  {
+    "checkpoint_dir": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1102",
+    "dataset": "WikiText-2 cached char-level, first 500000 chars",
+    "mean_step_time_seconds": 0.039725881999960015,
+    "n_params": 19484864,
+    "peak_vram_bytes": 413515264,
+    "seed": 1102,
+    "tokens_per_second": 3196.9082524115597,
+    "total_training_wall_seconds": 26.432960199999798,
+    "train_loss_final": 2.6824135780334473,
+    "vocab": 127
+  },
+  {
+    "checkpoint_dir": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1103",
+    "dataset": "WikiText-2 cached char-level, first 500000 chars",
+    "mean_step_time_seconds": 0.08730058566656225,
+    "n_params": 19484864,
+    "peak_vram_bytes": 413515264,
+    "seed": 1103,
+    "tokens_per_second": 1454.7439634032532,
+    "total_training_wall_seconds": 67.7414852999973,
+    "train_loss_final": 2.6044812202453613,
+    "vocab": 127
+  }
+]

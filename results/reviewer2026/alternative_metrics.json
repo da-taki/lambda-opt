@@ -1,0 +1,6 @@
+{
+  "blocker": "Clean reference parameter snapshots for each continuation step were not saved in frozen rows, so exact clean cumulative update-distance normalization requires rerunning paired continuations.",
+  "metric": "max divergence divided by cumulative divergence-curve path length proxy",
+  "spearman_vs_loss": 0.6084429664352586,
+  "status": "proxy_only"
+}

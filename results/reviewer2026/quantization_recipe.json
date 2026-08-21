@@ -1,0 +1,19 @@
+{
+  "case": "second_moment_quantized",
+  "clipping": "implicit fp16 finite-range behavior only",
+  "dequantization_rule": "convert fp16 tensor back to float32",
+  "execution_order": [
+    "deep-copy checkpoint optimizer state",
+    "for each state value with exp_avg_sq",
+    "exp_avg_sq = exp_avg_sq.to(torch.float16).to(torch.float32)",
+    "save/load scenario"
+  ],
+  "primary_source": "scripts/run_opt2026_pytorch_scale_final.py::mutate_opt_state",
+  "quantization_scope": "entire second-moment tensor for every optimizer state entry containing exp_avg_sq",
+  "rounding": "PyTorch dtype conversion rounding",
+  "scale_range_calculation": "implicit IEEE fp16 conversion; no explicit scale/range",
+  "secondary_toy_source": "scripts/run_opt2026_empirical_significance.py rounds moments[:,1] to 1/256 increments; this is not the PyTorch round-trip recipe.",
+  "storage_or_quantization_dtype": "float16 round-trip, stored back as float32",
+  "tensors_affected": "all AdamW optimizer_state exp_avg_sq tensors",
+  "zero_point": null
+}

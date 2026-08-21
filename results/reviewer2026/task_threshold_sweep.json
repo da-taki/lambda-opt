@@ -1,0 +1,68 @@
+[
+  {
+    "rows": 99,
+    "task_nonrecovered": 76,
+    "task_recovered": 23,
+    "threshold": 0.0
+  },
+  {
+    "rows": 99,
+    "task_nonrecovered": 65,
+    "task_recovered": 34,
+    "threshold": 0.001
+  },
+  {
+    "rows": 99,
+    "task_nonrecovered": 59,
+    "task_recovered": 40,
+    "threshold": 0.005
+  },
+  {
+    "rows": 99,
+    "task_nonrecovered": 55,
+    "task_recovered": 44,
+    "threshold": 0.01
+  },
+  {
+    "rows": 99,
+    "task_nonrecovered": 47,
+    "task_recovered": 52,
+    "threshold": 0.025
+  },
+  {
+    "rows": 99,
+    "task_nonrecovered": 43,
+    "task_recovered": 56,
+    "threshold": 0.05
+  },
+  {
+    "rows": 99,
+    "task_nonrecovered": 37,
+    "task_recovered": 62,
+    "threshold": 0.075
+  },
+  {
+    "rows": 99,
+    "task_nonrecovered": 35,
+    "task_recovered": 64,
+    "threshold": 0.1
+  },
+  {
+    "rows": 99,
+    "task_nonrecovered": 35,
+    "task_recovered": 64,
+    "threshold": 0.2
+  },
+  {
+    "rows": 99,
+    "task_nonrecovered": 24,
+    "task_recovered": 75,
+    "threshold": 0.5
+  },
+  {
+    "rows": 99,
+    "task_nonrecovered": 20,
+    "task_recovered": 79,
+    "threshold": 1.0
+  }
+]

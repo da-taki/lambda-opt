@@ -1,0 +1,6 @@
+{
+  "delayed": "gpu_seed1101_ckpt150_optimizer_reset",
+  "immediate": "gpu_seed1102_ckpt150_stale_v",
+  "parameter_threshold_false_negative": "gpu_seed1101_ckpt75_stale_mv",
+  "selection_rule": "median immediate max divergence; median delayed T_tau; largest task loss among inherited-tau false negatives"
+}
