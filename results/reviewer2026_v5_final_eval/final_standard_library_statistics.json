@@ -1,0 +1,270 @@
+{
+  "metrics": {
+    "clean_update_normalized_divergence": {
+      "binary_discrimination_h100_task_nonrecovery": {
+        "AP": null,
+        "AUROC": null,
+        "library": "unavailable: No module named 'sklearn'"
+      },
+      "checkpoint_stratified_spearman": {
+        "150": 0.765551839464883,
+        "300": 0.9260379895780804,
+        "75": 0.8839464882943144
+      },
+      "family_checkpoint_residualized_spearman": 0.3399457296145315,
+      "field": "max_clean_update_normalized_divergence",
+      "leave_one_family_out_spearman": {
+        "benign_nonzero": 0.7531497784635186,
+        "exact_restore": 0.746133140161836,
+        "model_current_optimizer_stale": 0.8399491744981393,
+        "optimizer_reset": 0.8022590945469846,
+        "reset_m": 0.8376224226272493,
+        "reset_v": 0.7455424549707504,
+        "scheduler_mismatch": 0.8202282371359123,
+        "stale_m": 0.8341405457140736,
+        "stale_mv": 0.8299490919892076,
+        "stale_v": 0.851830460647365,
+        "step_counter_mismatch": 0.8154935271743166
+      },
+      "per_seed_spearman": {
+        "1101": 0.8088382992969533,
+        "1102": 0.8382992969534647,
+        "1103": 0.7810512219618345
+      },
+      "pooled_spearman_vs_max_heldout_eval_loss_gap": 0.8089385059536347,
+      "seed_cluster_descriptive_bootstrap": {
+        "bootstrap_seed": 20260822,
+        "mean": 0.8099044648939452,
+        "p05": 0.7873036527558325,
+        "p95": 0.8266009852216749,
+        "samples": 400
+      },
+      "within_family_spearman": {
+        "benign_nonzero": 0.6166666666666666,
+        "exact_restore": null,
+        "model_current_optimizer_stale": -0.7666666666666667,
+        "optimizer_reset": -0.8666666666666667,
+        "reset_m": 0.8833333333333333,
+        "reset_v": 1.0,
+        "scheduler_mismatch": 1.0,
+        "stale_m": 0.5,
+        "stale_mv": 0.8833333333333333,
+        "stale_v": 0.75,
+        "step_counter_mismatch": 0.9
+      }
+    },
+    "function_space_kl": {
+      "binary_discrimination_h100_task_nonrecovery": {
+        "AP": null,
+        "AUROC": null,
+        "library": "unavailable: No module named 'sklearn'"
+      },
+      "checkpoint_stratified_spearman": {
+        "150": 0.9515050167224081,
+        "300": 0.9895780803496386,
+        "75": 0.9558528428093646
+      },
+      "family_checkpoint_residualized_spearman": 0.7026032438326292,
+      "field": "max_calibration_kl",
+      "leave_one_family_out_spearman": {
+        "benign_nonzero": 0.9918811211313624,
+        "exact_restore": 0.991455453939299,
+        "model_current_optimizer_stale": 0.9944223962243912,
+        "optimizer_reset": 0.9929042318831012,
+        "reset_m": 0.9941088622843421,
+        "reset_v": 0.9914355729007663,
+        "scheduler_mismatch": 0.9933588761174968,
+        "stale_m": 0.9958580516340894,
+        "stale_mv": 0.9950989694634442,
+        "stale_v": 0.9917656086271337,
+        "step_counter_mismatch": 0.9941088622843421
+      },
+      "per_seed_spearman": {
+        "1101": 0.994643454971543,
+        "1102": 0.9976565115500501,
+        "1103": 0.9839303649146298
+      },
+      "pooled_spearman_vs_max_heldout_eval_loss_gap": 0.9935693310369607,
+      "seed_cluster_descriptive_bootstrap": {
+        "bootstrap_seed": 20260822,
+        "mean": 0.9931224335549707,
+        "p05": 0.9885739071165227,
+        "p95": 0.9969637822598136,
+        "samples": 400
+      },
+      "within_family_spearman": {
+        "benign_nonzero": 0.8833333333333333,
+        "exact_restore": null,
+        "model_current_optimizer_stale": 0.9333333333333332,
+        "optimizer_reset": 0.9166666666666666,
+        "reset_m": 0.9833333333333333,
+        "reset_v": 1.0,
+        "scheduler_mismatch": 0.9827586206896554,
+        "stale_m": 0.9166666666666666,
+        "stale_mv": 0.9666666666666667,
+        "stale_v": 0.9833333333333333,
+        "step_counter_mismatch": 0.9500000000000001
+      }
+    },
+    "function_space_rms_logit": {
+      "binary_discrimination_h100_task_nonrecovery": {
+        "AP": null,
+        "AUROC": null,
+        "library": "unavailable: No module named 'sklearn'"
+      },
+      "checkpoint_stratified_spearman": {
+        "150": 0.92876254180602,
+        "300": 0.9878971255673222,
+        "75": 0.9414715719063546
+      },
+      "family_checkpoint_residualized_spearman": 0.4906265875326799,
+      "field": "max_calibration_rms_logit",
+      "leave_one_family_out_spearman": {
+        "benign_nonzero": 0.9845708297923249,
+        "exact_restore": 0.9836353009935709,
+        "model_current_optimizer_stale": 0.9883167352865947,
+        "optimizer_reset": 0.9873431298938109,
+        "reset_m": 0.9896368781920641,
+        "reset_v": 0.9836302279721779,
+        "scheduler_mismatch": 0.9856136447905081,
+        "stale_m": 0.989768892482611,
+        "stale_mv": 0.9897523906962928,
+        "stale_v": 0.9893893513972885,
+        "step_counter_mismatch": 0.988960304953011
+      },
+      "per_seed_spearman": {
+        "1101": 0.9845999330431869,
+        "1102": 0.9949782390358217,
+        "1103": 0.9805825242718444
+      },
+      "pooled_spearman_vs_max_heldout_eval_loss_gap": 0.9876838440283988,
+      "seed_cluster_descriptive_bootstrap": {
+        "bootstrap_seed": 20260822,
+        "mean": 0.9874778697256403,
+        "p05": 0.9818942280881123,
+        "p95": 0.9928989683056046,
+        "samples": 400
+      },
+      "within_family_spearman": {
+        "benign_nonzero": 0.9333333333333332,
+        "exact_restore": null,
+        "model_current_optimizer_stale": 0.9500000000000001,
+        "optimizer_reset": 0.9166666666666666,
+        "reset_m": 0.9333333333333332,
+        "reset_v": 0.9666666666666667,
+        "scheduler_mismatch": 0.9655172413793104,
+        "stale_m": 0.9333333333333332,
+        "stale_mv": 0.9333333333333332,
+        "stale_v": 0.9666666666666667,
+        "step_counter_mismatch": 0.8833333333333333
+      }
+    },
+    "global_normalized_parameter_divergence": {
+      "binary_discrimination_h100_task_nonrecovery": {
+        "AP": null,
+        "AUROC": null,
+        "library": "unavailable: No module named 'sklearn'"
+      },
+      "checkpoint_stratified_spearman": {
+        "150": 0.762876254180602,
+        "300": 0.9293998991427131,
+        "75": 0.8789297658862877
+      },
+      "family_checkpoint_residualized_spearman": 0.4817302092755274,
+      "field": "max_normalized_parameter_divergence",
+      "leave_one_family_out_spearman": {
+        "benign_nonzero": 0.8990420713042184,
+        "exact_restore": 0.8932343329409537,
+        "model_current_optimizer_stale": 0.9233657043374943,
+        "optimizer_reset": 0.9218640417825227,
+        "reset_m": 0.922408600731029,
+        "reset_v": 0.8932829478791079,
+        "scheduler_mismatch": 0.9129403040415277,
+        "stale_m": 0.9238442561407271,
+        "stale_mv": 0.9237122418501802,
+        "stale_v": 0.989768892482611,
+        "step_counter_mismatch": 0.9155273558362692
+      },
+      "per_seed_spearman": {
+        "1101": 0.9186474723803145,
+        "1102": 0.9193170405088716,
+        "1103": 0.9209909608302643
+      },
+      "pooled_spearman_vs_max_heldout_eval_loss_gap": 0.9196476142094241,
+      "seed_cluster_descriptive_bootstrap": {
+        "bootstrap_seed": 20260822,
+        "mean": 0.9195934518348358,
+        "p05": 0.9188896117978747,
+        "p95": 0.920327167952412,
+        "samples": 400
+      },
+      "within_family_spearman": {
+        "benign_nonzero": 0.9666666666666667,
+        "exact_restore": null,
+        "model_current_optimizer_stale": 0.9333333333333332,
+        "optimizer_reset": 0.8833333333333333,
+        "reset_m": 0.9500000000000001,
+        "reset_v": 1.0,
+        "scheduler_mismatch": 0.9827586206896554,
+        "stale_m": 0.8666666666666667,
+        "stale_mv": 0.8833333333333333,
+        "stale_v": 0.9500000000000001,
+        "step_counter_mismatch": 0.9
+      }
+    },
+    "max_layer_relative_displacement": {
+      "binary_discrimination_h100_task_nonrecovery": {
+        "AP": null,
+        "AUROC": null,
+        "library": "unavailable: No module named 'sklearn'"
+      },
+      "checkpoint_stratified_spearman": {
+        "150": 0.7819397993311037,
+        "300": 0.9028408135821145,
+        "75": 0.8836120401337794
+      },
+      "family_checkpoint_residualized_spearman": 0.5021497515704957,
+      "field": "max_layer_relative_displacement",
+      "leave_one_family_out_spearman": {
+        "benign_nonzero": 0.8929034067937853,
+        "exact_restore": 0.8711074159745145,
+        "model_current_optimizer_stale": 0.9053952590367906,
+        "optimizer_reset": 0.9061048358484806,
+        "reset_m": 0.9070784412412641,
+        "reset_v": 0.8719461381694567,
+        "scheduler_mismatch": 0.8921764923989618,
+        "stale_m": 0.9085140966509623,
+        "stale_mv": 0.9084315877193705,
+        "stale_v": 0.97156742217345,
+        "step_counter_mismatch": 0.8990090677315817
+      },
+      "per_seed_spearman": {
+        "1101": 0.9059256779377299,
+        "1102": 0.9029126213592231,
+        "1103": 0.8968865082022095
+      },
+      "pooled_spearman_vs_max_heldout_eval_loss_gap": 0.9029947835999355,
+      "seed_cluster_descriptive_bootstrap": {
+        "bootstrap_seed": 20260822,
+        "mean": 0.9024796671515856,
+        "p05": 0.899296712829569,
+        "p95": 0.9065092790531959,
+        "samples": 400
+      },
+      "within_family_spearman": {
+        "benign_nonzero": 0.8833333333333333,
+        "exact_restore": null,
+        "model_current_optimizer_stale": 0.9333333333333332,
+        "optimizer_reset": 0.9166666666666666,
+        "reset_m": 0.9666666666666667,
+        "reset_v": 0.9666666666666667,
+        "scheduler_mismatch": 0.9827586206896554,
+        "stale_m": 0.8833333333333333,
+        "stale_mv": 0.8833333333333333,
+        "stale_v": 0.9333333333333332,
+        "step_counter_mismatch": 0.9333333333333332
+      }
+    }
+  },
+  "status": "COMPLETE"
+}

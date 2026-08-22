@@ -1,0 +1,44 @@
+{
+  "available_batch_count": 3906,
+  "available_batch_count_checked": 3504,
+  "batch_size": 1,
+  "calibration_prediction_positions": 127,
+  "corpus_characters_read": 500000,
+  "corpus_path": "experiments\\data\\wikitext2_raw\\train.txt",
+  "created_utc": "2026-08-22T19:51:12.477362+00:00",
+  "dataset": "WikiText-2 cached char-level, first 500000 chars",
+  "deterministic_dataset_builder": "experiments/scripts/run_transformer.py::build_char_dataset",
+  "evaluation_batches": 3,
+  "evaluation_target_positions_total": 381,
+  "function_metrics": "mean KL(source||candidate) and RMS logit difference on held-out calibration batch",
+  "long_h100_continuation_max_index": 3099,
+  "long_training_max_index": 2999,
+  "model_input_length_positions": 127,
+  "primary_controlled_h100_continuation_max_index": 399,
+  "primary_controlled_training_max_index": 299,
+  "probe_seed": 1101,
+  "raw_chunk_length_characters": 128,
+  "retuning_after_results": false,
+  "source_experiment_commit": "622c80150ec1c199539af1ff300e33521cd56f78",
+  "status": "FROZEN",
+  "target_length_per_batch": 127,
+  "task_probe": "mean source/candidate cross-entropy over the three held-out evaluation batches; absolute gap",
+  "task_recovery": "gap <= 0.05 for 3 consecutive continuation evaluations",
+  "task_threshold_primary": 0.05,
+  "v4_transport_commit": "3c37a47092ad9409a9542ab403c3846c4bf199fc",
+  "vocab_size": 127,
+  "x_shape": [
+    1,
+    127
+  ],
+  "y_shape": [
+    1,
+    127
+  ],
+  "zero_based_calibration_batch_index": 3503,
+  "zero_based_evaluation_batch_indices": [
+    3500,
+    3501,
+    3502
+  ]
+}

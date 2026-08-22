@@ -1,0 +1,161 @@
+{
+  "benign_exceeds_0p05": false,
+  "benign_nonzero_max_gap_distribution": [
+    0.009787480036417495,
+    0.0032010873158774267,
+    0.0009058316548666845,
+    0.009706258773803711,
+    0.0025552908579506983,
+    0.0003658135732016454,
+    0.01127314567565918,
+    0.002306381861369111,
+    0.0003941059112548828
+  ],
+  "exact_restore_max_gap_distribution": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "maximum_benign_heldout_evaluation_loss_gap": 0.01127314567565918,
+  "status": "COMPLETE",
+  "sweep": [
+    {
+      "horizon": 20,
+      "rows": 99,
+      "task_nonrecovered": 78,
+      "threshold": 0.0
+    },
+    {
+      "horizon": 20,
+      "rows": 99,
+      "task_nonrecovered": 66,
+      "threshold": 0.001
+    },
+    {
+      "horizon": 20,
+      "rows": 99,
+      "task_nonrecovered": 55,
+      "threshold": 0.005
+    },
+    {
+      "horizon": 20,
+      "rows": 99,
+      "task_nonrecovered": 54,
+      "threshold": 0.01
+    },
+    {
+      "horizon": 20,
+      "rows": 99,
+      "task_nonrecovered": 50,
+      "threshold": 0.025
+    },
+    {
+      "horizon": 20,
+      "rows": 99,
+      "task_nonrecovered": 43,
+      "threshold": 0.05
+    },
+    {
+      "horizon": 20,
+      "rows": 99,
+      "task_nonrecovered": 42,
+      "threshold": 0.075
+    },
+    {
+      "horizon": 20,
+      "rows": 99,
+      "task_nonrecovered": 39,
+      "threshold": 0.1
+    },
+    {
+      "horizon": 20,
+      "rows": 99,
+      "task_nonrecovered": 33,
+      "threshold": 0.2
+    },
+    {
+      "horizon": 20,
+      "rows": 99,
+      "task_nonrecovered": 21,
+      "threshold": 0.5
+    },
+    {
+      "horizon": 20,
+      "rows": 99,
+      "task_nonrecovered": 17,
+      "threshold": 1.0
+    },
+    {
+      "horizon": 100,
+      "rows": 99,
+      "task_nonrecovered": 78,
+      "threshold": 0.0
+    },
+    {
+      "horizon": 100,
+      "rows": 99,
+      "task_nonrecovered": 60,
+      "threshold": 0.001
+    },
+    {
+      "horizon": 100,
+      "rows": 99,
+      "task_nonrecovered": 44,
+      "threshold": 0.005
+    },
+    {
+      "horizon": 100,
+      "rows": 99,
+      "task_nonrecovered": 41,
+      "threshold": 0.01
+    },
+    {
+      "horizon": 100,
+      "rows": 99,
+      "task_nonrecovered": 33,
+      "threshold": 0.025
+    },
+    {
+      "horizon": 100,
+      "rows": 99,
+      "task_nonrecovered": 25,
+      "threshold": 0.05
+    },
+    {
+      "horizon": 100,
+      "rows": 99,
+      "task_nonrecovered": 19,
+      "threshold": 0.075
+    },
+    {
+      "horizon": 100,
+      "rows": 99,
+      "task_nonrecovered": 13,
+      "threshold": 0.1
+    },
+    {
+      "horizon": 100,
+      "rows": 99,
+      "task_nonrecovered": 11,
+      "threshold": 0.2
+    },
+    {
+      "horizon": 100,
+      "rows": 99,
+      "task_nonrecovered": 9,
+      "threshold": 0.5
+    },
+    {
+      "horizon": 100,
+      "rows": 99,
+      "task_nonrecovered": 9,
+      "threshold": 1.0
+    }
+  ]
+}

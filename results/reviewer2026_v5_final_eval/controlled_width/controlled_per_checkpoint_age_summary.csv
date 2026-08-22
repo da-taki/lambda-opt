@@ -1,0 +1,4 @@
+checkpoint_age,rows,crossed_h20,crossed_h100,task_nonrecovered_h20,task_nonrecovered_h100,median_T_tau
+150,99,18,18,27,9,1.0
+300,99,10,10,12,10,1.0
+75,99,19,19,43,17,1.0

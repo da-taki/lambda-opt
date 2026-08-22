@@ -1,0 +1,4 @@
+seed,rows,crossed_h20,crossed_h100,task_nonrecovered_h20,task_nonrecovered_h100,median_T_tau
+1201,99,14,14,32,11,1.0
+1202,99,17,17,23,11,1.0
+1203,99,16,16,27,14,1.0

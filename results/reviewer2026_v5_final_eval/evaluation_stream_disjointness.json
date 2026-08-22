@@ -1,0 +1,841 @@
+{
+  "multi_future_audit": [
+    {
+      "calibration_batch_hash": "5e87126622d1c41d8656f2182a9287439c949fbd28c80bbe60f2ecf32894b557",
+      "calibration_index": 4,
+      "continuation_indices_max": 104,
+      "continuation_indices_min": 5,
+      "evaluation_batch_hashes": {
+        "1": "df22b3b6c053d578f99c2865be81379158d02b04b36c304bf697c676e1b9ae18",
+        "2": "5601294d2ff20ee10e5e8f594d234b730def5d9b9a0c7a02bcf15edaff1829b2",
+        "3": "7f64b9a0287f204050eee6bb68d0ed7c5a906157ca0da46faff4d56662275f5c"
+      },
+      "evaluation_indices": [
+        1,
+        2,
+        3
+      ],
+      "future_schedule_seed": 8101,
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "tensor_hash_disjoint_from_consumed": true
+    },
+    {
+      "calibration_batch_hash": "d1def17b4fe39d184080d5cc017a5ef4d5a1339be0ed73c7cee6e1085bfee650",
+      "calibration_index": 4,
+      "continuation_indices_max": 104,
+      "continuation_indices_min": 5,
+      "evaluation_batch_hashes": {
+        "1": "a1c6557f5d3e12e7712a39e3c87c58c25ba580248cfa5872d4df9f04d8f03415",
+        "2": "d99368bee47f599f6d7636874a83b7519e1eae03f4242d4ed075c4b0c8b8d4bf",
+        "3": "c0c5f157060eee62778fdb98df7cf1d155cc16bf12c7e9d31da44a27641588b7"
+      },
+      "evaluation_indices": [
+        1,
+        2,
+        3
+      ],
+      "future_schedule_seed": 8102,
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "tensor_hash_disjoint_from_consumed": true
+    },
+    {
+      "calibration_batch_hash": "e77cd586942fd13cedd2ea21d334182452278794da7f341de79028ad4ca1b4fb",
+      "calibration_index": 4,
+      "continuation_indices_max": 104,
+      "continuation_indices_min": 5,
+      "evaluation_batch_hashes": {
+        "1": "fb38ef84a4e03e2080feb6503009e18e5e0e3cf9064308a0121fc1c0f6fe15e5",
+        "2": "70436876347f470676bec55d336ab124671a805557b4b6bd77f3d473e9862eb6",
+        "3": "259809927efa5eaccbd9033cf1d22bbb94eed5a4af6a3f8b7125b8e123120a0d"
+      },
+      "evaluation_indices": [
+        1,
+        2,
+        3
+      ],
+      "future_schedule_seed": 8103,
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "tensor_hash_disjoint_from_consumed": true
+    },
+    {
+      "calibration_batch_hash": "a5382598e2221840282d28ab40aa867f415c2005f1d6f8aaa4d1a51ba165ad61",
+      "calibration_index": 4,
+      "continuation_indices_max": 104,
+      "continuation_indices_min": 5,
+      "evaluation_batch_hashes": {
+        "1": "7f8e370cce666edbc4045a892ae1b2b86d428a981a8f5c43f291b99ccb86458d",
+        "2": "9f4ca9cefda622c21c3aaa66f2b92f6f4426a85f4d3be852dd07ea43bc50d39c",
+        "3": "f67ab3f4af1477d787e1078c2d8bba04983451504d822fff8469fc05e5bbde02"
+      },
+      "evaluation_indices": [
+        1,
+        2,
+        3
+      ],
+      "future_schedule_seed": 8104,
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "tensor_hash_disjoint_from_consumed": true
+    },
+    {
+      "calibration_batch_hash": "e647a5deb644d9619d6fd11d2e6e65e543fb618cda66408e22c61e76d1479b53",
+      "calibration_index": 4,
+      "continuation_indices_max": 104,
+      "continuation_indices_min": 5,
+      "evaluation_batch_hashes": {
+        "1": "e87ce857c3104d91f046d23b2b36a230aac3330110a49c0b0feb21b12743b998",
+        "2": "06a40a8054c7c6377f8d120971d3b328250869a7e84b5ea1b1fa56a38f64ad18",
+        "3": "39fc3cdb10fcfd00530193d8ea7b44db5853166457825a84a69c61e2d170a8f0"
+      },
+      "evaluation_indices": [
+        1,
+        2,
+        3
+      ],
+      "future_schedule_seed": 8105,
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "tensor_hash_disjoint_from_consumed": true
+    }
+  ],
+  "rows": [
+    {
+      "calibration_batch_hash": "7d623ce1e59740cfca1a2f20ec1e93732c22f7aaacffb7ea2a236536a5bb88b4",
+      "calibration_index": 3503,
+      "campaign": "primary",
+      "checkpoint_age": 75,
+      "continuation_indices_max": 174,
+      "continuation_indices_min": 75,
+      "evaluation_batch_hashes": {
+        "3500": "8f5cbfaca0dc4a7ee1cfa5b4c72ba1df1a3394572b859a30da0ba281a9f667d4",
+        "3501": "013e5d988941ed499c1f1eeb62241128f3b628595a39e8f6edcdde54513d20fe",
+        "3502": "fef9c93d8ffe7211d526179e16ec307ec9c57df9989c35fdc8ab9161895b713b"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1101,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 74,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "7d623ce1e59740cfca1a2f20ec1e93732c22f7aaacffb7ea2a236536a5bb88b4",
+      "calibration_index": 3503,
+      "campaign": "primary",
+      "checkpoint_age": 150,
+      "continuation_indices_max": 249,
+      "continuation_indices_min": 150,
+      "evaluation_batch_hashes": {
+        "3500": "8f5cbfaca0dc4a7ee1cfa5b4c72ba1df1a3394572b859a30da0ba281a9f667d4",
+        "3501": "013e5d988941ed499c1f1eeb62241128f3b628595a39e8f6edcdde54513d20fe",
+        "3502": "fef9c93d8ffe7211d526179e16ec307ec9c57df9989c35fdc8ab9161895b713b"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1101,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 149,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "7d623ce1e59740cfca1a2f20ec1e93732c22f7aaacffb7ea2a236536a5bb88b4",
+      "calibration_index": 3503,
+      "campaign": "primary",
+      "checkpoint_age": 300,
+      "continuation_indices_max": 399,
+      "continuation_indices_min": 300,
+      "evaluation_batch_hashes": {
+        "3500": "8f5cbfaca0dc4a7ee1cfa5b4c72ba1df1a3394572b859a30da0ba281a9f667d4",
+        "3501": "013e5d988941ed499c1f1eeb62241128f3b628595a39e8f6edcdde54513d20fe",
+        "3502": "fef9c93d8ffe7211d526179e16ec307ec9c57df9989c35fdc8ab9161895b713b"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1101,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 299,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "a7d9e5ff55425b8506c5d0cc727864e4e5f823015dc3086fa1201e0d2f5b6978",
+      "calibration_index": 3503,
+      "campaign": "primary",
+      "checkpoint_age": 75,
+      "continuation_indices_max": 174,
+      "continuation_indices_min": 75,
+      "evaluation_batch_hashes": {
+        "3500": "8883a3b26e9c811581ffd572ceedcca1890cb48f7fa4da9da52786a1fa1c7579",
+        "3501": "916c1fabe3da7ab8d8be75a3484df63d95cd2fd1e8b11754cd8dfab6dccb52a6",
+        "3502": "921fca93434e039264cbfc2401667af46061c3f8ab248e34a5193c79ccdc2dc6"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1102,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 74,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "a7d9e5ff55425b8506c5d0cc727864e4e5f823015dc3086fa1201e0d2f5b6978",
+      "calibration_index": 3503,
+      "campaign": "primary",
+      "checkpoint_age": 150,
+      "continuation_indices_max": 249,
+      "continuation_indices_min": 150,
+      "evaluation_batch_hashes": {
+        "3500": "8883a3b26e9c811581ffd572ceedcca1890cb48f7fa4da9da52786a1fa1c7579",
+        "3501": "916c1fabe3da7ab8d8be75a3484df63d95cd2fd1e8b11754cd8dfab6dccb52a6",
+        "3502": "921fca93434e039264cbfc2401667af46061c3f8ab248e34a5193c79ccdc2dc6"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1102,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 149,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "a7d9e5ff55425b8506c5d0cc727864e4e5f823015dc3086fa1201e0d2f5b6978",
+      "calibration_index": 3503,
+      "campaign": "primary",
+      "checkpoint_age": 300,
+      "continuation_indices_max": 399,
+      "continuation_indices_min": 300,
+      "evaluation_batch_hashes": {
+        "3500": "8883a3b26e9c811581ffd572ceedcca1890cb48f7fa4da9da52786a1fa1c7579",
+        "3501": "916c1fabe3da7ab8d8be75a3484df63d95cd2fd1e8b11754cd8dfab6dccb52a6",
+        "3502": "921fca93434e039264cbfc2401667af46061c3f8ab248e34a5193c79ccdc2dc6"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1102,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 299,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "448b5197ac8bd796cd1aad1ed41e7250a8253c063d93c27bec418015792cf04f",
+      "calibration_index": 3503,
+      "campaign": "primary",
+      "checkpoint_age": 75,
+      "continuation_indices_max": 174,
+      "continuation_indices_min": 75,
+      "evaluation_batch_hashes": {
+        "3500": "4b30fa4025eda291c043c6795505b100cff5c594106e92c896ccde44e19fa82d",
+        "3501": "3f3a9208d8fd7aba1dd51f6ce523dc65788d522beeac51a5cef2323c0a9a4aaf",
+        "3502": "b09acab0a5636d8322657a58fe1b43c214987445c99a465fb50ac661d934fb6d"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1103,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 74,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "448b5197ac8bd796cd1aad1ed41e7250a8253c063d93c27bec418015792cf04f",
+      "calibration_index": 3503,
+      "campaign": "primary",
+      "checkpoint_age": 150,
+      "continuation_indices_max": 249,
+      "continuation_indices_min": 150,
+      "evaluation_batch_hashes": {
+        "3500": "4b30fa4025eda291c043c6795505b100cff5c594106e92c896ccde44e19fa82d",
+        "3501": "3f3a9208d8fd7aba1dd51f6ce523dc65788d522beeac51a5cef2323c0a9a4aaf",
+        "3502": "b09acab0a5636d8322657a58fe1b43c214987445c99a465fb50ac661d934fb6d"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1103,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 149,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "448b5197ac8bd796cd1aad1ed41e7250a8253c063d93c27bec418015792cf04f",
+      "calibration_index": 3503,
+      "campaign": "primary",
+      "checkpoint_age": 300,
+      "continuation_indices_max": 399,
+      "continuation_indices_min": 300,
+      "evaluation_batch_hashes": {
+        "3500": "4b30fa4025eda291c043c6795505b100cff5c594106e92c896ccde44e19fa82d",
+        "3501": "3f3a9208d8fd7aba1dd51f6ce523dc65788d522beeac51a5cef2323c0a9a4aaf",
+        "3502": "b09acab0a5636d8322657a58fe1b43c214987445c99a465fb50ac661d934fb6d"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1103,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 299,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "51c2f1b67bb869ce03cfe974a848783322cd031b7fdc5ae00dfff174c6dc2bc0",
+      "calibration_index": 3503,
+      "campaign": "controlled_width",
+      "checkpoint_age": 75,
+      "continuation_indices_max": 174,
+      "continuation_indices_min": 75,
+      "evaluation_batch_hashes": {
+        "3500": "f6d3c6a5b20ad07ab573912704e3e3b703c8244ab72fa8155aed16668c788392",
+        "3501": "7e31fd802899c97e1e438026c899f90a82f0ea1e63e3bcc781fbce152c0542a2",
+        "3502": "4e5113f3071802319ec7808a13ae1abfd84faf423d73ef1db7244060229ad495"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1201,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 74,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "51c2f1b67bb869ce03cfe974a848783322cd031b7fdc5ae00dfff174c6dc2bc0",
+      "calibration_index": 3503,
+      "campaign": "controlled_width",
+      "checkpoint_age": 150,
+      "continuation_indices_max": 249,
+      "continuation_indices_min": 150,
+      "evaluation_batch_hashes": {
+        "3500": "f6d3c6a5b20ad07ab573912704e3e3b703c8244ab72fa8155aed16668c788392",
+        "3501": "7e31fd802899c97e1e438026c899f90a82f0ea1e63e3bcc781fbce152c0542a2",
+        "3502": "4e5113f3071802319ec7808a13ae1abfd84faf423d73ef1db7244060229ad495"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1201,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 149,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "51c2f1b67bb869ce03cfe974a848783322cd031b7fdc5ae00dfff174c6dc2bc0",
+      "calibration_index": 3503,
+      "campaign": "controlled_width",
+      "checkpoint_age": 300,
+      "continuation_indices_max": 399,
+      "continuation_indices_min": 300,
+      "evaluation_batch_hashes": {
+        "3500": "f6d3c6a5b20ad07ab573912704e3e3b703c8244ab72fa8155aed16668c788392",
+        "3501": "7e31fd802899c97e1e438026c899f90a82f0ea1e63e3bcc781fbce152c0542a2",
+        "3502": "4e5113f3071802319ec7808a13ae1abfd84faf423d73ef1db7244060229ad495"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1201,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 299,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "7554d6439dc6a79f15ca25615696d93ed0b09cac3045a519a08d47e34650a4bb",
+      "calibration_index": 3503,
+      "campaign": "controlled_width",
+      "checkpoint_age": 75,
+      "continuation_indices_max": 174,
+      "continuation_indices_min": 75,
+      "evaluation_batch_hashes": {
+        "3500": "89fd2e9d9abc0e779f5ded3fb392872afaae6feec2e7ed215fabb012e6a7d35c",
+        "3501": "4a1900dc33d375c1e749812920c865d8d7c3be11d7a8048f4924968a22419b4c",
+        "3502": "5dc23354ba249aede1007343c20fafa04565bd5b53a58d90194e24f1a9b08183"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1202,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 74,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "7554d6439dc6a79f15ca25615696d93ed0b09cac3045a519a08d47e34650a4bb",
+      "calibration_index": 3503,
+      "campaign": "controlled_width",
+      "checkpoint_age": 150,
+      "continuation_indices_max": 249,
+      "continuation_indices_min": 150,
+      "evaluation_batch_hashes": {
+        "3500": "89fd2e9d9abc0e779f5ded3fb392872afaae6feec2e7ed215fabb012e6a7d35c",
+        "3501": "4a1900dc33d375c1e749812920c865d8d7c3be11d7a8048f4924968a22419b4c",
+        "3502": "5dc23354ba249aede1007343c20fafa04565bd5b53a58d90194e24f1a9b08183"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1202,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 149,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "7554d6439dc6a79f15ca25615696d93ed0b09cac3045a519a08d47e34650a4bb",
+      "calibration_index": 3503,
+      "campaign": "controlled_width",
+      "checkpoint_age": 300,
+      "continuation_indices_max": 399,
+      "continuation_indices_min": 300,
+      "evaluation_batch_hashes": {
+        "3500": "89fd2e9d9abc0e779f5ded3fb392872afaae6feec2e7ed215fabb012e6a7d35c",
+        "3501": "4a1900dc33d375c1e749812920c865d8d7c3be11d7a8048f4924968a22419b4c",
+        "3502": "5dc23354ba249aede1007343c20fafa04565bd5b53a58d90194e24f1a9b08183"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1202,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 299,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "8776a7223d6b343983aff8403cfa292e49adc15b54c95db3c3bcae24e2584778",
+      "calibration_index": 3503,
+      "campaign": "controlled_width",
+      "checkpoint_age": 75,
+      "continuation_indices_max": 174,
+      "continuation_indices_min": 75,
+      "evaluation_batch_hashes": {
+        "3500": "882ea9fff4b6892f1b4a8390bd87132da8f34a0710e095232c0c84d226952dc5",
+        "3501": "c85cb9f96b07a78066ef0a0b384d2d0e35419423c943f66cee0be23145422eb2",
+        "3502": "20a9face0019ea7aa669b894ad6802e71da40029b416f001bf80816d43b0c754"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1203,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 74,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "8776a7223d6b343983aff8403cfa292e49adc15b54c95db3c3bcae24e2584778",
+      "calibration_index": 3503,
+      "campaign": "controlled_width",
+      "checkpoint_age": 150,
+      "continuation_indices_max": 249,
+      "continuation_indices_min": 150,
+      "evaluation_batch_hashes": {
+        "3500": "882ea9fff4b6892f1b4a8390bd87132da8f34a0710e095232c0c84d226952dc5",
+        "3501": "c85cb9f96b07a78066ef0a0b384d2d0e35419423c943f66cee0be23145422eb2",
+        "3502": "20a9face0019ea7aa669b894ad6802e71da40029b416f001bf80816d43b0c754"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1203,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 149,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "8776a7223d6b343983aff8403cfa292e49adc15b54c95db3c3bcae24e2584778",
+      "calibration_index": 3503,
+      "campaign": "controlled_width",
+      "checkpoint_age": 300,
+      "continuation_indices_max": 399,
+      "continuation_indices_min": 300,
+      "evaluation_batch_hashes": {
+        "3500": "882ea9fff4b6892f1b4a8390bd87132da8f34a0710e095232c0c84d226952dc5",
+        "3501": "c85cb9f96b07a78066ef0a0b384d2d0e35419423c943f66cee0be23145422eb2",
+        "3502": "20a9face0019ea7aa669b894ad6802e71da40029b416f001bf80816d43b0c754"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1203,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 299,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "0d64296ffd97acfdce00c266a405d86f24f9243a4c34032cc57359265f07f0a1",
+      "calibration_index": 3503,
+      "campaign": "long_training",
+      "checkpoint_age": 750,
+      "continuation_indices_max": 849,
+      "continuation_indices_min": 750,
+      "evaluation_batch_hashes": {
+        "3500": "6e07f158b7c1278b49aca4ccc0fedd9f563c5b1901470a5f085b37989549a985",
+        "3501": "be27a812adc3e293df991928a2560f0ac70839d3a14720bd27538e1edd167d93",
+        "3502": "d499d8265376b33df333064c0af3801bd3c28dc935296fd07d8f0766509b03cc"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1301,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 749,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "0d64296ffd97acfdce00c266a405d86f24f9243a4c34032cc57359265f07f0a1",
+      "calibration_index": 3503,
+      "campaign": "long_training",
+      "checkpoint_age": 1500,
+      "continuation_indices_max": 1599,
+      "continuation_indices_min": 1500,
+      "evaluation_batch_hashes": {
+        "3500": "6e07f158b7c1278b49aca4ccc0fedd9f563c5b1901470a5f085b37989549a985",
+        "3501": "be27a812adc3e293df991928a2560f0ac70839d3a14720bd27538e1edd167d93",
+        "3502": "d499d8265376b33df333064c0af3801bd3c28dc935296fd07d8f0766509b03cc"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1301,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 1499,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "0d64296ffd97acfdce00c266a405d86f24f9243a4c34032cc57359265f07f0a1",
+      "calibration_index": 3503,
+      "campaign": "long_training",
+      "checkpoint_age": 3000,
+      "continuation_indices_max": 3099,
+      "continuation_indices_min": 3000,
+      "evaluation_batch_hashes": {
+        "3500": "6e07f158b7c1278b49aca4ccc0fedd9f563c5b1901470a5f085b37989549a985",
+        "3501": "be27a812adc3e293df991928a2560f0ac70839d3a14720bd27538e1edd167d93",
+        "3502": "d499d8265376b33df333064c0af3801bd3c28dc935296fd07d8f0766509b03cc"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1301,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 2999,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "626866f1791370c15ec88d6dfda00f88bee017bdab47c043dd431f5d2cb4e789",
+      "calibration_index": 3503,
+      "campaign": "long_training",
+      "checkpoint_age": 750,
+      "continuation_indices_max": 849,
+      "continuation_indices_min": 750,
+      "evaluation_batch_hashes": {
+        "3500": "3b3d9947a832ca1486684143c3fc9d3e18be0f81322296ede7f7b0a8981440fc",
+        "3501": "ecdbeba4c11d660c048c290c64321e4e72c957b0583a2b4dd8b757c575f2ace2",
+        "3502": "652d9783f975269ecf087c7c11da35b1a09c04c0d56b8e0c1f58bcdbc34ee67f"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1302,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 749,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "626866f1791370c15ec88d6dfda00f88bee017bdab47c043dd431f5d2cb4e789",
+      "calibration_index": 3503,
+      "campaign": "long_training",
+      "checkpoint_age": 1500,
+      "continuation_indices_max": 1599,
+      "continuation_indices_min": 1500,
+      "evaluation_batch_hashes": {
+        "3500": "3b3d9947a832ca1486684143c3fc9d3e18be0f81322296ede7f7b0a8981440fc",
+        "3501": "ecdbeba4c11d660c048c290c64321e4e72c957b0583a2b4dd8b757c575f2ace2",
+        "3502": "652d9783f975269ecf087c7c11da35b1a09c04c0d56b8e0c1f58bcdbc34ee67f"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1302,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 1499,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "626866f1791370c15ec88d6dfda00f88bee017bdab47c043dd431f5d2cb4e789",
+      "calibration_index": 3503,
+      "campaign": "long_training",
+      "checkpoint_age": 3000,
+      "continuation_indices_max": 3099,
+      "continuation_indices_min": 3000,
+      "evaluation_batch_hashes": {
+        "3500": "3b3d9947a832ca1486684143c3fc9d3e18be0f81322296ede7f7b0a8981440fc",
+        "3501": "ecdbeba4c11d660c048c290c64321e4e72c957b0583a2b4dd8b757c575f2ace2",
+        "3502": "652d9783f975269ecf087c7c11da35b1a09c04c0d56b8e0c1f58bcdbc34ee67f"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1302,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 2999,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "7a155e35d2ac92b9db2c45cf8f2e7fb34d0d90e5eae527f75d2ec818f129dc04",
+      "calibration_index": 3503,
+      "campaign": "long_training",
+      "checkpoint_age": 750,
+      "continuation_indices_max": 849,
+      "continuation_indices_min": 750,
+      "evaluation_batch_hashes": {
+        "3500": "1042bc146a3dfd632b718450fdc7c264609025935c808942ef965726d0765ab5",
+        "3501": "85463cae054946306e68ff40a86bfd0d6d66b76f9a1f3e4e2878855221939b0b",
+        "3502": "18af32c7bf013b23ccd07565c14132e2866ab96555a6e1c45ed942d759a53756"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1303,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 749,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "7a155e35d2ac92b9db2c45cf8f2e7fb34d0d90e5eae527f75d2ec818f129dc04",
+      "calibration_index": 3503,
+      "campaign": "long_training",
+      "checkpoint_age": 1500,
+      "continuation_indices_max": 1599,
+      "continuation_indices_min": 1500,
+      "evaluation_batch_hashes": {
+        "3500": "1042bc146a3dfd632b718450fdc7c264609025935c808942ef965726d0765ab5",
+        "3501": "85463cae054946306e68ff40a86bfd0d6d66b76f9a1f3e4e2878855221939b0b",
+        "3502": "18af32c7bf013b23ccd07565c14132e2866ab96555a6e1c45ed942d759a53756"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1303,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 1499,
+      "training_indices_min": 0
+    },
+    {
+      "calibration_batch_hash": "7a155e35d2ac92b9db2c45cf8f2e7fb34d0d90e5eae527f75d2ec818f129dc04",
+      "calibration_index": 3503,
+      "campaign": "long_training",
+      "checkpoint_age": 3000,
+      "continuation_indices_max": 3099,
+      "continuation_indices_min": 3000,
+      "evaluation_batch_hashes": {
+        "3500": "1042bc146a3dfd632b718450fdc7c264609025935c808942ef965726d0765ab5",
+        "3501": "85463cae054946306e68ff40a86bfd0d6d66b76f9a1f3e4e2878855221939b0b",
+        "3502": "18af32c7bf013b23ccd07565c14132e2866ab96555a6e1c45ed942d759a53756"
+      },
+      "evaluation_indices": [
+        3500,
+        3501,
+        3502
+      ],
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "intersection_training_calibration": [],
+      "intersection_training_evaluation": [],
+      "seed": 1303,
+      "tensor_hash_disjoint_from_consumed": true,
+      "training_indices_max": 2999,
+      "training_indices_min": 0
+    }
+  ],
+  "status": "PASS"
+}

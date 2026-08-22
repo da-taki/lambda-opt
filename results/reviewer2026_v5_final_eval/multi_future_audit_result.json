@@ -1,0 +1,245 @@
+{
+  "audit": [
+    {
+      "calibration_batch_hash": "5e87126622d1c41d8656f2182a9287439c949fbd28c80bbe60f2ecf32894b557",
+      "calibration_index": 4,
+      "continuation_indices_max": 104,
+      "continuation_indices_min": 5,
+      "evaluation_batch_hashes": {
+        "1": "df22b3b6c053d578f99c2865be81379158d02b04b36c304bf697c676e1b9ae18",
+        "2": "5601294d2ff20ee10e5e8f594d234b730def5d9b9a0c7a02bcf15edaff1829b2",
+        "3": "7f64b9a0287f204050eee6bb68d0ed7c5a906157ca0da46faff4d56662275f5c"
+      },
+      "evaluation_indices": [
+        1,
+        2,
+        3
+      ],
+      "future_schedule_seed": 8101,
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "tensor_hash_disjoint_from_consumed": true
+    },
+    {
+      "calibration_batch_hash": "d1def17b4fe39d184080d5cc017a5ef4d5a1339be0ed73c7cee6e1085bfee650",
+      "calibration_index": 4,
+      "continuation_indices_max": 104,
+      "continuation_indices_min": 5,
+      "evaluation_batch_hashes": {
+        "1": "a1c6557f5d3e12e7712a39e3c87c58c25ba580248cfa5872d4df9f04d8f03415",
+        "2": "d99368bee47f599f6d7636874a83b7519e1eae03f4242d4ed075c4b0c8b8d4bf",
+        "3": "c0c5f157060eee62778fdb98df7cf1d155cc16bf12c7e9d31da44a27641588b7"
+      },
+      "evaluation_indices": [
+        1,
+        2,
+        3
+      ],
+      "future_schedule_seed": 8102,
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "tensor_hash_disjoint_from_consumed": true
+    },
+    {
+      "calibration_batch_hash": "e77cd586942fd13cedd2ea21d334182452278794da7f341de79028ad4ca1b4fb",
+      "calibration_index": 4,
+      "continuation_indices_max": 104,
+      "continuation_indices_min": 5,
+      "evaluation_batch_hashes": {
+        "1": "fb38ef84a4e03e2080feb6503009e18e5e0e3cf9064308a0121fc1c0f6fe15e5",
+        "2": "70436876347f470676bec55d336ab124671a805557b4b6bd77f3d473e9862eb6",
+        "3": "259809927efa5eaccbd9033cf1d22bbb94eed5a4af6a3f8b7125b8e123120a0d"
+      },
+      "evaluation_indices": [
+        1,
+        2,
+        3
+      ],
+      "future_schedule_seed": 8103,
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "tensor_hash_disjoint_from_consumed": true
+    },
+    {
+      "calibration_batch_hash": "a5382598e2221840282d28ab40aa867f415c2005f1d6f8aaa4d1a51ba165ad61",
+      "calibration_index": 4,
+      "continuation_indices_max": 104,
+      "continuation_indices_min": 5,
+      "evaluation_batch_hashes": {
+        "1": "7f8e370cce666edbc4045a892ae1b2b86d428a981a8f5c43f291b99ccb86458d",
+        "2": "9f4ca9cefda622c21c3aaa66f2b92f6f4426a85f4d3be852dd07ea43bc50d39c",
+        "3": "f67ab3f4af1477d787e1078c2d8bba04983451504d822fff8469fc05e5bbde02"
+      },
+      "evaluation_indices": [
+        1,
+        2,
+        3
+      ],
+      "future_schedule_seed": 8104,
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "tensor_hash_disjoint_from_consumed": true
+    },
+    {
+      "calibration_batch_hash": "e647a5deb644d9619d6fd11d2e6e65e543fb618cda66408e22c61e76d1479b53",
+      "calibration_index": 4,
+      "continuation_indices_max": 104,
+      "continuation_indices_min": 5,
+      "evaluation_batch_hashes": {
+        "1": "e87ce857c3104d91f046d23b2b36a230aac3330110a49c0b0feb21b12743b998",
+        "2": "06a40a8054c7c6377f8d120971d3b328250869a7e84b5ea1b1fa56a38f64ad18",
+        "3": "39fc3cdb10fcfd00530193d8ea7b44db5853166457825a84a69c61e2d170a8f0"
+      },
+      "evaluation_indices": [
+        1,
+        2,
+        3
+      ],
+      "future_schedule_seed": 8105,
+      "intersection_continuation_calibration": [],
+      "intersection_continuation_evaluation": [],
+      "intersection_evaluation_calibration": [],
+      "tensor_hash_disjoint_from_consumed": true
+    }
+  ],
+  "reason": "existing V4 evaluation/calibration/continuation indices are disjoint",
+  "rerun": false,
+  "status": "PASS",
+  "v4_rows_preserved": 45,
+  "v4_summary": {
+    "case_summaries": [
+      {
+        "P_T_le_10": 0.0,
+        "P_T_le_100": 1.0,
+        "P_T_le_20": 1.0,
+        "P_T_le_50": 1.0,
+        "checkpoint_age": 75,
+        "future_schedules": 5,
+        "max_function_kl_mean": 27.59538803100586,
+        "max_validation_loss_gap_mean": 18.864300886789955,
+        "median_T_tau": 15.0,
+        "source_seed": 1101,
+        "task_nonrecovered_h100": 5,
+        "task_nonrecovered_h20": 5
+      },
+      {
+        "P_T_le_10": 0.0,
+        "P_T_le_100": 0.0,
+        "P_T_le_20": 0.0,
+        "P_T_le_50": 0.0,
+        "checkpoint_age": 150,
+        "future_schedules": 5,
+        "max_function_kl_mean": 8.82756748199463,
+        "max_validation_loss_gap_mean": 6.7930961608886715,
+        "median_T_tau": null,
+        "source_seed": 1101,
+        "task_nonrecovered_h100": 5,
+        "task_nonrecovered_h20": 5
+      },
+      {
+        "P_T_le_10": 0.0,
+        "P_T_le_100": 0.0,
+        "P_T_le_20": 0.0,
+        "P_T_le_50": 0.0,
+        "checkpoint_age": 300,
+        "future_schedules": 5,
+        "max_function_kl_mean": 1.0027999043464662,
+        "max_validation_loss_gap_mean": 0.5699956099192302,
+        "median_T_tau": null,
+        "source_seed": 1101,
+        "task_nonrecovered_h100": 1,
+        "task_nonrecovered_h20": 5
+      },
+      {
+        "P_T_le_10": 0.0,
+        "P_T_le_100": 1.0,
+        "P_T_le_20": 1.0,
+        "P_T_le_50": 1.0,
+        "checkpoint_age": 75,
+        "future_schedules": 5,
+        "max_function_kl_mean": 25.723600769042967,
+        "max_validation_loss_gap_mean": 18.767026201883954,
+        "median_T_tau": 15.0,
+        "source_seed": 1102,
+        "task_nonrecovered_h100": 5,
+        "task_nonrecovered_h20": 5
+      },
+      {
+        "P_T_le_10": 0.0,
+        "P_T_le_100": 0.0,
+        "P_T_le_20": 0.0,
+        "P_T_le_50": 0.0,
+        "checkpoint_age": 150,
+        "future_schedules": 5,
+        "max_function_kl_mean": 8.949825668334961,
+        "max_validation_loss_gap_mean": 7.173531230290732,
+        "median_T_tau": null,
+        "source_seed": 1102,
+        "task_nonrecovered_h100": 4,
+        "task_nonrecovered_h20": 5
+      },
+      {
+        "P_T_le_10": 0.0,
+        "P_T_le_100": 0.0,
+        "P_T_le_20": 0.0,
+        "P_T_le_50": 0.0,
+        "checkpoint_age": 300,
+        "future_schedules": 5,
+        "max_function_kl_mean": 0.9780677556991577,
+        "max_validation_loss_gap_mean": 0.6019159634908041,
+        "median_T_tau": null,
+        "source_seed": 1102,
+        "task_nonrecovered_h100": 1,
+        "task_nonrecovered_h20": 5
+      },
+      {
+        "P_T_le_10": 0.0,
+        "P_T_le_100": 1.0,
+        "P_T_le_20": 1.0,
+        "P_T_le_50": 1.0,
+        "checkpoint_age": 75,
+        "future_schedules": 5,
+        "max_function_kl_mean": 24.37000846862793,
+        "max_validation_loss_gap_mean": 15.828357791900634,
+        "median_T_tau": 14.0,
+        "source_seed": 1103,
+        "task_nonrecovered_h100": 4,
+        "task_nonrecovered_h20": 5
+      },
+      {
+        "P_T_le_10": 0.0,
+        "P_T_le_100": 0.0,
+        "P_T_le_20": 0.0,
+        "P_T_le_50": 0.0,
+        "checkpoint_age": 150,
+        "future_schedules": 5,
+        "max_function_kl_mean": 11.244166374206543,
+        "max_validation_loss_gap_mean": 8.771636136372884,
+        "median_T_tau": null,
+        "source_seed": 1103,
+        "task_nonrecovered_h100": 2,
+        "task_nonrecovered_h20": 5
+      },
+      {
+        "P_T_le_10": 0.0,
+        "P_T_le_100": 0.0,
+        "P_T_le_20": 0.0,
+        "P_T_le_50": 0.0,
+        "checkpoint_age": 300,
+        "future_schedules": 5,
+        "max_function_kl_mean": 1.100592350959778,
+        "max_validation_loss_gap_mean": 0.8436227480570476,
+        "median_T_tau": null,
+        "source_seed": 1103,
+        "task_nonrecovered_h100": 3,
+        "task_nonrecovered_h20": 5
+      }
+    ],
+    "rows": 45,
+    "status": "COMPLETE"
+  }
+}
