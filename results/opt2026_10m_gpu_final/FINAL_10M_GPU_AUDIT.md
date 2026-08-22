@@ -1,0 +1,31 @@
+﻿# Final 10M GPU Audit
+
+- branch: experiment/opt2026-10m-gpu-final
+- commit: final repository commit SHA is reported in the task handoff; embedding the post-commit SHA in this file would change the SHA itself
+- Python: 3.14.4
+- PyTorch: 2.11.0+cu128
+- CUDA runtime: 12.8
+- driver: 572.70
+- GPU: NVIDIA GeForce GTX 1650
+- VRAM bytes: 4294639616
+- disk cleanup performed: removed disposable failed project `.venv-gpu` of 6372380 bytes; pip cache was 0 bytes
+- model configs probed: see model_probe.csv
+- exact model chosen: {'name': 'candidate_B_19p48m', 'num_layers': 8, 'd_model': 448, 'nhead': 8, 'dim_feedforward': 1792, 'seq_len': 127, 'dropout': 0.0}
+- trainable params: 19484864
+- precision: fp32
+- peak VRAM: 414451200
+- throughput tokens/sec: 2451.8488129313987
+- mean training step time: 0.05799858688882523
+- training steps: 300
+- independent seeds: [1101, 1102, 1103]
+- checkpoint ages: [75, 150, 300]
+- rewrite taxonomy: frozen 11-family taxonomy copied from final task-validity campaign
+- tau: tau = 0.10 * (||theta_checkpoint||_2 + 1e-12)
+- tau sweep: see tau_sensitivity.csv
+- task-damage table: {'parameter_benign_task_ok': 53, 'parameter_benign_task_damaged': 21, 'parameter_dangerous_task_ok': 3, 'parameter_dangerous_task_damaged': 22, 'sensitivity': 0.5116279069767442, 'specificity': 0.9464285714285714, 'ppv': 0.88, 'npv': 0.7162162162162162}
+- rollout frontier: see tau_sensitivity.csv
+- lambda-Opt: budgeted/full columns in rows.csv; no tuning
+- 1.298M vs >=10M comparison: see scale_comparison.json
+- tests/verifiers/artifact verification: recorded after final verification
+- negative results: ['Suggested candidate A was below the required threshold at 9,985,600 parameters and was not used for replication.', 'Candidate C had 25,414,144 parameters and survived a one-step probe, but failed during full rewrite evaluation with CUBLAS_STATUS_EXECUTION_FAILED.', 'No BF16 was used; GTX 1650 capability was recorded and fp32 was used because the selected 19.5M model fit reliably.', 'lambda-Opt is reported unchanged as a secondary baseline; no tuning was performed.']
+

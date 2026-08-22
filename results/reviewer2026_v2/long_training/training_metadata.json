@@ -1,0 +1,50 @@
+[
+  {
+    "checkpoint_dir": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1301",
+    "dataset": "WikiText-2 cached char-level, first 500000 chars",
+    "mean_step_time_seconds": 0.04417150599976594,
+    "model_config": "candidate_B_19p48m",
+    "n_params": 19484864,
+    "peak_vram_bytes": 413433344,
+    "reused_existing_checkpoints": false,
+    "scheduler_step_size": 1000,
+    "seed": 1301,
+    "tokens_per_second": 2897.7956966348,
+    "total_training_wall_seconds": 136.3527238999959,
+    "train_loss_final": 1.9777820110321045,
+    "training_steps": 3000,
+    "vocab": 127
+  },
+  {
+    "checkpoint_dir": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1302",
+    "dataset": "WikiText-2 cached char-level, first 500000 chars",
+    "mean_step_time_seconds": 0.036890000966872324,
+    "model_config": "candidate_B_19p48m",
+    "n_params": 19484864,
+    "peak_vram_bytes": 413728256,
+    "reused_existing_checkpoints": false,
+    "scheduler_step_size": 1000,
+    "seed": 1302,
+    "tokens_per_second": 3469.7749158354745,
+    "total_training_wall_seconds": 113.02284860001237,
+    "train_loss_final": 1.8825876712799072,
+    "training_steps": 3000,
+    "vocab": 127
+  },
+  {
+    "checkpoint_dir": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1303",
+    "dataset": "WikiText-2 cached char-level, first 500000 chars",
+    "mean_step_time_seconds": 0.04211154193328306,
+    "model_config": "candidate_B_19p48m",
+    "n_params": 19484864,
+    "peak_vram_bytes": 413728256,
+    "reused_existing_checkpoints": false,
+    "scheduler_step_size": 1000,
+    "seed": 1303,
+    "tokens_per_second": 3039.546740007508,
+    "total_training_wall_seconds": 129.42703079999774,
+    "train_loss_final": 1.907751202583313,
+    "training_steps": 3000,
+    "vocab": 127
+  }
+]

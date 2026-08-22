@@ -1,0 +1,246 @@
+{
+  "created_utc": "2026-08-22T12:54:54.453898+00:00",
+  "files": [
+    {
+      "bytes": 1385,
+      "path": "results\\reviewer2026_v3_lr_isolation\\calibration_validation_disjointness.json",
+      "sha256": "a016584a426cca7e803c722be65aa57bc4ffe5435afff0b72ea614547f0299bb"
+    },
+    {
+      "bytes": 4785,
+      "path": "results\\reviewer2026_v3_lr_isolation\\leave_one_seed_out_discrimination.csv",
+      "sha256": "4d1ada9847e426fa22c7be187d09a3369dcafcd9f8f1242de6f0fc8bd40690a5"
+    },
+    {
+      "bytes": 14478,
+      "path": "results\\reviewer2026_v3_lr_isolation\\leave_one_seed_out_discrimination.json",
+      "sha256": "f57edc6387525a0819b2ee9be5ecf86041adb08b4290797107d2e25e62efc894"
+    },
+    {
+      "bytes": 1891,
+      "path": "results\\reviewer2026_v3_lr_isolation\\leave_one_seed_out_discrimination.md",
+      "sha256": "784f5047aaf39d298346927557e327c909ef917ae3b25c42062c622589b62100"
+    },
+    {
+      "bytes": 112789,
+      "path": "results\\reviewer2026_v3_lr_isolation\\legacy_reset_audit.json",
+      "sha256": "1f25292e76658316b98cc1e5832f0bca32314efe980af9607b9dac681f00e833"
+    },
+    {
+      "bytes": 883,
+      "path": "results\\reviewer2026_v3_lr_isolation\\optimizer_reset_isolation_tests.json",
+      "sha256": "c3c6630f9ffdf90e79be4f4a5e60c8b85fec63800ecb3d69df118f9aa5f39b6c"
+    },
+    {
+      "bytes": 680,
+      "path": "results\\reviewer2026_v3_lr_isolation\\PROVENANCE.json",
+      "sha256": "2fc3e57f91da1abb6cef6501567db5ba0a26a8d32b830a906d9bf683dc1e3ffa"
+    },
+    {
+      "bytes": 41,
+      "path": "results\\reviewer2026_v3_lr_isolation\\verification_report_v3_lr_isolation.json",
+      "sha256": "bbf6951971c0630be2426381779ef59f3182a8f76a6505d626a94c535c932eb6"
+    },
+    {
+      "bytes": 1207,
+      "path": "results\\reviewer2026_v3_lr_isolation\\controlled_scale\\corrected_latency_histogram.json",
+      "sha256": "5ce7e04ecd485edd46c60861557eee41839798c4370ab4c5675737835ec788a6"
+    },
+    {
+      "bytes": 1111,
+      "path": "results\\reviewer2026_v3_lr_isolation\\controlled_scale\\corrected_metric_summary.json",
+      "sha256": "ca220997ee155e1e612f69ccff5573648d014f3df8bdb1cf410d3f556cea4dfd"
+    },
+    {
+      "bytes": 207,
+      "path": "results\\reviewer2026_v3_lr_isolation\\controlled_scale\\corrected_per_model_config_summary.csv",
+      "sha256": "5a129d7fd5440ea698d39a832277277e18b2624f834e2ead772b3c9149d2cd0a"
+    },
+    {
+      "bytes": 421,
+      "path": "results\\reviewer2026_v3_lr_isolation\\controlled_scale\\corrected_per_rewrite_family_summary.csv",
+      "sha256": "c8d9292947f115b14ecb5a9837b636e89ea12f4cdbfeb88b613f538c5cf2c78a"
+    },
+    {
+      "bytes": 169,
+      "path": "results\\reviewer2026_v3_lr_isolation\\controlled_scale\\corrected_per_seed_summary.csv",
+      "sha256": "b9f67416bea791262b46ec2dd58ddc5c5ae1e15a444fab98ee7a7bf7a13a097c"
+    },
+    {
+      "bytes": 2774822,
+      "path": "results\\reviewer2026_v3_lr_isolation\\controlled_scale\\corrected_rows_297.csv",
+      "sha256": "2559cf3aa6e2dbb206525b5414bd1bab12a4abf09ced9d1bf43df3ddf542db68"
+    },
+    {
+      "bytes": 4205618,
+      "path": "results\\reviewer2026_v3_lr_isolation\\controlled_scale\\corrected_rows_297.json",
+      "sha256": "e8b0f5f08ec5f12f883572c0f50485acb83a390a86d32b6a333c2afc489df84b"
+    },
+    {
+      "bytes": 6718,
+      "path": "results\\reviewer2026_v3_lr_isolation\\controlled_scale\\corrected_summary.json",
+      "sha256": "e508da8e7d328b429a79d3243ef29cd3a9c5ee5f58986528de68147ce6f3b3fb"
+    },
+    {
+      "bytes": 284473,
+      "path": "results\\reviewer2026_v3_lr_isolation\\controlled_scale\\optimizer_reset_corrected_rows.csv",
+      "sha256": "343fa05558e3fb8b7433280f4f49c3e791ecf112888eba537331b79ee8e6aab7"
+    },
+    {
+      "bytes": 439007,
+      "path": "results\\reviewer2026_v3_lr_isolation\\controlled_scale\\optimizer_reset_corrected_rows.json",
+      "sha256": "0286789703911f0561cfbdd736c288ba2464b1fb257dd1d40383fb41feefcdcc"
+    },
+    {
+      "bytes": 1207,
+      "path": "results\\reviewer2026_v3_lr_isolation\\long_training\\corrected_latency_histogram.json",
+      "sha256": "fdd98108b4ae8bdb635b1baa2146549c23d096add787b59106a9f35419dfe1dc"
+    },
+    {
+      "bytes": 1105,
+      "path": "results\\reviewer2026_v3_lr_isolation\\long_training\\corrected_metric_summary.json",
+      "sha256": "81dcbbf45cb1c3c1213fb39983573721d85a70f8f155da9a919017294e67d1e4"
+    },
+    {
+      "bytes": 166,
+      "path": "results\\reviewer2026_v3_lr_isolation\\long_training\\corrected_per_checkpoint_age_summary.csv",
+      "sha256": "8287d85c0a53e7993513fe2124cc38955e8f09d7cf4c4638aca93111fe33bccf"
+    },
+    {
+      "bytes": 403,
+      "path": "results\\reviewer2026_v3_lr_isolation\\long_training\\corrected_per_rewrite_family_summary.csv",
+      "sha256": "860b12e98431845987f4ef2ff572b18267c08ef264738bdbc045b69f086cc83e"
+    },
+    {
+      "bytes": 157,
+      "path": "results\\reviewer2026_v3_lr_isolation\\long_training\\corrected_per_seed_summary.csv",
+      "sha256": "d5b3115bf7755b9dace8f2fdd4e8c0a675aece5a3c73cbe4948af4c3e5c9711c"
+    },
+    {
+      "bytes": 913839,
+      "path": "results\\reviewer2026_v3_lr_isolation\\long_training\\corrected_rows_99.csv",
+      "sha256": "9009deea4f913f1cec7aef5378b8644dba79a5ec16a1716697b6d3f9389ce022"
+    },
+    {
+      "bytes": 1390065,
+      "path": "results\\reviewer2026_v3_lr_isolation\\long_training\\corrected_rows_99.json",
+      "sha256": "c32e91bd81031b0bc021d5fadce3b56c9c7ee6eb36870202ed5f7d5803388f6c"
+    },
+    {
+      "bytes": 6637,
+      "path": "results\\reviewer2026_v3_lr_isolation\\long_training\\corrected_summary.json",
+      "sha256": "6ff320f48e10a53cf92dd2116b7840cc8beed76f5b2f562f3f31e365f736b9f6"
+    },
+    {
+      "bytes": 94307,
+      "path": "results\\reviewer2026_v3_lr_isolation\\long_training\\optimizer_reset_corrected_rows.csv",
+      "sha256": "77f4614db6f4592194256a17a11b3bd510c9a5017a2da12af425c89d25a1f7f2"
+    },
+    {
+      "bytes": 145123,
+      "path": "results\\reviewer2026_v3_lr_isolation\\long_training\\optimizer_reset_corrected_rows.json",
+      "sha256": "4731de29e95a1e3122f06f37428dee9eacd08814471c6c963b7839a90f5571ac"
+    },
+    {
+      "bytes": 142658,
+      "path": "results\\reviewer2026_v3_lr_isolation\\mechanism\\mechanism_isolated_cases.json",
+      "sha256": "7709fdc8074b350d5db0148431370441189ae9f3d31e61d7faf07682aeef0d73"
+    },
+    {
+      "bytes": 722942,
+      "path": "results\\reviewer2026_v3_lr_isolation\\mechanism\\mechanism_isolated_steps.csv",
+      "sha256": "6d8c2795ca97062a28e83f5c5044f9a4b15d203502b723a4195d78f8765c230e"
+    },
+    {
+      "bytes": 973,
+      "path": "results\\reviewer2026_v3_lr_isolation\\mechanism\\mechanism_isolated_summary.json",
+      "sha256": "441df264eba9ef2fb207f4b82ba6ef6580f370280bb9ec3bdebeed5f4e55908b"
+    },
+    {
+      "bytes": 795,
+      "path": "results\\reviewer2026_v3_lr_isolation\\mechanism\\mechanism_isolated_summary.md",
+      "sha256": "e806582ab600f46c93721b1ccb8407fc2696e69ae8c46231b608ac4612f6ac64"
+    },
+    {
+      "bytes": 8737,
+      "path": "results\\reviewer2026_v3_lr_isolation\\multi_future\\multi_future_isolated_rows.csv",
+      "sha256": "3f339c969601ca764c490153be54d5fc5d4e0ad99d955906cbd298e16d0cb000"
+    },
+    {
+      "bytes": 29112,
+      "path": "results\\reviewer2026_v3_lr_isolation\\multi_future\\multi_future_isolated_rows.json",
+      "sha256": "45242f9dfe47439b99d6279977efc2ba8df2cf75e5a048425c68a2c7481697cc"
+    },
+    {
+      "bytes": 3777,
+      "path": "results\\reviewer2026_v3_lr_isolation\\multi_future\\multi_future_isolated_summary.json",
+      "sha256": "821a4e1d4298ea6f8860d9a9ebe260def66c8dd23405edeaa26426afd957bbc0"
+    },
+    {
+      "bytes": 500,
+      "path": "results\\reviewer2026_v3_lr_isolation\\multi_future\\multi_future_isolated_summary.md",
+      "sha256": "89d7d9c4980d2ffff28286ae7ddf2dad5722ce8d10b746c196ac3cda6b1f4376"
+    },
+    {
+      "bytes": 1207,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_corrected_latency_histogram.json",
+      "sha256": "b86e1d82ac23cd776061c049d17246c36a01ebf5bd6fe28c10db1e1c5fa0d191"
+    },
+    {
+      "bytes": 166,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_corrected_per_checkpoint_summary.csv",
+      "sha256": "004389196256882521eec552f411ae50023422f0ea20e6549053abaa644a1095"
+    },
+    {
+      "bytes": 403,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_corrected_per_family_summary.csv",
+      "sha256": "54c07eddcdb9bd06ed0190f71f6d9dea7b45219f6078759bea33b90943d66f35"
+    },
+    {
+      "bytes": 160,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_corrected_per_seed_summary.csv",
+      "sha256": "c7af46ee6c8fa638105d74e2845da2d7694d13b5cfdb366a199e85c6d4924513"
+    },
+    {
+      "bytes": 18722,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_corrected_statistics.json",
+      "sha256": "00759b1c59243e28c23b2d4439e3d2035ebea16d2512c272e7c3936b3323ee06"
+    },
+    {
+      "bytes": 915270,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_h100_corrected_99_rows.csv",
+      "sha256": "7a22bb803e3d52b71ddcea40a72d4e89fb3061641d06c8671193c8d98b64e9da"
+    },
+    {
+      "bytes": 1395140,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_h100_corrected_99_rows.json",
+      "sha256": "66b94d5b91d7842d5d4f2cc1b32866320f3b91c1eeb67b4848616b2a52f3b347"
+    },
+    {
+      "bytes": 18722,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_h100_corrected_summary.json",
+      "sha256": "00759b1c59243e28c23b2d4439e3d2035ebea16d2512c272e7c3936b3323ee06"
+    },
+    {
+      "bytes": 170,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_h100_corrected_summary.md",
+      "sha256": "cb8de8abf1df105e290fd81e9acc11004c05d1503b05108d05d933ef7846e018"
+    },
+    {
+      "bytes": 94453,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_optimizer_reset_corrected_rows.csv",
+      "sha256": "1cb86d07c52f7bdd3cb846196e2af90006a3c5359bc8f669d3fe831ce06f2820"
+    },
+    {
+      "bytes": 145045,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_optimizer_reset_corrected_rows.json",
+      "sha256": "df947f07e9871731c8e5646d3f42076d9318c0e4d8e97f53262af7ea8c6c7336"
+    },
+    {
+      "bytes": 401484,
+      "path": "results\\reviewer2026_v3_lr_isolation\\primary\\primary_optimizer_reset_corrected_steps.csv",
+      "sha256": "1a4d34cfd3db16dda2339383da76cd2d73c3f2f1e50fba135c70fb6b3f4078f3"
+    }
+  ],
+  "status": "COMPLETE"
+}

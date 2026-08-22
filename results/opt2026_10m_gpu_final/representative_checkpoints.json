@@ -1,0 +1,10 @@
+{
+  "exact_restore": {
+    "path": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\representative_scenarios\\exact_restore.pt",
+    "sha256": "3d985487a43c3fd304a969fd489ba99f7955a8afc4de184d73b0704d827e758b"
+  },
+  "reset_v": {
+    "path": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\representative_scenarios\\reset_v.pt",
+    "sha256": "50ff4b19238e2f3b135898443aa923898ae929a808165b7b09a580db30773967"
+  }
+}

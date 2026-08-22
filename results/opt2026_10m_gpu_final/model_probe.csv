@@ -1,0 +1,5 @@
+name,num_layers,d_model,nhead,dim_feedforward,context,trainable_params,status,error,precision,microbatch,gradient_accumulation,peak_vram_bytes,step_wall_time_seconds,tokens_per_second,selected_for_replication
+candidate_A_9p99m,8,320,8,1280,128,9985600,completed,,fp32,1,1,221451264,0.0955335999988165,1329.3752146006568,False
+candidate_B_16p82m,8,416,8,1664,128,16815136,completed,,fp32,1,1,362186240,0.08372779999990598,1516.819980939934,False
+candidate_B_19p48m,8,448,8,1792,128,19484864,completed,,fp32,1,1,414451200,0.08581599999888567,1479.910506218527,True
+candidate_C_25p41m,8,512,8,2048,128,25414144,completed,,fp32,1,1,538646528,0.07191720000082569,1765.9196965196352,False

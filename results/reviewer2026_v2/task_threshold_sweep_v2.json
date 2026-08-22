@@ -1,0 +1,134 @@
+[
+  {
+    "horizon": 20,
+    "rows": 99,
+    "task_nonrecovered": 76,
+    "threshold": 0.0
+  },
+  {
+    "horizon": 20,
+    "rows": 99,
+    "task_nonrecovered": 65,
+    "threshold": 0.001
+  },
+  {
+    "horizon": 20,
+    "rows": 99,
+    "task_nonrecovered": 59,
+    "threshold": 0.005
+  },
+  {
+    "horizon": 20,
+    "rows": 99,
+    "task_nonrecovered": 55,
+    "threshold": 0.01
+  },
+  {
+    "horizon": 20,
+    "rows": 99,
+    "task_nonrecovered": 47,
+    "threshold": 0.025
+  },
+  {
+    "horizon": 20,
+    "rows": 99,
+    "task_nonrecovered": 43,
+    "threshold": 0.05
+  },
+  {
+    "horizon": 20,
+    "rows": 99,
+    "task_nonrecovered": 37,
+    "threshold": 0.075
+  },
+  {
+    "horizon": 20,
+    "rows": 99,
+    "task_nonrecovered": 35,
+    "threshold": 0.1
+  },
+  {
+    "horizon": 20,
+    "rows": 99,
+    "task_nonrecovered": 35,
+    "threshold": 0.2
+  },
+  {
+    "horizon": 20,
+    "rows": 99,
+    "task_nonrecovered": 24,
+    "threshold": 0.5
+  },
+  {
+    "horizon": 20,
+    "rows": 99,
+    "task_nonrecovered": 20,
+    "threshold": 1.0
+  },
+  {
+    "horizon": 100,
+    "rows": 99,
+    "task_nonrecovered": 76,
+    "threshold": 0.0
+  },
+  {
+    "horizon": 100,
+    "rows": 99,
+    "task_nonrecovered": 57,
+    "threshold": 0.001
+  },
+  {
+    "horizon": 100,
+    "rows": 99,
+    "task_nonrecovered": 47,
+    "threshold": 0.005
+  },
+  {
+    "horizon": 100,
+    "rows": 99,
+    "task_nonrecovered": 37,
+    "threshold": 0.01
+  },
+  {
+    "horizon": 100,
+    "rows": 99,
+    "task_nonrecovered": 35,
+    "threshold": 0.025
+  },
+  {
+    "horizon": 100,
+    "rows": 99,
+    "task_nonrecovered": 26,
+    "threshold": 0.05
+  },
+  {
+    "horizon": 100,
+    "rows": 99,
+    "task_nonrecovered": 20,
+    "threshold": 0.075
+  },
+  {
+    "horizon": 100,
+    "rows": 99,
+    "task_nonrecovered": 18,
+    "threshold": 0.1
+  },
+  {
+    "horizon": 100,
+    "rows": 99,
+    "task_nonrecovered": 16,
+    "threshold": 0.2
+  },
+  {
+    "horizon": 100,
+    "rows": 99,
+    "task_nonrecovered": 14,
+    "threshold": 0.5
+  },
+  {
+    "horizon": 100,
+    "rows": 99,
+    "task_nonrecovered": 11,
+    "threshold": 1.0
+  }
+]

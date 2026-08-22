@@ -1,0 +1,27 @@
+{
+  "batch_rng_seed_for_main_h100": "same held-out training seed as row",
+  "batch_size": 1,
+  "batches_cached_fixed": true,
+  "candidate_reference_share_evaluation_batch": true,
+  "corpus_characters_read": 500000,
+  "corpus_path": "experiments\\data\\wikitext2_raw\\train.txt",
+  "dataset": "WikiText-2 cached char-level, first 500000 chars",
+  "dev_seed_for_protocol_probe": 1051,
+  "evaluation_cadence": "after every continuation optimizer update",
+  "evaluation_deterministic": true,
+  "model_sequence_length": 128,
+  "original_rows_checked": 99,
+  "perplexity_gap_formula": "abs(exp(min(loss_clean, 50)) - exp(min(loss_candidate, 50)))",
+  "sequence_length_config": 128,
+  "tokenization": "character-level vocabulary built by run_transformer.build_char_dataset",
+  "validation_batch_indices": [
+    301,
+    302,
+    303
+  ],
+  "validation_batches": 3,
+  "validation_loss_gap_formula": "abs(validation_loss_clean - validation_loss_candidate)",
+  "validation_sequences": 3,
+  "validation_tokens": 384,
+  "vocab_size": 127
+}

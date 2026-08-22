@@ -1,0 +1,13 @@
+{
+  "branch": "experiment/opt2026-reviewer-lr-isolation",
+  "created_utc": "2026-08-22T12:09:46.159379+00:00",
+  "cuda_available": true,
+  "current_commit_at_start": "a127083830cc7ac6f7ade865397362df048c0a05",
+  "dirty_status_at_start": "?? scripts/run_reviewer2026_v3_lr_isolation.py",
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Asus\\Desktop\\Profitlo Projects\\Lambda_Opt\\.venv-gpu\\Scripts\\python.exe",
+  "starting_commit": "a127083830cc7ac6f7ade865397362df048c0a05",
+  "torch": "2.11.0+cu128"
+}

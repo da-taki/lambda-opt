@@ -1,0 +1,43 @@
+{
+  "cases": 9,
+  "old_vs_corrected_T_tau": {
+    "gpu_seed1101_ckpt150_optimizer_reset": {
+      "corrected": null,
+      "old": 16
+    },
+    "gpu_seed1101_ckpt300_optimizer_reset": {
+      "corrected": null,
+      "old": 18
+    },
+    "gpu_seed1101_ckpt75_optimizer_reset": {
+      "corrected": 15,
+      "old": 15
+    },
+    "gpu_seed1102_ckpt150_optimizer_reset": {
+      "corrected": null,
+      "old": 16
+    },
+    "gpu_seed1102_ckpt300_optimizer_reset": {
+      "corrected": null,
+      "old": 17
+    },
+    "gpu_seed1102_ckpt75_optimizer_reset": {
+      "corrected": 15,
+      "old": 15
+    },
+    "gpu_seed1103_ckpt150_optimizer_reset": {
+      "corrected": null,
+      "old": 16
+    },
+    "gpu_seed1103_ckpt300_optimizer_reset": {
+      "corrected": null,
+      "old": 16
+    },
+    "gpu_seed1103_ckpt75_optimizer_reset": {
+      "corrected": 14,
+      "old": 14
+    }
+  },
+  "status": "COMPLETE",
+  "step_rows": 900
+}

@@ -1,0 +1,21 @@
+{
+  "candidate_initial_state_empty_before_step": true,
+  "candidate_initial_state_keys_before_step": [],
+  "candidate_loss_after_one_step": 3.4184396266937256,
+  "candidate_lr_equals_checkpoint_lr": true,
+  "candidate_param_groups_match_checkpoint": true,
+  "candidate_state_keys_after_one_step": [
+    "exp_avg",
+    "exp_avg_sq",
+    "step"
+  ],
+  "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1101\\checkpoint_step_150.pt",
+  "clean_loss_after_one_step": 3.4184396266937256,
+  "clean_reference_full_resume_param_groups_match": true,
+  "dataset": "WikiText-2 cached char-level, first 500000 chars",
+  "difference_source": "missing persistent AdamW per-parameter state only",
+  "model_parameters_equal_checkpoint": true,
+  "same_training_batch_consumed": true,
+  "scheduler_state_matches_checkpoint": true,
+  "status": "PASS"
+}

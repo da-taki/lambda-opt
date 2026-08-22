@@ -1,0 +1,4133 @@
+{
+  "mismatches": [
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1101\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1101
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1101\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1101
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1102\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1102
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1102\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1102
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1103\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1103
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1103\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1103
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1201\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1201\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1202\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1202\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1203\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1203\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1201\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1201\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1202\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1202\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1203\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1203\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1201\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1201\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1202\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1202\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1203\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1203\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 1500,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1301\\checkpoint_step_1500.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1301
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 3000,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1301\\checkpoint_step_3000.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1301
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 1500,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1302\\checkpoint_step_1500.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1302
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 3000,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1302\\checkpoint_step_3000.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1302
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 1500,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1303\\checkpoint_step_1500.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1303
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 3000,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1303\\checkpoint_step_3000.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1303
+    }
+  ],
+  "reviewer_concern_confirmed": true,
+  "rows": [
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1101\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1101
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1101\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1101
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1101\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1101
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1102\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1102
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1102\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1102
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1102\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1102
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1103\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1103
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1103\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1103
+    },
+    {
+      "campaign": "primary_19p48m",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1103\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1103
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1201\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1201\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1201\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1202\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1202\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1202\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1203\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1203\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width128_1p63m\\seed_1203\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width128_1p63m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1201\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1201\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1201\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1202\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1202\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1202\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1203\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1203\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width224_4p93m\\seed_1203\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width224_4p93m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1201\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1201\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1201\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1201
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1202\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1202\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1202\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1202
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 75,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1203\\checkpoint_step_75.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 76,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 75,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 150,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1203\\checkpoint_step_150.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 151,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 150,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "controlled_scale",
+      "checkpoint_age": 300,
+      "checkpoint_file": "results\\reviewer2026_v2\\controlled_scale\\checkpoints\\width448_19p48m\\seed_1203\\checkpoint_step_300.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 301,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 300,
+        "step_size": 100
+      },
+      "model_size": "width448_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1203
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 750,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1301\\checkpoint_step_750.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 751,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 750,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 751,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 750,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1301
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 1500,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1301\\checkpoint_step_1500.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1301
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 3000,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1301\\checkpoint_step_3000.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1301
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 750,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1302\\checkpoint_step_750.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 751,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 750,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 751,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 750,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1302
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 1500,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1302\\checkpoint_step_1500.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1302
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 3000,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1302\\checkpoint_step_3000.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1302
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 750,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1303\\checkpoint_step_750.pt",
+      "checkpoint_optimizer_lr": 0.001,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.001,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 751,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 750,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.001
+        ],
+        "_step_count": 751,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 750,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": true,
+      "seed": 1303
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 1500,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1303\\checkpoint_step_1500.pt",
+      "checkpoint_optimizer_lr": 0.0005,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.0005,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.0005
+        ],
+        "_step_count": 1501,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 1500,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1303
+    },
+    {
+      "campaign": "long_training",
+      "checkpoint_age": 3000,
+      "checkpoint_file": "results\\reviewer2026_v2\\long_training\\checkpoints\\candidate_B_19p48m\\seed_1303\\checkpoint_step_3000.pt",
+      "checkpoint_optimizer_lr": 0.000125,
+      "checkpoint_param_group": {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": true,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "initial_lr": 0.001,
+        "lr": 0.000125,
+        "maximize": false,
+        "weight_decay": 0.01
+      },
+      "checkpoint_scheduler_state": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "loaded_scheduler_state_old": {
+        "_get_lr_called_within_step": false,
+        "_is_initial": false,
+        "_last_lr": [
+          0.000125
+        ],
+        "_step_count": 3001,
+        "base_lrs": [
+          0.001
+        ],
+        "gamma": 0.5,
+        "last_epoch": 3000,
+        "step_size": 1000
+      },
+      "model_size": "candidate_B_19p48m",
+      "old_fresh_adamw_lr": 0.001,
+      "old_lr_equals_checkpoint_lr": false,
+      "seed": 1303
+    }
+  ],
+  "status": "COMPLETE"
+}

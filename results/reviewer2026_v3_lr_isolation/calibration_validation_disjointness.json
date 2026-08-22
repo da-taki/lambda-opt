@@ -1,0 +1,75 @@
+{
+  "campaigns": [
+    {
+      "calibration_index": 304,
+      "campaign": "primary_v2_and_v3",
+      "disjoint_by_index": true,
+      "seeds": [
+        1101,
+        1102,
+        1103
+      ],
+      "status": "PASS",
+      "training_steps": 300,
+      "validation_indices": [
+        301,
+        302,
+        303
+      ]
+    },
+    {
+      "calibration_index": 304,
+      "campaign": "controlled_scale",
+      "disjoint_by_index": true,
+      "seeds": [
+        1201,
+        1202,
+        1203
+      ],
+      "status": "PASS",
+      "training_steps": 300,
+      "validation_indices": [
+        301,
+        302,
+        303
+      ]
+    },
+    {
+      "calibration_index": 3004,
+      "campaign": "long_training",
+      "disjoint_by_index": true,
+      "seeds": [
+        1301,
+        1302,
+        1303
+      ],
+      "status": "PASS",
+      "training_steps": 3000,
+      "validation_indices": [
+        3001,
+        3002,
+        3003
+      ]
+    },
+    {
+      "calibration_index": 4,
+      "campaign": "multi_future",
+      "disjoint_by_index": true,
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104,
+        8105
+      ],
+      "status": "PASS",
+      "training_steps": null,
+      "validation_indices": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "status": "PASS"
+}

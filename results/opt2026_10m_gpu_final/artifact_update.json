@@ -1,0 +1,10 @@
+{
+  "artifact_dir": "artifact\\opt2026_final_anonymous",
+  "fresh_extraction_dir": "results\\opt2026_10m_gpu_final\\_artifact_extract_check",
+  "gpu_pt_files_included": [
+    "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\representative_scenarios\\exact_restore.pt",
+    "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\representative_scenarios\\reset_v.pt"
+  ],
+  "zip": "lambdaopt_OPT2026_FINAL_ANONYMOUS_ARTIFACT.zip",
+  "zip_size_bytes": 415805642
+}

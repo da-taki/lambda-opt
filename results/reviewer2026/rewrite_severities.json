@@ -1,0 +1,207 @@
+[
+  {
+    "benign_perturbation": null,
+    "category": "control",
+    "exact_transformation": "Load model, optimizer, scheduler, and RNG exactly from the checkpoint.",
+    "numeric_severity": 0.0,
+    "observed_T_tau_values": [],
+    "parameters_change_immediately": false,
+    "rewrite_name": "exact_restore",
+    "scheduler_offset": 0,
+    "severity_changes_by_checkpoint_age": false,
+    "severity_identical_across_seeds": true,
+    "source_checkpoint_by_age": {},
+    "stale_lag_optimizer_updates": 0,
+    "state_components_modified": "none",
+    "step_counter_offset": 0
+  },
+  {
+    "benign_perturbation": {
+      "location": "first scalar of first model_state tensor",
+      "magnitude": 1e-08
+    },
+    "category": "control",
+    "exact_transformation": "Add 1e-8 to the first scalar of the first model-state tensor.",
+    "numeric_severity": 1e-08,
+    "observed_T_tau_values": [],
+    "parameters_change_immediately": true,
+    "rewrite_name": "benign_nonzero",
+    "scheduler_offset": 0,
+    "severity_changes_by_checkpoint_age": false,
+    "severity_identical_across_seeds": true,
+    "source_checkpoint_by_age": {},
+    "stale_lag_optimizer_updates": 0,
+    "state_components_modified": "model_state",
+    "step_counter_offset": 0
+  },
+  {
+    "benign_perturbation": null,
+    "category": "plausible failure mode",
+    "exact_transformation": "Replace every AdamW first-moment tensor with zeros.",
+    "numeric_severity": 1.0,
+    "observed_T_tau_values": [],
+    "parameters_change_immediately": false,
+    "rewrite_name": "reset_m",
+    "scheduler_offset": 0,
+    "severity_changes_by_checkpoint_age": false,
+    "severity_identical_across_seeds": true,
+    "source_checkpoint_by_age": {},
+    "stale_lag_optimizer_updates": 0,
+    "state_components_modified": "optimizer_state.exp_avg",
+    "step_counter_offset": 0
+  },
+  {
+    "benign_perturbation": null,
+    "category": "plausible failure mode",
+    "exact_transformation": "Replace every AdamW second-moment tensor with zeros.",
+    "numeric_severity": 1.0,
+    "observed_T_tau_values": [
+      1
+    ],
+    "parameters_change_immediately": false,
+    "rewrite_name": "reset_v",
+    "scheduler_offset": 0,
+    "severity_changes_by_checkpoint_age": false,
+    "severity_identical_across_seeds": true,
+    "source_checkpoint_by_age": {},
+    "stale_lag_optimizer_updates": 0,
+    "state_components_modified": "optimizer_state.exp_avg_sq",
+    "step_counter_offset": 0
+  },
+  {
+    "benign_perturbation": null,
+    "category": "common operational transformation",
+    "exact_transformation": "Replace every AdamW first-moment tensor by the value saved 25 optimizer updates earlier.",
+    "numeric_severity": 25,
+    "observed_T_tau_values": [],
+    "parameters_change_immediately": false,
+    "rewrite_name": "stale_m",
+    "scheduler_offset": 0,
+    "severity_changes_by_checkpoint_age": true,
+    "severity_identical_across_seeds": true,
+    "source_checkpoint_by_age": {
+      "150": "optimizer_state_step_125.pt",
+      "300": "optimizer_state_step_275.pt",
+      "75": "optimizer_state_step_50.pt"
+    },
+    "stale_lag_optimizer_updates": 25,
+    "state_components_modified": "optimizer_state.exp_avg",
+    "step_counter_offset": 0
+  },
+  {
+    "benign_perturbation": null,
+    "category": "common operational transformation",
+    "exact_transformation": "Replace every AdamW second-moment tensor by the value saved 25 optimizer updates earlier.",
+    "numeric_severity": 25,
+    "observed_T_tau_values": [
+      1
+    ],
+    "parameters_change_immediately": false,
+    "rewrite_name": "stale_v",
+    "scheduler_offset": 0,
+    "severity_changes_by_checkpoint_age": true,
+    "severity_identical_across_seeds": true,
+    "source_checkpoint_by_age": {
+      "150": "optimizer_state_step_125.pt",
+      "300": "optimizer_state_step_275.pt",
+      "75": "optimizer_state_step_50.pt"
+    },
+    "stale_lag_optimizer_updates": 25,
+    "state_components_modified": "optimizer_state.exp_avg_sq",
+    "step_counter_offset": 0
+  },
+  {
+    "benign_perturbation": null,
+    "category": "common operational transformation",
+    "exact_transformation": "Replace AdamW first- and second-moment tensors by values saved 25 optimizer updates earlier.",
+    "numeric_severity": 25,
+    "observed_T_tau_values": [],
+    "parameters_change_immediately": false,
+    "rewrite_name": "stale_mv",
+    "scheduler_offset": 0,
+    "severity_changes_by_checkpoint_age": true,
+    "severity_identical_across_seeds": true,
+    "source_checkpoint_by_age": {
+      "150": "optimizer_state_step_125.pt",
+      "300": "optimizer_state_step_275.pt",
+      "75": "optimizer_state_step_50.pt"
+    },
+    "stale_lag_optimizer_updates": 25,
+    "state_components_modified": "optimizer_state.exp_avg and exp_avg_sq",
+    "step_counter_offset": 0
+  },
+  {
+    "benign_perturbation": null,
+    "category": "common operational transformation",
+    "exact_transformation": "Keep current model parameters but replace the entire optimizer state by the state saved 25 updates earlier.",
+    "numeric_severity": 25,
+    "observed_T_tau_values": [],
+    "parameters_change_immediately": false,
+    "rewrite_name": "model_current_optimizer_stale",
+    "scheduler_offset": 0,
+    "severity_changes_by_checkpoint_age": true,
+    "severity_identical_across_seeds": true,
+    "source_checkpoint_by_age": {
+      "150": "optimizer_state_step_125.pt",
+      "300": "optimizer_state_step_275.pt",
+      "75": "optimizer_state_step_50.pt"
+    },
+    "stale_lag_optimizer_updates": 25,
+    "state_components_modified": "entire optimizer_state",
+    "step_counter_offset": 0
+  },
+  {
+    "benign_perturbation": null,
+    "category": "plausible failure mode",
+    "exact_transformation": "Subtract 25 from every AdamW per-parameter step counter, clamped at zero.",
+    "numeric_severity": 25,
+    "observed_T_tau_values": [],
+    "parameters_change_immediately": false,
+    "rewrite_name": "step_counter_mismatch",
+    "scheduler_offset": 0,
+    "severity_changes_by_checkpoint_age": false,
+    "severity_identical_across_seeds": true,
+    "source_checkpoint_by_age": {},
+    "stale_lag_optimizer_updates": 25,
+    "state_components_modified": "optimizer_state.step",
+    "step_counter_offset": -25
+  },
+  {
+    "benign_perturbation": null,
+    "category": "plausible failure mode",
+    "exact_transformation": "Drop scheduler state before resume, causing a fresh StepLR scheduler state to be used.",
+    "numeric_severity": "fresh StepLR scheduler state at resume",
+    "observed_T_tau_values": [],
+    "parameters_change_immediately": false,
+    "rewrite_name": "scheduler_mismatch",
+    "scheduler_offset": "fresh scheduler state",
+    "severity_changes_by_checkpoint_age": false,
+    "severity_identical_across_seeds": true,
+    "source_checkpoint_by_age": {},
+    "stale_lag_optimizer_updates": 0,
+    "state_components_modified": "scheduler_state",
+    "step_counter_offset": 0
+  },
+  {
+    "benign_perturbation": null,
+    "category": "stress test",
+    "exact_transformation": "Drop optimizer state before resume, causing a fresh AdamW state to be used.",
+    "numeric_severity": "fresh AdamW state at resume",
+    "observed_T_tau_values": [
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "parameters_change_immediately": false,
+    "rewrite_name": "optimizer_reset",
+    "scheduler_offset": 0,
+    "severity_changes_by_checkpoint_age": false,
+    "severity_identical_across_seeds": true,
+    "source_checkpoint_by_age": {},
+    "stale_lag_optimizer_updates": 0,
+    "state_components_modified": "optimizer_state",
+    "step_counter_offset": 0
+  }
+]

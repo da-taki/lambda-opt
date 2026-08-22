@@ -1,0 +1,4 @@
+model_config,rows,crossed_h20,crossed_h100,task_nonrecovered_h20,task_nonrecovered_h100,median_T_tau
+width128_1p63m,99,16,16,20,9,1.0
+width224_4p93m,99,14,14,21,10,1.0
+width448_19p48m,99,17,17,34,18,1.0

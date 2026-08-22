@@ -1,0 +1,45 @@
+{
+  "max_calibration_kl": {
+    "max": 1650422448128.0,
+    "mean": 6539302432.215811,
+    "median": 0.07582921534776688,
+    "min": 0.0
+  },
+  "max_calibration_rms_logit": {
+    "max": 536301928448.0,
+    "mean": 3232417474.487832,
+    "median": 0.4680527150630951,
+    "min": 0.0
+  },
+  "max_clean_update_normalized_divergence": {
+    "max": 213587.10128945936,
+    "mean": 5845.451608676864,
+    "median": 1.099092058302198,
+    "min": 0.0
+  },
+  "max_layer_relative_displacement": {
+    "max": 9820.393289136164,
+    "mean": 188.0413832084117,
+    "median": 0.10243116687522019,
+    "min": 0.0
+  },
+  "max_normalized_parameter_divergence": {
+    "max": 2671.690216888342,
+    "mean": 42.94858894095657,
+    "median": 0.006849287351374744,
+    "min": 0.0
+  },
+  "max_parameter_divergence": {
+    "max": 453736.375,
+    "mean": 6371.97633659165,
+    "median": 0.7586203813552856,
+    "min": 0.0
+  },
+  "max_validation_loss_gap": {
+    "max": 1683722513060.7964,
+    "mean": 6981967070.8584585,
+    "median": 0.0817190806070962,
+    "min": 0.0
+  },
+  "rows": 297
+}
