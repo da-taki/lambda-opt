@@ -2,9 +2,9 @@
   "metrics": {
     "clean_update_normalized_divergence": {
       "binary_discrimination_h100_task_nonrecovery": {
-        "AP": null,
-        "AUROC": null,
-        "library": "unavailable: No module named 'sklearn'"
+        "AP": 0.8109823092742704,
+        "AUROC": 0.9091891891891892,
+        "library": "manual_standard_fallback; sklearn unavailable: No module named 'sklearn'"
       },
       "checkpoint_stratified_spearman": {
         "150": 0.765551839464883,
@@ -55,9 +55,9 @@
     },
     "function_space_kl": {
       "binary_discrimination_h100_task_nonrecovery": {
-        "AP": null,
-        "AUROC": null,
-        "library": "unavailable: No module named 'sklearn'"
+        "AP": 0.9433575063368521,
+        "AUROC": 0.9778378378378378,
+        "library": "manual_standard_fallback; sklearn unavailable: No module named 'sklearn'"
       },
       "checkpoint_stratified_spearman": {
         "150": 0.9515050167224081,
@@ -108,9 +108,9 @@
     },
     "function_space_rms_logit": {
       "binary_discrimination_h100_task_nonrecovery": {
-        "AP": null,
-        "AUROC": null,
-        "library": "unavailable: No module named 'sklearn'"
+        "AP": 0.9333053204777343,
+        "AUROC": 0.9740540540540541,
+        "library": "manual_standard_fallback; sklearn unavailable: No module named 'sklearn'"
       },
       "checkpoint_stratified_spearman": {
         "150": 0.92876254180602,
@@ -161,9 +161,9 @@
     },
     "global_normalized_parameter_divergence": {
       "binary_discrimination_h100_task_nonrecovery": {
-        "AP": null,
-        "AUROC": null,
-        "library": "unavailable: No module named 'sklearn'"
+        "AP": 0.8619978059345413,
+        "AUROC": 0.9491891891891892,
+        "library": "manual_standard_fallback; sklearn unavailable: No module named 'sklearn'"
       },
       "checkpoint_stratified_spearman": {
         "150": 0.762876254180602,
@@ -214,9 +214,9 @@
     },
     "max_layer_relative_displacement": {
       "binary_discrimination_h100_task_nonrecovery": {
-        "AP": null,
-        "AUROC": null,
-        "library": "unavailable: No module named 'sklearn'"
+        "AP": 0.8457680693653745,
+        "AUROC": 0.9367567567567567,
+        "library": "manual_standard_fallback; sklearn unavailable: No module named 'sklearn'"
       },
       "checkpoint_stratified_spearman": {
         "150": 0.7819397993311037,

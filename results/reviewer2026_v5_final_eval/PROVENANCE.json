@@ -451,9 +451,9 @@
       "sha256": "df805a1bd01ae58a6f0a99d769cf4a759de4a58c1361af9fa0fbff5e17eeb0bf"
     }
   ],
-  "created_utc": "2026-08-22T23:11:43.704141+00:00",
+  "created_utc": "2026-08-22T23:20:28.360681+00:00",
   "cuda_available": true,
-  "current_git_status": "?? results/reviewer2026_v5_final_eval/\n?? scripts/run_reviewer2026_v5_final_eval.py\n?? scripts/verify_reviewer2026_v5_final_eval.py",
+  "current_git_status": "M results/reviewer2026_v5_final_eval/MANIFEST.json\n M results/reviewer2026_v5_final_eval/final_standard_library_statistics.json\n M results/reviewer2026_v5_final_eval/leave_one_training_seed_out_internal_robustness.csv\n M results/reviewer2026_v5_final_eval/leave_one_training_seed_out_internal_robustness.json\n M results/reviewer2026_v5_final_eval/primary/primary_final_summary.json\n M scripts/run_reviewer2026_v5_final_eval.py",
   "gpu": "NVIDIA GeForce GTX 1650",
   "platform": "Windows-11-10.0.26200-SP0",
   "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
@@ -461,7 +461,7 @@
   "script_hashes": [
     {
       "path": "scripts\\run_reviewer2026_v5_final_eval.py",
-      "sha256": "56bea92a9f2a3b7c17fe10d3c9e0497a216a7830b64e96d77173ffb05083490f"
+      "sha256": "72b308f300eadf95055c35d952eff8fc63c0a755ce2e0c3d6994f40eb475e1be"
     },
     {
       "path": "scripts\\verify_reviewer2026_v5_final_eval.py",
@@ -474,7 +474,7 @@
   ],
   "source_experiment_commit_v4": "622c80150ec1c199539af1ff300e33521cd56f78",
   "starting_branch": "experiment/opt2026-final-heldout-eval",
-  "starting_commit": "622c80150ec1c199539af1ff300e33521cd56f78",
+  "starting_commit": "65a28c45bffff08c5501f78643e6c50427197aea",
   "torch": "2.11.0+cu128",
   "torch_cuda": "12.8",
   "v4_transport_commit": "3c37a47092ad9409a9542ab403c3846c4bf199fc"

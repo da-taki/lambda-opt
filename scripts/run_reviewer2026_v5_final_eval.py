@@ -614,21 +614,70 @@ def standard_spearman(xs: list[float], ys: list[float]) -> float | None:
         return v2.spearman(xs, ys)
 
 
+def rank_auc(y: list[int], scores: list[float]) -> float | None:
+    n_pos = sum(y)
+    n_neg = len(y) - n_pos
+    if n_pos == 0 or n_neg == 0:
+        return None
+    order = sorted(range(len(scores)), key=lambda i: scores[i])
+    ranks = [0.0] * len(scores)
+    i = 0
+    while i < len(order):
+        j = i + 1
+        while j < len(order) and scores[order[j]] == scores[order[i]]:
+            j += 1
+        avg_rank = (i + 1 + j) / 2.0
+        for k in range(i, j):
+            ranks[order[k]] = avg_rank
+        i = j
+    pos_rank_sum = sum(r for r, yy in zip(ranks, y) if yy)
+    return (pos_rank_sum - n_pos * (n_pos + 1) / 2.0) / (n_pos * n_neg)
+
+
+def average_precision_step(y: list[int], scores: list[float]) -> float | None:
+    n_pos = sum(y)
+    if n_pos == 0:
+        return None
+    pairs = sorted(zip(scores, y), key=lambda p: p[0], reverse=True)
+    tp = fp = 0
+    prev_recall = 0.0
+    ap = 0.0
+    i = 0
+    while i < len(pairs):
+        score = pairs[i][0]
+        group_pos = group_neg = 0
+        while i < len(pairs) and pairs[i][0] == score:
+            if pairs[i][1]:
+                group_pos += 1
+            else:
+                group_neg += 1
+            i += 1
+        tp += group_pos
+        fp += group_neg
+        recall = tp / n_pos
+        precision = tp / (tp + fp) if tp + fp else 0.0
+        ap += (recall - prev_recall) * precision
+        prev_recall = recall
+    return ap
+
+
 def auc_ap(rows: list[dict[str, Any]], field: str, label: str) -> dict[str, Any]:
     y = [1 if bool(r[label]) else 0 for r in rows]
     s = [float(r[field]) for r in rows]
-    out: dict[str, Any] = {}
     try:
         from sklearn.metrics import average_precision_score, roc_auc_score
 
-        out["AUROC"] = float(roc_auc_score(y, s)) if len(set(y)) > 1 else None
-        out["AP"] = float(average_precision_score(y, s)) if len(set(y)) > 1 else None
-        out["library"] = "sklearn"
+        return {
+            "AUROC": float(roc_auc_score(y, s)) if len(set(y)) > 1 else None,
+            "AP": float(average_precision_score(y, s)) if len(set(y)) > 1 else None,
+            "library": "sklearn",
+        }
     except Exception as exc:
-        out["AUROC"] = None
-        out["AP"] = None
-        out["library"] = f"unavailable: {exc}"
-    return out
+        return {
+            "AUROC": rank_auc(y, s),
+            "AP": average_precision_step(y, s),
+            "library": f"manual_standard_fallback; sklearn unavailable: {exc}",
+        }
 
 
 def residual_spearman(rows: list[dict[str, Any]], xfield: str, yfield: str, keys: list[str]) -> float | None:
@@ -915,5 +964,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 
