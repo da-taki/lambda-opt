@@ -1,0 +1,207 @@
+{
+  "cluster_bootstrap": {
+    "cluster": "training_seed",
+    "clusters": [
+      1101,
+      1102,
+      1103
+    ],
+    "median": 0.9351478494623656,
+    "note": "Only three independent runs are available; bootstrap resolution is necessarily limited.",
+    "p025": 0.9273827534039334,
+    "p975": 0.9393792313819196,
+    "replicates": 1000,
+    "rng_seed": 20260821
+  },
+  "manuscript_reproduction": {
+    "aggregation_rule": "pooled over all 99 repeated rows",
+    "columns": [
+      "normalized_max_parameter_divergence",
+      "max_validation_loss_gap"
+    ],
+    "spearman": 0.9353329475956723,
+    "spearman_perplexity": 0.9354087950736774
+  },
+  "records": [
+    {
+      "N": 99,
+      "analysis": "pooled_all_rows",
+      "coefficient": 0.9353329475956723,
+      "group": "all"
+    },
+    {
+      "N": 33,
+      "analysis": "per_seed",
+      "coefficient": 0.9273827534039334,
+      "group": 1101
+    },
+    {
+      "N": 33,
+      "analysis": "per_seed",
+      "coefficient": 0.9357875273155152,
+      "group": 1102
+    },
+    {
+      "N": 33,
+      "analysis": "per_seed",
+      "coefficient": 0.9388132459236846,
+      "group": 1103
+    },
+    {
+      "N": 90,
+      "analysis": "leave_one_family_out",
+      "coefficient": 0.9143575165822106,
+      "group": "exact_restore"
+    },
+    {
+      "N": 90,
+      "analysis": "leave_one_family_out",
+      "coefficient": 0.9156460552955624,
+      "group": "benign_nonzero"
+    },
+    {
+      "N": 90,
+      "analysis": "leave_one_family_out",
+      "coefficient": 0.939659464303495,
+      "group": "reset_m"
+    },
+    {
+      "N": 90,
+      "analysis": "leave_one_family_out",
+      "coefficient": 0.914052905838229,
+      "group": "reset_v"
+    },
+    {
+      "N": 90,
+      "analysis": "leave_one_family_out",
+      "coefficient": 0.9400411563609811,
+      "group": "stale_m"
+    },
+    {
+      "N": 90,
+      "analysis": "leave_one_family_out",
+      "coefficient": 0.9906734375518603,
+      "group": "stale_v"
+    },
+    {
+      "N": 90,
+      "analysis": "leave_one_family_out",
+      "coefficient": 0.9401407282020644,
+      "group": "stale_mv"
+    },
+    {
+      "N": 90,
+      "analysis": "leave_one_family_out",
+      "coefficient": 0.9393441534733977,
+      "group": "model_current_optimizer_stale"
+    },
+    {
+      "N": 90,
+      "analysis": "leave_one_family_out",
+      "coefficient": 0.9378671711639949,
+      "group": "step_counter_mismatch"
+    },
+    {
+      "N": 90,
+      "analysis": "leave_one_family_out",
+      "coefficient": 0.9143575165822106,
+      "group": "scheduler_mismatch"
+    },
+    {
+      "N": 90,
+      "analysis": "leave_one_family_out",
+      "coefficient": 0.9391616050980782,
+      "group": "optimizer_reset"
+    },
+    {
+      "N": 9,
+      "analysis": "within_family",
+      "coefficient": null,
+      "group": "exact_restore"
+    },
+    {
+      "N": 9,
+      "analysis": "within_family",
+      "coefficient": 0.6333333333333333,
+      "group": "benign_nonzero"
+    },
+    {
+      "N": 9,
+      "analysis": "within_family",
+      "coefficient": 0.9666666666666667,
+      "group": "reset_m"
+    },
+    {
+      "N": 9,
+      "analysis": "within_family",
+      "coefficient": 1.0,
+      "group": "reset_v"
+    },
+    {
+      "N": 9,
+      "analysis": "within_family",
+      "coefficient": 0.9166666666666666,
+      "group": "stale_m"
+    },
+    {
+      "N": 9,
+      "analysis": "within_family",
+      "coefficient": 0.9,
+      "group": "stale_v"
+    },
+    {
+      "N": 9,
+      "analysis": "within_family",
+      "coefficient": 0.8833333333333333,
+      "group": "stale_mv"
+    },
+    {
+      "N": 9,
+      "analysis": "within_family",
+      "coefficient": 0.9166666666666666,
+      "group": "model_current_optimizer_stale"
+    },
+    {
+      "N": 9,
+      "analysis": "within_family",
+      "coefficient": 0.9166666666666666,
+      "group": "step_counter_mismatch"
+    },
+    {
+      "N": 9,
+      "analysis": "within_family",
+      "coefficient": null,
+      "group": "scheduler_mismatch"
+    },
+    {
+      "N": 9,
+      "analysis": "within_family",
+      "coefficient": 0.38333333333333336,
+      "group": "optimizer_reset"
+    },
+    {
+      "N": 33,
+      "analysis": "checkpoint_age",
+      "coefficient": 0.9220036981005211,
+      "group": 75
+    },
+    {
+      "N": 33,
+      "analysis": "checkpoint_age",
+      "coefficient": 0.8530845520255506,
+      "group": 150
+    },
+    {
+      "N": 33,
+      "analysis": "checkpoint_age",
+      "coefficient": 0.9109093965372331,
+      "group": 300
+    },
+    {
+      "N": 99,
+      "analysis": "family_checkpoint_residualized",
+      "coefficient": 0.963136481151583,
+      "group": "two_way_additive_mean_residuals"
+    }
+  ]
+}

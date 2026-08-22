@@ -1,0 +1,4 @@
+checkpoint_age,rows,crossed_h100,task_nonrecovered_h100,median_T_tau,max_validation_loss_gap_mean,max_parameter_divergence_mean
+1500,33,7,6,1.0,57426.6443349171,1121.7656670935226
+3000,33,6,6,9.0,742.4501458201746,200.72825203519878
+750,33,6,6,9.5,2169331.0643451866,3390.856805339004

@@ -1,0 +1,44 @@
+{
+  "checkpoint_ages": [
+    75,
+    150,
+    300
+  ],
+  "completed_utc": "2026-08-22T03:50:00.548770+00:00",
+  "crossed_h100": 56,
+  "horizon": 100,
+  "kind": "controlled_scale",
+  "model_configs": [
+    "width128_1p63m",
+    "width224_4p93m",
+    "width448_19p48m"
+  ],
+  "protocol_hash": {
+    "actual_sha256": "4cd56b2b9998e0440480ee47a5a093ada4bafce75ed97dcdddeb2f0df4def534",
+    "expected_sha256": "4cd56b2b9998e0440480ee47a5a093ada4bafce75ed97dcdddeb2f0df4def534",
+    "path": "results\\reviewer2026_v2\\controlled_scale\\FROZEN_PROTOCOL.json",
+    "status": "PASS"
+  },
+  "rewrite_families": [
+    "exact_restore",
+    "benign_nonzero",
+    "reset_m",
+    "reset_v",
+    "stale_m",
+    "stale_v",
+    "stale_mv",
+    "model_current_optimizer_stale",
+    "step_counter_mismatch",
+    "scheduler_mismatch",
+    "optimizer_reset"
+  ],
+  "rows": 297,
+  "seeds": [
+    1201,
+    1202,
+    1203
+  ],
+  "status": "COMPLETE",
+  "task_nonrecovered_h100": 46,
+  "trajectory_rows": 29997
+}

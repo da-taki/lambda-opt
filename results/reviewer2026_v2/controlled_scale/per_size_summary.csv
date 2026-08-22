@@ -1,0 +1,4 @@
+model_config,rows,crossed_h100,task_nonrecovered_h100,median_T_tau,max_validation_loss_gap_mean,max_parameter_divergence_mean
+width128_1p63m,99,16,9,1.0,8227.270261269225,1458.1540305580277
+width224_4p93m,99,17,14,1.0,22262075.892550025,3609.487057221442
+width448_19p48m,99,23,23,1.0,20923630909.412563,14048.28792199548

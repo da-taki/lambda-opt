@@ -1,0 +1,7 @@
+transformation_name,exact_recipe,state_components_affected,loadability,T_tau,maximum_parameter_divergence,final_parameter_divergence,maximum_validation_loss_gap,final_validation_loss_gap,task_recovery,continuation_horizon,censoring
+correct_full_resume,from scripts/run_opt2026_pytorch_scale_final.py,exact_restore,loadable .pt scenario,,0.0,0.0,0.0,0.0,recovered,20,right-censored at horizon
+optimizer_reset,from scripts/run_opt2026_pytorch_scale_final.py,optimizer_reset,loadable .pt scenario,,4.207764148712158,4.207764148712158,1.0837457180023193,0.12531677881876613,recovered,20,right-censored at horizon
+stale_optimizer_state,from scripts/run_opt2026_pytorch_scale_final.py,stale_optimizer_state,loadable .pt scenario,,0.5910782217979431,0.5910782217979431,0.06023112932841013,0.016999483108520508,recovered,20,right-censored at horizon
+step_counter_mismatch,from scripts/run_opt2026_pytorch_scale_final.py,step_counter_mismatch,loadable .pt scenario,,0.028475819155573845,0.028475819155573845,0.004620711008707534,6.802876790379386e-05,recovered,20,right-censored at horizon
+scheduler_mismatch,from scripts/run_opt2026_pytorch_scale_final.py,scheduler_mismatch,loadable .pt scenario,,0.0,0.0,0.0,0.0,recovered,20,right-censored at horizon
+second_moment_quantized,from scripts/run_opt2026_pytorch_scale_final.py,second_moment_quantized,loadable .pt scenario,1,394.44732666015625,394.44732666015625,90.75355982780457,2.1939202149709063,recovered,20,event observed

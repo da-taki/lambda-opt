@@ -1,0 +1,42 @@
+{
+  "cpu_model": "AMD Ryzen 5 4600H with Radeon Graphics",
+  "cuda_available": true,
+  "free_disk_space_after_setup": [
+    {
+      "Free": 61092265984,
+      "Name": "C",
+      "Root": "C:\\",
+      "Used": 174523092992
+    }
+  ],
+  "free_disk_space_before_setup": [
+    {
+      "Free": 61092265984,
+      "Name": "C",
+      "Root": "C:\\",
+      "Used": 174523092992
+    }
+  ],
+  "gpu_capability": [
+    7,
+    5
+  ],
+  "gpu_name": "NVIDIA GeForce GTX 1650",
+  "nvidia_smi": {
+    "available_vram_mib": 3669,
+    "driver_version": "572.70",
+    "gpu_name": "NVIDIA GeForce GTX 1650",
+    "raw": "NVIDIA GeForce GTX 1650, 4096, 269, 3669, 572.70",
+    "total_vram_mib": 4096,
+    "used_vram_mib": 269
+  },
+  "os": "Windows-11-10.0.26200-SP0",
+  "pip_cache": "Package index page cache location (pip v23.3+): c:\\users\\asus\\appdata\\local\\pip\\cache\\http-v2\nPackage index page cache location (older pips): c:\\users\\asus\\appdata\\local\\pip\\cache\\http\nPackage index page cache size: 1.9 MB\nNumber of HTTP files: 6\nLocally built wheels location: c:\\users\\asus\\appdata\\local\\pip\\cache\\wheels\nLocally built wheels size: 0 bytes\nNumber of locally built wheels: 0",
+  "python": "3.14.4",
+  "python_executable": "python.exe",
+  "system_ram_bytes": 7968432128,
+  "torch_cuda_version": "12.8",
+  "torch_version": "2.11.0+cu128",
+  "total_vram_bytes": 4294639616,
+  "venv_gpu_size_bytes": 4860975195
+}

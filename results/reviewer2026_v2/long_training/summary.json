@@ -1,0 +1,42 @@
+{
+  "checkpoint_ages": [
+    750,
+    1500,
+    3000
+  ],
+  "completed_utc": "2026-08-22T07:49:22.526210+00:00",
+  "crossed_h100": 19,
+  "horizon": 100,
+  "kind": "long_training",
+  "model_configs": [
+    "candidate_B_19p48m"
+  ],
+  "protocol_hash": {
+    "actual_sha256": "e4de7cc3ef8e1b2fa78c9f8c8492a82aab40a29ee09f1f695062381e0465c61c",
+    "expected_sha256": "e4de7cc3ef8e1b2fa78c9f8c8492a82aab40a29ee09f1f695062381e0465c61c",
+    "path": "results\\reviewer2026_v2\\long_training\\FROZEN_PROTOCOL.json",
+    "status": "PASS"
+  },
+  "rewrite_families": [
+    "exact_restore",
+    "benign_nonzero",
+    "reset_m",
+    "reset_v",
+    "stale_m",
+    "stale_v",
+    "stale_mv",
+    "model_current_optimizer_stale",
+    "step_counter_mismatch",
+    "scheduler_mismatch",
+    "optimizer_reset"
+  ],
+  "rows": 99,
+  "seeds": [
+    1301,
+    1302,
+    1303
+  ],
+  "status": "COMPLETE",
+  "task_nonrecovered_h100": 18,
+  "trajectory_rows": 9999
+}

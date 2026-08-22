@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-08-21T18:42:28.747933+00:00",
+  "cuda_available": true,
+  "dirty_status": "?? scripts/run_reviewer2026_v2.py\n?? scripts/verify_reviewer2026_v2.py",
+  "future_schedule_seeds": [
+    8101,
+    8102,
+    8103,
+    8104,
+    8105
+  ],
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "horizon": 100,
+  "long_training_seeds": [
+    1301,
+    1302,
+    1303
+  ],
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Asus\\Desktop\\Profitlo Projects\\Lambda_Opt\\.venv-gpu\\Scripts\\python.exe",
+  "scale_seeds": [
+    1201,
+    1202,
+    1203
+  ],
+  "source_commit": "0a00294f29dd50a913aba2cafc0b678ff9751149",
+  "starting_branch": "experiment/opt2026-reviewer-completion-v2",
+  "starting_commit": "0a00294f29dd50a913aba2cafc0b678ff9751149",
+  "torch": "2.11.0+cu128",
+  "torch_cuda": "12.8"
+}

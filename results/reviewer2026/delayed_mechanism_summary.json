@@ -1,0 +1,15 @@
+{
+  "blocker": "Requires rerunning the nine delayed paired continuations with per-step optimizer-vector instrumentation.",
+  "cases": [
+    "gpu_seed1101_ckpt75_optimizer_reset",
+    "gpu_seed1101_ckpt150_optimizer_reset",
+    "gpu_seed1101_ckpt300_optimizer_reset",
+    "gpu_seed1102_ckpt75_optimizer_reset",
+    "gpu_seed1102_ckpt150_optimizer_reset",
+    "gpu_seed1102_ckpt300_optimizer_reset",
+    "gpu_seed1103_ckpt75_optimizer_reset",
+    "gpu_seed1103_ckpt150_optimizer_reset",
+    "gpu_seed1103_ckpt300_optimizer_reset"
+  ],
+  "status": "blocked"
+}

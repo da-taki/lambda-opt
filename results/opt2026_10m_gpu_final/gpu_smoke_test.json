@@ -1,0 +1,8 @@
+{
+  "cuda_tensor_sum": 1073741824.0,
+  "forward_backward_adamw_step": true,
+  "loss": 4.9318695068359375,
+  "memory_allocated_bytes": 27480064,
+  "peak_memory_allocated_bytes": 27714048,
+  "step_wall_time_seconds": 0.5079153000006045
+}

@@ -1,0 +1,336 @@
+{
+  "T_tau_distribution": {
+    "1": 16,
+    "14": 1,
+    "15": 2,
+    "16": 4,
+    "17": 1,
+    "18": 1
+  },
+  "artifact": {
+    "artifact_dir": "artifact\\opt2026_final_anonymous",
+    "fresh_extraction_dir": "results\\opt2026_10m_gpu_final\\_artifact_extract_check",
+    "gpu_pt_files_included": [
+      "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\representative_scenarios\\exact_restore.pt",
+      "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\representative_scenarios\\reset_v.pt"
+    ],
+    "zip": "lambdaopt_OPT2026_FINAL_ANONYMOUS_ARTIFACT.zip",
+    "zip_size_bytes": 415805642
+  },
+  "confusion": {
+    "npv": 0.7162162162162162,
+    "parameter_benign_task_damaged": 21,
+    "parameter_benign_task_ok": 53,
+    "parameter_dangerous_task_damaged": 22,
+    "parameter_dangerous_task_ok": 3,
+    "ppv": 0.88,
+    "sensitivity": 0.5116279069767442,
+    "specificity": 0.9464285714285714
+  },
+  "dataset": "WikiText-2 cached char-level, first 500000 chars",
+  "full_eval_failures": [
+    {
+      "candidate": "candidate_C_25p41m",
+      "decision": "not used for three-seed replication; next-largest >=10M candidate selected",
+      "failure": "survived one CUDA AdamW step but failed during full rewrite evaluation with CUBLAS_STATUS_EXECUTION_FAILED",
+      "trainable_params": 25414144
+    }
+  ],
+  "hardware": {
+    "cpu_model": "AMD Ryzen 5 4600H with Radeon Graphics",
+    "cuda_available": true,
+    "free_disk_space_after_setup": [
+      {
+        "Free": 61092265984,
+        "Name": "C",
+        "Root": "C:\\",
+        "Used": 174523092992
+      }
+    ],
+    "free_disk_space_before_setup": [
+      {
+        "Free": 61092265984,
+        "Name": "C",
+        "Root": "C:\\",
+        "Used": 174523092992
+      }
+    ],
+    "gpu_capability": [
+      7,
+      5
+    ],
+    "gpu_name": "NVIDIA GeForce GTX 1650",
+    "nvidia_smi": {
+      "available_vram_mib": 3669,
+      "driver_version": "572.70",
+      "gpu_name": "NVIDIA GeForce GTX 1650",
+      "raw": "NVIDIA GeForce GTX 1650, 4096, 269, 3669, 572.70",
+      "total_vram_mib": 4096,
+      "used_vram_mib": 269
+    },
+    "os": "Windows-11-10.0.26200-SP0",
+    "pip_cache": "Package index page cache location (pip v23.3+): c:\\users\\asus\\appdata\\local\\pip\\cache\\http-v2\nPackage index page cache location (older pips): c:\\users\\asus\\appdata\\local\\pip\\cache\\http\nPackage index page cache size: 1.9 MB\nNumber of HTTP files: 6\nLocally built wheels location: c:\\users\\asus\\appdata\\local\\pip\\cache\\wheels\nLocally built wheels size: 0 bytes\nNumber of locally built wheels: 0",
+    "python": "3.14.4",
+    "python_executable": "python.exe",
+    "system_ram_bytes": 7968432128,
+    "torch_cuda_version": "12.8",
+    "torch_version": "2.11.0+cu128",
+    "total_vram_bytes": 4294639616,
+    "venv_gpu_size_bytes": 4860975195
+  },
+  "model": {
+    "config": {
+      "d_model": 448,
+      "dim_feedforward": 1792,
+      "dropout": 0.0,
+      "name": "candidate_B_19p48m",
+      "nhead": 8,
+      "num_layers": 8,
+      "seq_len": 127
+    },
+    "trainable_params": 19484864
+  },
+  "negative_results": [
+    "Suggested candidate A was below the required threshold at 9,985,600 parameters and was not used for replication.",
+    "Candidate C had 25,414,144 parameters and survived a one-step probe, but failed during full rewrite evaluation with CUBLAS_STATUS_EXECUTION_FAILED.",
+    "No BF16 was used; GTX 1650 capability was recorded and fp32 was used because the selected 19.5M model fit reliably.",
+    "lambda-Opt is reported unchanged as a secondary baseline; no tuning was performed."
+  ],
+  "representative_checkpoints": {
+    "exact_restore": {
+      "path": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\representative_scenarios\\exact_restore.pt",
+      "sha256": "3d985487a43c3fd304a969fd489ba99f7955a8afc4de184d73b0704d827e758b"
+    },
+    "reset_v": {
+      "path": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\representative_scenarios\\reset_v.pt",
+      "sha256": "50ff4b19238e2f3b135898443aa923898ae929a808165b7b09a580db30773967"
+    }
+  },
+  "rows": 99,
+  "runtime": {
+    "mean_step_time_seconds": 0.05799858688882523,
+    "mean_tokens_per_second": 2451.8488129313987,
+    "peak_vram_bytes": 414451200,
+    "per_seed": [
+      {
+        "checkpoint_dir": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1101",
+        "dataset": "WikiText-2 cached char-level, first 500000 chars",
+        "mean_step_time_seconds": 0.04696929299995342,
+        "n_params": 19484864,
+        "peak_vram_bytes": 414451200,
+        "seed": 1101,
+        "tokens_per_second": 2703.8942229793824,
+        "total_training_wall_seconds": 18.077828800000134,
+        "train_loss_final": 2.642636299133301,
+        "vocab": 127
+      },
+      {
+        "checkpoint_dir": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1102",
+        "dataset": "WikiText-2 cached char-level, first 500000 chars",
+        "mean_step_time_seconds": 0.039725881999960015,
+        "n_params": 19484864,
+        "peak_vram_bytes": 413515264,
+        "seed": 1102,
+        "tokens_per_second": 3196.9082524115597,
+        "total_training_wall_seconds": 26.432960199999798,
+        "train_loss_final": 2.6824135780334473,
+        "vocab": 127
+      },
+      {
+        "checkpoint_dir": "results\\opt2026_10m_gpu_final\\gpu_scale\\checkpoints\\seed_1103",
+        "dataset": "WikiText-2 cached char-level, first 500000 chars",
+        "mean_step_time_seconds": 0.08730058566656225,
+        "n_params": 19484864,
+        "peak_vram_bytes": 413515264,
+        "seed": 1103,
+        "tokens_per_second": 1454.7439634032532,
+        "total_training_wall_seconds": 67.7414852999973,
+        "train_loss_final": 2.6044812202453613,
+        "vocab": 127
+      }
+    ]
+  },
+  "scale_comparison": {
+    "gpu_ge_10m": {
+      "actual_parameter_count": 19484864,
+      "benign_but_task_damaged": 21,
+      "checkpoint_ages": [
+        75,
+        150,
+        300
+      ],
+      "independent_training_runs": 3,
+      "max_T_tau": 18,
+      "median_T_tau": 1.0,
+      "parameter_dangerous": 25,
+      "rollout_10_misses": 9,
+      "rollout_1_misses": 9,
+      "rollout_5_misses": 9,
+      "second_moment_dangerous": 16,
+      "spearman_loss": 0.9353329475956723,
+      "task_damaged": 43,
+      "total_rewrite_rows": 99,
+      "training_steps": 300
+    },
+    "scale_1p298m": {
+      "actual_parameter_count": 1298080,
+      "benign_but_task_damaged": 10,
+      "checkpoint_ages": [
+        50,
+        100,
+        200
+      ],
+      "independent_training_runs": 3,
+      "max_T_tau": 1,
+      "median_T_tau": 1,
+      "parameter_dangerous": 16,
+      "rollout_10_misses": 0,
+      "rollout_1_misses": 0,
+      "rollout_5_misses": 0,
+      "second_moment_dangerous": 16,
+      "spearman_loss": 0.8958119655119241,
+      "task_damaged": 20,
+      "total_rewrite_rows": 99,
+      "training_steps": 200
+    }
+  },
+  "smoke_test": {
+    "cuda_tensor_sum": 1073741824.0,
+    "forward_backward_adamw_step": true,
+    "loss": 4.9318695068359375,
+    "memory_allocated_bytes": 27480064,
+    "peak_memory_allocated_bytes": 27714048,
+    "step_wall_time_seconds": 0.5079153000006045
+  },
+  "spearman": {
+    "normalized_divergence_vs_max_perplexity_gap": 0.9354087950736774,
+    "normalized_divergence_vs_max_validation_loss_gap": 0.9353329475956723
+  },
+  "tau_sensitivity": [
+    {
+      "max_T_tau": 16,
+      "median_T_tau": 2.0,
+      "npv": 0.8548387096774194,
+      "parameter_benign_count": 62,
+      "parameter_benign_task_damaged_count": 9,
+      "parameter_dangerous_count": 37,
+      "parameter_dangerous_task_damaged_count": 34,
+      "ppv": 0.918918918918919,
+      "rollout_10_misses": 2,
+      "rollout_1_misses": 21,
+      "rollout_20_misses": 0,
+      "rollout_2_misses": 12,
+      "rollout_5_misses": 12,
+      "sensitivity": 0.7906976744186046,
+      "specificity": 0.9464285714285714,
+      "tau_multiplier": 0.25
+    },
+    {
+      "max_T_tau": 20,
+      "median_T_tau": 1.0,
+      "npv": 0.7681159420289855,
+      "parameter_benign_count": 69,
+      "parameter_benign_task_damaged_count": 16,
+      "parameter_dangerous_count": 30,
+      "parameter_dangerous_task_damaged_count": 27,
+      "ppv": 0.9,
+      "rollout_10_misses": 5,
+      "rollout_1_misses": 14,
+      "rollout_20_misses": 0,
+      "rollout_2_misses": 14,
+      "rollout_5_misses": 8,
+      "sensitivity": 0.627906976744186,
+      "specificity": 0.9464285714285714,
+      "tau_multiplier": 0.5
+    },
+    {
+      "max_T_tau": 11,
+      "median_T_tau": 1.0,
+      "npv": 0.7162162162162162,
+      "parameter_benign_count": 74,
+      "parameter_benign_task_damaged_count": 21,
+      "parameter_dangerous_count": 25,
+      "parameter_dangerous_task_damaged_count": 22,
+      "ppv": 0.88,
+      "rollout_10_misses": 1,
+      "rollout_1_misses": 9,
+      "rollout_20_misses": 0,
+      "rollout_2_misses": 9,
+      "rollout_5_misses": 9,
+      "sensitivity": 0.5116279069767442,
+      "specificity": 0.9464285714285714,
+      "tau_multiplier": 0.75
+    },
+    {
+      "max_T_tau": 18,
+      "median_T_tau": 1.0,
+      "npv": 0.7162162162162162,
+      "parameter_benign_count": 74,
+      "parameter_benign_task_damaged_count": 21,
+      "parameter_dangerous_count": 25,
+      "parameter_dangerous_task_damaged_count": 22,
+      "ppv": 0.88,
+      "rollout_10_misses": 9,
+      "rollout_1_misses": 9,
+      "rollout_20_misses": 0,
+      "rollout_2_misses": 9,
+      "rollout_5_misses": 9,
+      "sensitivity": 0.5116279069767442,
+      "specificity": 0.9464285714285714,
+      "tau_multiplier": 1.0
+    },
+    {
+      "max_T_tau": 2,
+      "median_T_tau": 1.0,
+      "npv": 0.6385542168674698,
+      "parameter_benign_count": 83,
+      "parameter_benign_task_damaged_count": 30,
+      "parameter_dangerous_count": 16,
+      "parameter_dangerous_task_damaged_count": 13,
+      "ppv": 0.8125,
+      "rollout_10_misses": 0,
+      "rollout_1_misses": 1,
+      "rollout_20_misses": 0,
+      "rollout_2_misses": 0,
+      "rollout_5_misses": 0,
+      "sensitivity": 0.3023255813953488,
+      "specificity": 0.9464285714285714,
+      "tau_multiplier": 1.5
+    },
+    {
+      "max_T_tau": 2,
+      "median_T_tau": 1.0,
+      "npv": 0.6385542168674698,
+      "parameter_benign_count": 83,
+      "parameter_benign_task_damaged_count": 30,
+      "parameter_dangerous_count": 16,
+      "parameter_dangerous_task_damaged_count": 13,
+      "ppv": 0.8125,
+      "rollout_10_misses": 0,
+      "rollout_1_misses": 2,
+      "rollout_20_misses": 0,
+      "rollout_2_misses": 0,
+      "rollout_5_misses": 0,
+      "sensitivity": 0.3023255813953488,
+      "specificity": 0.9464285714285714,
+      "tau_multiplier": 2.0
+    }
+  ],
+  "training": {
+    "checkpoint_ages": [
+      75,
+      150,
+      300
+    ],
+    "effective_batch": 1,
+    "gradient_accumulation": 1,
+    "heldout_seeds": [
+      1101,
+      1102,
+      1103
+    ],
+    "microbatch": 1,
+    "precision": "fp32",
+    "steps": 300
+  }
+}

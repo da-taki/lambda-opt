@@ -1,0 +1,9 @@
+{
+  "errors": [
+    "all nine delayed cases do not have completed multi-future results",
+    "extended horizon results are not completed",
+    "controlled scale configs/results were not completed",
+    "long-training outputs are missing; explicit blocker report exists"
+  ],
+  "status": "FAIL"
+}

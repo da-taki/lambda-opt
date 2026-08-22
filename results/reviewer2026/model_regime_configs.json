@@ -1,0 +1,104 @@
+{
+  "large_19p485M": {
+    "config": {
+      "d_model": 448,
+      "dim_feedforward": 1792,
+      "dropout": 0.0,
+      "name": "candidate_B_19p48m",
+      "nhead": 8,
+      "num_layers": 8,
+      "seq_len": 127
+    },
+    "trainable_params": 19484864
+  },
+  "model_probe_candidates": [
+    {
+      "context": "128",
+      "d_model": "320",
+      "dim_feedforward": "1280",
+      "error": "",
+      "gradient_accumulation": "1",
+      "microbatch": "1",
+      "name": "candidate_A_9p99m",
+      "nhead": "8",
+      "num_layers": "8",
+      "peak_vram_bytes": "221451264",
+      "precision": "fp32",
+      "selected_for_replication": "False",
+      "status": "completed",
+      "step_wall_time_seconds": "0.0955335999988165",
+      "tokens_per_second": "1329.3752146006568",
+      "trainable_params": "9985600"
+    },
+    {
+      "context": "128",
+      "d_model": "416",
+      "dim_feedforward": "1664",
+      "error": "",
+      "gradient_accumulation": "1",
+      "microbatch": "1",
+      "name": "candidate_B_16p82m",
+      "nhead": "8",
+      "num_layers": "8",
+      "peak_vram_bytes": "362186240",
+      "precision": "fp32",
+      "selected_for_replication": "False",
+      "status": "completed",
+      "step_wall_time_seconds": "0.08372779999990598",
+      "tokens_per_second": "1516.819980939934",
+      "trainable_params": "16815136"
+    },
+    {
+      "context": "128",
+      "d_model": "448",
+      "dim_feedforward": "1792",
+      "error": "",
+      "gradient_accumulation": "1",
+      "microbatch": "1",
+      "name": "candidate_B_19p48m",
+      "nhead": "8",
+      "num_layers": "8",
+      "peak_vram_bytes": "414451200",
+      "precision": "fp32",
+      "selected_for_replication": "True",
+      "status": "completed",
+      "step_wall_time_seconds": "0.08581599999888567",
+      "tokens_per_second": "1479.910506218527",
+      "trainable_params": "19484864"
+    },
+    {
+      "context": "128",
+      "d_model": "512",
+      "dim_feedforward": "2048",
+      "error": "",
+      "gradient_accumulation": "1",
+      "microbatch": "1",
+      "name": "candidate_C_25p41m",
+      "nhead": "8",
+      "num_layers": "8",
+      "peak_vram_bytes": "538646528",
+      "precision": "fp32",
+      "selected_for_replication": "False",
+      "status": "completed",
+      "step_wall_time_seconds": "0.07191720000082569",
+      "tokens_per_second": "1765.9196965196352",
+      "trainable_params": "25414144"
+    }
+  ],
+  "small_1p298M": {
+    "checkpoint_ages": [
+      50,
+      100,
+      200
+    ],
+    "note": "Exact layer/width fields were not present in the 19.485M frozen row files; see historical generator for the 1.298M campaign.",
+    "parameter_count": 1298080,
+    "seeds": [
+      901,
+      902,
+      903
+    ],
+    "source": "results/opt2026_final_gpu_task_validity and previous scale comparison",
+    "training_steps": 200
+  }
+}

@@ -1,0 +1,4 @@
+checkpoint_step,rows,parameter_dangerous,task_damaged,median_T_tau,max_T_tau
+75,33,9,24,1.0,15
+150,33,9,13,1.0,16
+300,33,7,6,1.0,18

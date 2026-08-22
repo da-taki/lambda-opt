@@ -1,0 +1,39 @@
+{
+  "checkpoint_ages": [
+    750,
+    1500,
+    3000
+  ],
+  "horizon": 100,
+  "model_config": {
+    "d_model": 448,
+    "dim_feedforward": 1792,
+    "dropout": 0.0,
+    "name": "candidate_B_19p48m",
+    "nhead": 8,
+    "num_layers": 8,
+    "seq_len": 127
+  },
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "lr": 0.001,
+    "weight_decay": 0.01
+  },
+  "scheduler": {
+    "gamma": 0.5,
+    "rationale": "preserve approximately original scheduler phase as fraction of training",
+    "step_size": 1000
+  },
+  "seeds": [
+    1301,
+    1302,
+    1303
+  ],
+  "stale_age": 25,
+  "status": "FROZEN_BEFORE_RESULTS",
+  "training_steps": 3000
+}
