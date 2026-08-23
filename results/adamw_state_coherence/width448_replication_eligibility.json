@@ -1,0 +1,167 @@
+{
+  "allowed_difference": "independent training seeds only",
+  "comparisons": {
+    "StepLR_policy": {
+      "identical": true,
+      "primary": {
+        "gamma": 0.5,
+        "step_size": 100
+      },
+      "width448_19p48m": {
+        "gamma": 0.5,
+        "step_size": 100
+      }
+    },
+    "architecture": {
+      "identical": false,
+      "primary": {
+        "d_model": 448,
+        "dim_feedforward": 1792,
+        "dropout": 0.0,
+        "name": "candidate_B_19p48m",
+        "nhead": 8,
+        "num_layers": 8,
+        "seq_len": 127
+      },
+      "width448_19p48m": {
+        "d_model": 448,
+        "dim_feedforward": 1792,
+        "dropout": 0.0,
+        "name": "width448_19p48m",
+        "nhead": 8,
+        "num_layers": 8,
+        "seq_len": 127
+      }
+    },
+    "batch_size": {
+      "identical": true,
+      "primary": 1,
+      "width448_19p48m": 1
+    },
+    "betas": {
+      "identical": true,
+      "primary": [
+        0.9,
+        0.999
+      ],
+      "width448_19p48m": [
+        0.9,
+        0.999
+      ]
+    },
+    "checkpoint_ages": {
+      "identical": true,
+      "primary": [
+        75,
+        150,
+        300
+      ],
+      "width448_19p48m": [
+        75,
+        150,
+        300
+      ]
+    },
+    "corpus_slice": {
+      "identical": true,
+      "primary": "first 500000 characters of experiments/data/wikitext2_raw/train.txt",
+      "width448_19p48m": "first 500000 characters of experiments/data/wikitext2_raw/train.txt"
+    },
+    "dataset_construction": {
+      "identical": true,
+      "primary": "run_transformer.build_char_dataset, shuffled by training seed",
+      "width448_19p48m": "run_transformer.build_char_dataset, shuffled by training seed"
+    },
+    "eps": {
+      "identical": true,
+      "primary": 1e-08,
+      "width448_19p48m": 1e-08
+    },
+    "initial_lr": {
+      "identical": true,
+      "primary": 0.001,
+      "width448_19p48m": 0.001
+    },
+    "optimizer": {
+      "identical": true,
+      "primary": "torch.optim.AdamW",
+      "width448_19p48m": "torch.optim.AdamW"
+    },
+    "parameter_count": {
+      "identical": true,
+      "primary": 19484864,
+      "width448_19p48m": 19484864
+    },
+    "rewrite_semantics": {
+      "identical": true,
+      "primary": [
+        "exact_restore",
+        "benign_nonzero",
+        "reset_m",
+        "reset_v",
+        "stale_m",
+        "stale_v",
+        "stale_mv",
+        "model_current_optimizer_stale",
+        "step_counter_mismatch",
+        "scheduler_mismatch",
+        "optimizer_reset"
+      ],
+      "width448_19p48m": [
+        "exact_restore",
+        "benign_nonzero",
+        "reset_m",
+        "reset_v",
+        "stale_m",
+        "stale_v",
+        "stale_mv",
+        "model_current_optimizer_stale",
+        "step_counter_mismatch",
+        "scheduler_mismatch",
+        "optimizer_reset"
+      ]
+    },
+    "sequence_length": {
+      "identical": true,
+      "primary": 128,
+      "width448_19p48m": 128
+    },
+    "total_training_steps": {
+      "identical": true,
+      "primary": 300,
+      "width448_19p48m": 300
+    },
+    "weight_decay": {
+      "identical": true,
+      "primary": 0.01,
+      "width448_19p48m": 0.01
+    }
+  },
+  "controlled_width_seed": 1201,
+  "differences": {
+    "architecture": {
+      "identical": false,
+      "primary": {
+        "d_model": 448,
+        "dim_feedforward": 1792,
+        "dropout": 0.0,
+        "name": "candidate_B_19p48m",
+        "nhead": 8,
+        "num_layers": 8,
+        "seq_len": 127
+      },
+      "width448_19p48m": {
+        "d_model": 448,
+        "dim_feedforward": 1792,
+        "dropout": 0.0,
+        "name": "width448_19p48m",
+        "nhead": 8,
+        "num_layers": 8,
+        "seq_len": 127
+      }
+    }
+  },
+  "eligible_for_narrow_mechanism_pooling": false,
+  "primary_seed": 1101,
+  "status": "COMPLETE"
+}

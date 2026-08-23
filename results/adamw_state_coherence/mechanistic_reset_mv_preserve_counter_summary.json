@@ -1,0 +1,69 @@
+{
+  "S1_median": 23.58670301138333,
+  "age_summary": [
+    {
+      "S1_median": 6.8769151750166735,
+      "T_tau_crossings": 3,
+      "T_tau_median_among_crossers": 8.0,
+      "checkpoint_age": 75,
+      "n": 3,
+      "observed_ratio_median": 6.956246003086459,
+      "predicted_A_t": 0.8559662493938642
+    },
+    {
+      "S1_median": 17.495498774037966,
+      "T_tau_crossings": 3,
+      "T_tau_median_among_crossers": 15.0,
+      "checkpoint_age": 150,
+      "n": 3,
+      "observed_ratio_median": 17.701976084193838,
+      "predicted_A_t": 1.1841338406187014
+    },
+    {
+      "S1_median": 29.9275761542572,
+      "T_tau_crossings": 0,
+      "T_tau_median_among_crossers": null,
+      "checkpoint_age": 300,
+      "n": 3,
+      "observed_ratio_median": 30.136913755855527,
+      "predicted_A_t": 1.6125559676366752
+    },
+    {
+      "S1_median": 35.56614002547416,
+      "T_tau_crossings": 3,
+      "T_tau_median_among_crossers": 3.0,
+      "checkpoint_age": 750,
+      "n": 3,
+      "observed_ratio_median": 35.77727143083335,
+      "predicted_A_t": 2.29844046904298
+    },
+    {
+      "S1_median": 29.15850851145973,
+      "T_tau_crossings": 3,
+      "T_tau_median_among_crossers": 5.0,
+      "checkpoint_age": 1500,
+      "n": 3,
+      "observed_ratio_median": 29.36262218264218,
+      "predicted_A_t": 2.7879386633511145
+    },
+    {
+      "S1_median": 21.855797050313438,
+      "T_tau_crossings": 3,
+      "T_tau_median_among_crossers": 62.0,
+      "checkpoint_age": 3000,
+      "n": 3,
+      "observed_ratio_median": 22.112262700264168,
+      "predicted_A_t": 3.0827541556146842
+    }
+  ],
+  "crossings_h100": 15,
+  "crossings_h20": 12,
+  "median_T_tau_among_crossers": 8.0,
+  "observed_ratio_median": 23.795761329591222,
+  "observed_ratio_monotone_non_decreasing_by_age": false,
+  "required_18_cases_present": true,
+  "rows": 18,
+  "spearman_predicted_A_t_vs_observed_age_median_ratio": 0.4857142857142857,
+  "state_coherence_supported_for_phase4": false,
+  "status": "COMPLETE"
+}

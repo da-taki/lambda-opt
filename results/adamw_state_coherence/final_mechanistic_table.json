@@ -1,0 +1,37 @@
+{
+  "final_verdict": "PARTIALLY SUPPORTED",
+  "paired_reset_v_minus_optimizer_reset_S1_median": 52379.42487697298,
+  "questions": {
+    "Q1": true,
+    "Q2": false,
+    "Q3": false,
+    "Q4": "not_evaluated"
+  },
+  "status": "COMPLETE",
+  "table": [
+    {
+      "T_tau_behavior": "existing V5 primary: 9/9 crossings, median T_tau=1",
+      "candidate_clean_update_ratio_median": 52393.98372093785,
+      "family": "reset_v",
+      "first_step_S1_median": 52393.90131944534,
+      "large_validation_functional_effect": "",
+      "state_preserved_cleared": "parameters, m, counter, param groups, scheduler preserved; v cleared"
+    },
+    {
+      "T_tau_behavior": "existing V5 primary: 3/9 crossings, delayed to T_tau=14-15",
+      "candidate_clean_update_ratio_median": 15.00003878795521,
+      "family": "isolated full reset",
+      "first_step_S1_median": 14.7990631492413,
+      "large_validation_functional_effect": "",
+      "state_preserved_cleared": "parameters, param groups, scheduler preserved; optimizer per-parameter state empty"
+    },
+    {
+      "T_tau_behavior": "new 18-case: 15/18 crossings; median among crossers 8.0",
+      "candidate_clean_update_ratio_median": 23.795761329591222,
+      "family": "reset_mv_preserve_counter",
+      "first_step_S1_median": 23.58670301138333,
+      "large_validation_functional_effect": "",
+      "state_preserved_cleared": "parameters, param groups, scheduler, LR, and counter preserved; m and v cleared"
+    }
+  ]
+}

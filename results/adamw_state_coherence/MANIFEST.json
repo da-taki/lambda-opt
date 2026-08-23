@@ -1,0 +1,95 @@
+﻿{
+    "status":  "COMPLETE",
+    "files":  [
+                  {
+                      "path":  "results\\adamw_state_coherence\\existing_state_shock_audit.csv",
+                      "sha256":  "372435a87b1eb5d837093b3f6a6bad15f304f8e66fdefee86f13295b8b51cc30",
+                      "bytes":  39598
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\existing_state_shock_audit.json",
+                      "sha256":  "0b609ee92ba0dc973d384fd5523c304056f026084641ebf1aa5b0d9a2ceebd6d",
+                      "bytes":  113054
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\existing_state_shock_audit.md",
+                      "sha256":  "11e93a96cf712e780bd986cd1b5ddba879fab2a1a7feb7ce6e41eb2fe0923b81",
+                      "bytes":  859
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\existing_state_shock_family_summary.csv",
+                      "sha256":  "3a8da1204a83d96bc58aea5768a27eeacba2d5d5c427a456ffbab328102b4fdd",
+                      "bytes":  1565
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\existing_state_shock_primary_pairs.csv",
+                      "sha256":  "e25bbf8eb23632e971a7ff7035d5762bb507741e761e256d0a562714c8a86e40",
+                      "bytes":  1076
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\final_mechanistic_table.json",
+                      "sha256":  "eeabd540d31c8165fe6211e4e068f290638e30a456189675451a82e516a7fbfd",
+                      "bytes":  1507
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\final_mechanistic_table.md",
+                      "sha256":  "db378e298b81e7f789872cac1177df955601b41f7d7f46c5cfce2443bf989f40",
+                      "bytes":  792
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\mechanistic_reset_mv_preserve_counter_rows.csv",
+                      "sha256":  "388588afe072afba0e4432832a4a26ee8dd0fbff7edc41401eb50ecc159ccbcf",
+                      "bytes":  14126
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\mechanistic_reset_mv_preserve_counter_rows.json",
+                      "sha256":  "affa720b463578fbd6aab269a49ab0f3bbca7bf959bb665ff2b55e9c324d3107",
+                      "bytes":  37131
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\mechanistic_reset_mv_preserve_counter_steps.csv",
+                      "sha256":  "f5a908579253933d0878bc3b2e1bc661012f20b3fe78c55a28c10df13c6a6bdf",
+                      "bytes":  527403
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\mechanistic_reset_mv_preserve_counter_summary.json",
+                      "sha256":  "3db41c2503fe4de4dd560ec94aa62fadc22ff9935d8192368e69d5d3ec9b88b8",
+                      "bytes":  2061
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\mechanistic_reset_mv_preserve_counter_summary.md",
+                      "sha256":  "4a86b623fa5a8c3dfb8127d7883c1f314ed2f253dbd20842ca2fb24480717fa4",
+                      "bytes":  606
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\moment_reset_counter_preserved_prediction.json",
+                      "sha256":  "02dc5cd53d622a1123cbeac45419e623fbf8b6c413f0c409e4e7b0586d01fa30",
+                      "bytes":  769
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\moment_reset_counter_preserved_prediction.md",
+                      "sha256":  "597b29614911a77a801642b69c4afca22ef7eea5a76ae613281a599651aa9641",
+                      "bytes":  392
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\phase1_fail_fast_verdict.json",
+                      "sha256":  "61240851c6f9b16bb7d20f6818c34fde617589de2f7e42f3cc7c6c4cb0a0d2dc",
+                      "bytes":  109
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\phase4_skipped.json",
+                      "sha256":  "499f31a9afffa824cbe5f5f8688739d6a019149992bcc3bae5d4bca6f70a1e5d",
+                      "bytes":  245
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\PROVENANCE.json",
+                      "sha256":  "f06c1ef4e2ed8346e14c8b696e2153e329224616a219a630ed015d06266a653b",
+                      "bytes":  594
+                  },
+                  {
+                      "path":  "results\\adamw_state_coherence\\width448_replication_eligibility.json",
+                      "sha256":  "cd9dd595073a4fc96b04269f7e69796dee068ead4ca864b7d81049c3efb142b3",
+                      "bytes":  3984
+                  }
+              ]
+}

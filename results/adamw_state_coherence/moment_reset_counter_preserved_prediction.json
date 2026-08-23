@@ -1,0 +1,33 @@
+{
+  "beta1": 0.9,
+  "beta2": 0.999,
+  "epsilon_note": "Analytic approximation ignores epsilon for nonzero gradient coordinates; it is not exact when epsilon matters.",
+  "formula": "A_t = ((1-beta1)/(1-beta1^(t+1))) * sqrt((1-beta2^(t+1))/(1-beta2))",
+  "status": "COMPLETE",
+  "values": [
+    {
+      "A_t": 0.8559662493938642,
+      "checkpoint_age": 75
+    },
+    {
+      "A_t": 1.1841338406187014,
+      "checkpoint_age": 150
+    },
+    {
+      "A_t": 1.6125559676366752,
+      "checkpoint_age": 300
+    },
+    {
+      "A_t": 2.29844046904298,
+      "checkpoint_age": 750
+    },
+    {
+      "A_t": 2.7879386633511145,
+      "checkpoint_age": 1500
+    },
+    {
+      "A_t": 3.0827541556146842,
+      "checkpoint_age": 3000
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "V5_source_integrity_retained": true,
+    "analytic_A_t_values_reproducible": true,
+    "exact_restore_zero": true,
+    "exact_rewrite_definitions_verified": true,
+    "manifest_hashes_valid": true,
+    "no_historical_contaminated_metrics_mixed_into_new_summaries": true,
+    "no_model_retraining": true,
+    "no_train_validation_overlap": true,
+    "official_validation_protocol_frozen": false,
+    "required_18_cases_present": true,
+    "same_batch_pairing": true
+  },
+  "failures": [],
+  "status": "PASS"
+}

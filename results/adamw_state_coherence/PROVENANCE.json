@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-08-23T00:37:08.069170+00:00",
+  "cuda_available": true,
+  "cuda_device": "NVIDIA GeForce GTX 1650",
+  "current_git_branch": "experiment/opt2026-adamw-state-coherence",
+  "current_git_head": "c3f245cafab05c4db376755e292602844985ff91",
+  "no_model_retraining": true,
+  "python": "3.14.4",
+  "source_experiment_commit": "c3f245cafab05c4db376755e292602844985ff91",
+  "source_transport_branch": "experiment/opt2026-reviewer-results-v5",
+  "source_transport_commit": "365257a3a5fbe68672ad99334f0183a45e15bda2",
+  "status": "COMPLETE",
+  "torch": "2.11.0+cu128"
+}

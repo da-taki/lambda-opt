@@ -1,0 +1,4 @@
+{
+  "reason": "Phase 3 did not fully support the state-coherence hypothesis: observed candidate/clean update scaling had positive Spearman association with predicted A_t but was not monotone across checkpoint ages.",
+  "status": "SKIPPED"
+}
