@@ -1,5 +1,5 @@
-{
-  "clear_repeated_first_step_shock_advantage": true,
-  "status": "PASS",
-  "width448_eligible": false
+﻿{
+    "clear_repeated_first_step_shock_advantage":  true,
+    "status":  "PASS",
+    "width448_eligible":  true
 }

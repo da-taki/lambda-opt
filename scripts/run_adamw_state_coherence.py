@@ -237,7 +237,7 @@ def audit_width448() -> dict[str, Any]:
         "rewrite_semantics",
     ]
     primary_desc = {
-        "architecture": primary["cfg"],
+        "architecture": {k: v for k, v in primary["cfg"].items() if k != "name"},
         "parameter_count": count_params_from_payload(primary),
         "dataset_construction": "run_transformer.build_char_dataset, shuffled by training seed",
         "corpus_slice": f"first {base.DATA_CHARS} characters of experiments/data/wikitext2_raw/train.txt",
@@ -254,7 +254,7 @@ def audit_width448() -> dict[str, Any]:
         "rewrite_semantics": base.REWRITE_FAMILIES,
     }
     controlled_desc = {
-        "architecture": controlled["cfg"],
+        "architecture": {k: v for k, v in controlled["cfg"].items() if k != "name"},
         "parameter_count": count_params_from_payload(controlled),
         "dataset_construction": "run_transformer.build_char_dataset, shuffled by training seed",
         "corpus_slice": f"first {base.DATA_CHARS} characters of experiments/data/wikitext2_raw/train.txt",
@@ -277,7 +277,8 @@ def audit_width448() -> dict[str, Any]:
         "eligible_for_narrow_mechanism_pooling": len(differences) == 0,
         "primary_seed": primary["seed"],
         "controlled_width_seed": controlled["seed"],
-        "allowed_difference": "independent training seeds only",
+        "allowed_difference": "independent training seeds only; config label/name difference is recorded as non-scientific",
+        "non_scientific_label_difference": {"primary_name": primary["cfg"].get("name"), "width448_name": controlled["cfg"].get("name")},
         "comparisons": comparisons,
         "differences": differences,
     }
@@ -929,6 +930,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 
 

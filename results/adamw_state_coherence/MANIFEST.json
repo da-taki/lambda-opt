@@ -73,8 +73,8 @@
                   },
                   {
                       "path":  "results\\adamw_state_coherence\\phase1_fail_fast_verdict.json",
-                      "sha256":  "61240851c6f9b16bb7d20f6818c34fde617589de2f7e42f3cc7c6c4cb0a0d2dc",
-                      "bytes":  109
+                      "sha256":  "155a61fdde9887f5961f9984cf9db0d438e7ed4a3f2095d37360b5d8746851b7",
+                      "bytes":  122
                   },
                   {
                       "path":  "results\\adamw_state_coherence\\phase4_skipped.json",
@@ -88,8 +88,8 @@
                   },
                   {
                       "path":  "results\\adamw_state_coherence\\width448_replication_eligibility.json",
-                      "sha256":  "cd9dd595073a4fc96b04269f7e69796dee068ead4ca864b7d81049c3efb142b3",
-                      "bytes":  3984
+                      "sha256":  "500d6558de04b5bcf0a809aee6f37737b6a21c2c8243e0c6c6a32f17589b7273",
+                      "bytes":  9886
                   }
               ]
 }
