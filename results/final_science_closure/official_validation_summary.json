@@ -1,0 +1,37 @@
+﻿{
+    "status":  "FAILED",
+    "reason":  "official validation contains characters outside the training vocabulary; no substitute counts or remapping performed",
+    "exact_task_targets_requested":  8128,
+    "exact_function_positions_requested":  2032,
+    "exact_task_targets_generated":  0,
+    "exact_function_positions_generated":  0,
+    "unrepresentable_validation_characters":  [
+                                                  "*",
+                                                  "½",
+                                                  "É",
+                                                  "Î",
+                                                  "Ú",
+                                                  "ç",
+                                                  "ë",
+                                                  "ü",
+                                                  "ā",
+                                                  "α",
+                                                  "γ",
+                                                  "μ",
+                                                  "‑",
+                                                  "′",
+                                                  "″",
+                                                  "⁄",
+                                                  "−",
+                                                  "♭",
+                                                  "♯"
+                                              ],
+    "rows":  0,
+    "summary":  [
+
+                ],
+    "k100_loss_gap_ordering_desc":  [
+
+                                    ],
+    "exact_restore_sanity":  false
+}

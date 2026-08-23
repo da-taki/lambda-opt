@@ -1,0 +1,7 @@
+﻿{
+    "py_compile":  "PASS",
+    "v5_verifier":  "PASS",
+    "state_coherence_verifier":  "PASS",
+    "final_science_closure_verifier":  "FAIL: official validation did not complete",
+    "pytest_q":  "FAIL: root collection included archived artifact tests causing import mismatches"
+}

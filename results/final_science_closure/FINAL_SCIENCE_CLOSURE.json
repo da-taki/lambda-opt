@@ -1,0 +1,70 @@
+{
+  "official_validation_failure_reason": "official validation contains characters outside the training vocabulary; no substitute counts or remapping performed",
+  "official_validation_status": "FAILED",
+  "questions": {
+    "Q1": true,
+    "Q2": true,
+    "Q3": true,
+    "Q4": true,
+    "Q5": true,
+    "Q6": false
+  },
+  "status": "COMPLETE",
+  "table": [
+    {
+      "coherence_invariant_behavior": 0.0,
+      "family": "reset_m",
+      "interpretation": "",
+      "large_validation_loss_behavior": "not run: official validation has unrepresentable characters",
+      "median_first_step_S1": 0.9249336730486302,
+      "six_seed_parameter_crossings": "0/6 H100",
+      "state_relationship": "m cleared, v/counter preserved"
+    },
+    {
+      "coherence_invariant_behavior": 0.9989308624376336,
+      "family": "reset_v",
+      "interpretation": "",
+      "large_validation_loss_behavior": "not run: official validation has unrepresentable characters",
+      "median_first_step_S1": 53280.7452006737,
+      "six_seed_parameter_crossings": "6/6 H100",
+      "state_relationship": "v cleared, m/counter preserved"
+    },
+    {
+      "coherence_invariant_behavior": 4.418814521877084e-05,
+      "family": "stale_v",
+      "interpretation": "",
+      "large_validation_loss_behavior": "not run: official validation has unrepresentable characters",
+      "median_first_step_S1": 729.7681401938605,
+      "six_seed_parameter_crossings": "6/6 H100",
+      "state_relationship": "v from stale snapshot, m/counter current"
+    },
+    {
+      "coherence_invariant_behavior": 0.0,
+      "family": "stale_mv",
+      "interpretation": "",
+      "large_validation_loss_behavior": "not run: official validation has unrepresentable characters",
+      "median_first_step_S1": 1.5235526130365251,
+      "six_seed_parameter_crossings": "0/6 H100",
+      "state_relationship": "m and v from same stale snapshot, counter current"
+    },
+    {
+      "coherence_invariant_behavior": 0.0,
+      "family": "optimizer_reset",
+      "interpretation": "",
+      "large_validation_loss_behavior": "not run: official validation has unrepresentable characters",
+      "median_first_step_S1": 15.196774028970497,
+      "six_seed_parameter_crossings": "6/6 H100",
+      "state_relationship": "coherent empty optimizer state"
+    },
+    {
+      "coherence_invariant_behavior": 0.0,
+      "family": "reset_mv_preserve_counter",
+      "interpretation": "",
+      "large_validation_loss_behavior": "not run: official validation has unrepresentable characters",
+      "median_first_step_S1": 23.58670301138333,
+      "six_seed_parameter_crossings": "/6 H100",
+      "state_relationship": "m/v cleared, old counter preserved"
+    }
+  ],
+  "verdict": "PARTIAL MOMENT-COHERENCE EVIDENCE"
+}

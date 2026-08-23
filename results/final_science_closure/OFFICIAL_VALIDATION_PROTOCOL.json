@@ -1,0 +1,63 @@
+{
+  "available_validation_sequences": 0,
+  "checkpoint_ages": [
+    75,
+    150,
+    300
+  ],
+  "created_utc": "2026-08-23T01:32:02.858807+00:00",
+  "evaluation_steps": [
+    0,
+    1,
+    20,
+    100
+  ],
+  "families": [
+    "exact_restore",
+    "benign_nonzero",
+    "reset_m",
+    "reset_v",
+    "stale_v",
+    "stale_mv",
+    "optimizer_reset",
+    "reset_mv_preserve_counter"
+  ],
+  "function_prediction_positions": 2032,
+  "function_sequences": 16,
+  "no_train_validation_overlap_first_80_sequences": true,
+  "primary_seeds": [
+    1101,
+    1102,
+    1103
+  ],
+  "status": "FROZEN",
+  "target_positions_per_sequence": 127,
+  "task_sequences": 64,
+  "task_target_positions": 8128,
+  "training_vocab_size": 127,
+  "training_vocabulary_source": "first 500000 characters of train.txt",
+  "unrepresentable_validation_characters": [
+    "*",
+    "\u00bd",
+    "\u00c9",
+    "\u00ce",
+    "\u00da",
+    "\u00e7",
+    "\u00eb",
+    "\u00fc",
+    "\u0101",
+    "\u03b1",
+    "\u03b3",
+    "\u03bc",
+    "\u2011",
+    "\u2032",
+    "\u2033",
+    "\u2044",
+    "\u2212",
+    "\u266d",
+    "\u266f"
+  ],
+  "validation_characters": 1120192,
+  "validation_sha256": "f0737ed31fc1329026e95cb8b98e19c2a182c39c240ab909dc31abf2f8af58e8",
+  "validation_source": "https://raw.githubusercontent.com/pytorch/examples/main/word_language_model/data/wikitext-2/valid.txt"
+}

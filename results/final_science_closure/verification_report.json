@@ -1,0 +1,9 @@
+{
+  "failures": [
+    "official validation did not complete",
+    "large probes outside k=0,1,20,100 or missing k",
+    "unauthorized families in validation rows",
+    "exact_restore sanity failed"
+  ],
+  "status": "FAIL"
+}

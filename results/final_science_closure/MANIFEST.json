@@ -1,0 +1,105 @@
+﻿{
+    "status":  "COMPLETE",
+    "files":  [
+                  {
+                      "path":  "results\\final_science_closure\\corrected_A_t_validation.csv",
+                      "sha256":  "4b2df61fce013099d923c15af6da67a251198cdff7759c1182e102dcd5618210",
+                      "bytes":  2591
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\corrected_A_t_validation.json",
+                      "sha256":  "a17093062514bf61eaa8444946b7208f7f3bb157a1f0e5daa8382914753739aa",
+                      "bytes":  1501
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\corrected_A_t_validation.md",
+                      "sha256":  "9932e174b32847363c2ba91df65c257667cd0d00c686b6ab1337b6ca7b9e0e52",
+                      "bytes":  191
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\corrected_A_t_validation_rows.json",
+                      "sha256":  "bd8dc53eb732a39d8854ac7553639c86497afdc03d6bcd52400cf6298e051ac2",
+                      "bytes":  8883
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\FINAL_SCIENCE_CLOSURE.json",
+                      "sha256":  "292a2dc67cae275bf4706b8831ef7b385604d65bb05947559b51a6fb60cab5ce",
+                      "bytes":  2820
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\FINAL_SCIENCE_CLOSURE.md",
+                      "sha256":  "9b9f26110b1d0d117521f8d624a3e3a9de1044852a064f2e278650d3406231bd",
+                      "bytes":  1259
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\moment_coherence_invariant.csv",
+                      "sha256":  "d6630113ee3d7cea2b9466a76b07445128e38362afb70d32f96c48bbad2310c4",
+                      "bytes":  23678
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\moment_coherence_invariant.json",
+                      "sha256":  "4b0739a169f4e370fedfd837ad2336c8095d3276da75962273dda3014da7338b",
+                      "bytes":  2675
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\moment_coherence_invariant.md",
+                      "sha256":  "96eedec5fb472691fb92d475debe38e8f7169127cde48bb0db989bba9ba0c9a3",
+                      "bytes":  920
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\OFFICIAL_VALIDATION_PROTOCOL.json",
+                      "sha256":  "ea112673505a3f2b66f4be74714cd9b27a59ceaa562335fe93764d0d46003d8f",
+                      "bytes":  1416
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\OFFICIAL_VALIDATION_PROTOCOL.sha256.json",
+                      "sha256":  "6803cec83f8657499dbc294c41681eee2a371e1ebc49d3f13a1a689b4bea59cc",
+                      "bytes":  162
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\official_validation_summary.json",
+                      "sha256":  "be236d33a38ecaded05526f7941043254d977d9f531743d29f8e3b25e598ba1e",
+                      "bytes":  1715
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\official_validation_summary.md",
+                      "sha256":  "a5b2d52c8dc40a72620f93581cc22bda6ee35b494aa0d68df2fcbe5da2087b9c",
+                      "bytes":  163
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\PROVENANCE.json",
+                      "sha256":  "9c83c9c40216e39a2b4d1a486d3a9a3db10d67a918b498883eb78b2d21a195ff",
+                      "bytes":  396
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\six_seed_mechanism_rows.csv",
+                      "sha256":  "4996c0f480b2004cc1ad446cdf1b4f6185f7247ec60b8bc6d76408856dc66a7c",
+                      "bytes":  25388
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\six_seed_mechanism_summary.csv",
+                      "sha256":  "0294131e956b5590843bde36131f244359769fa857d24e6bce78a03c72dc6de4",
+                      "bytes":  1357
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\six_seed_mechanism_summary.json",
+                      "sha256":  "57747408daf33222b9b34c1d7dca2fd04cd7df298e829ee423380512bf965a5a",
+                      "bytes":  11904
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\six_seed_mechanism_summary.md",
+                      "sha256":  "93d11e511b46fabdc6e9c9fc7f6bde7d8934c6282772ae611f24b081d1a94b8b",
+                      "bytes":  906
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\verification_commands.json",
+                      "sha256":  "95bbd98314ecdf16217e08cfcedab5c3ef9c6eb0174180ef518b5b0db69b6a79",
+                      "bytes":  295
+                  },
+                  {
+                      "path":  "results\\final_science_closure\\verification_report.json",
+                      "sha256":  "58ea6b7e70cfe84fcd6d1304b720edee24ddb31d34ba9395353b5db15253ce3b",
+                      "bytes":  231
+                  }
+              ]
+}

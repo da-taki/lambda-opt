@@ -1,0 +1,49 @@
+{
+  "cases": 18,
+  "median_cosine_adaptive": 1.0,
+  "median_cosine_update": 1.0,
+  "median_norm_ratio_predicted_observed_update": 1.0,
+  "median_relative_l2_prediction_error_adaptive": 2.252364101025872e-06,
+  "median_relative_l2_prediction_error_update": 2.252361715497694e-06,
+  "old_invalid_test": "candidate_update_norm / clean_update_norm monotonicity",
+  "old_invalid_test_status": "SUPERSEDED",
+  "per_age": [
+    {
+      "checkpoint_age": 75,
+      "median_cosine_update": 1.0,
+      "median_relative_l2_prediction_error_update": 1.906418647368379e-06,
+      "n": 3
+    },
+    {
+      "checkpoint_age": 150,
+      "median_cosine_update": 1.0,
+      "median_relative_l2_prediction_error_update": 2.6519479535115725e-06,
+      "n": 3
+    },
+    {
+      "checkpoint_age": 300,
+      "median_cosine_update": 1.0,
+      "median_relative_l2_prediction_error_update": 8.023872825563769e-06,
+      "n": 3
+    },
+    {
+      "checkpoint_age": 750,
+      "median_cosine_update": 1.0,
+      "median_relative_l2_prediction_error_update": 7.502985724191983e-07,
+      "n": 3
+    },
+    {
+      "checkpoint_age": 1500,
+      "median_cosine_update": 0.9999999403953552,
+      "median_relative_l2_prediction_error_update": 1.1317570417099458e-06,
+      "n": 3
+    },
+    {
+      "checkpoint_age": 3000,
+      "median_cosine_update": 1.0,
+      "median_relative_l2_prediction_error_update": 3.923207976217912e-06,
+      "n": 3
+    }
+  ],
+  "status": "COMPLETE"
+}

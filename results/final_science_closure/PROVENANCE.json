@@ -1,0 +1,10 @@
+{
+  "branch": "experiment/opt2026-final-science-closure",
+  "created_utc": "2026-08-23T01:34:36.251475+00:00",
+  "head": "c3f245cafab05c4db376755e292602844985ff91",
+  "no_model_retraining": true,
+  "no_new_checkpoints": true,
+  "state_coherence_transport": "40b72ec456fd71383216d2d1ce302352ef5addf9",
+  "status": "COMPLETE",
+  "v5_transport": "365257a3a5fbe68672ad99334f0183a45e15bda2"
+}
