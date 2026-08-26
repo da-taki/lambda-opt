@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "adamw_betas": true,
+    "effective_batch": true,
+    "eps": true,
+    "gpt2_bpe": true,
+    "no_manuscript_edits": true,
+    "no_scientific_cases_run": true,
+    "parameter_count": true,
+    "peak_lr": true,
+    "runtime_gate_failed": true,
+    "runtime_gate_stop_evidence": true,
+    "six_families": true,
+    "study_seeds": true,
+    "warmup": true,
+    "weight_decay": true,
+    "wikitext_103": true
+  },
+  "status": "PASS"
+}

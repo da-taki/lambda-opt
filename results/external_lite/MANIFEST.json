@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-08-26T02:27:58.9571232Z",
+  "status": "STOPPED_RUNTIME_GATE",
+  "files": [
+    {
+      "path": "scripts/run_external_lite.py",
+      "bytes": 28966,
+      "sha256": "f5e8ebab048a54468b3c7d9e3df4f9fdfec86657e424ba44512202c388b1bbb5"
+    },
+    {
+      "path": "scripts/verify_external_lite.py",
+      "bytes": 2081,
+      "sha256": "c6eb53b97c4c5e6f408b08977d29d0179c8ed83c92af8eb23336a4e70896b20b"
+    },
+    {
+      "path": "results/external_lite/STOPPED_RUNTIME_GATE.json",
+      "bytes": 2202,
+      "sha256": "6c3d40aa9c3f694937f5de545750d90691371b7bd42f360b7af50f590c565f47"
+    },
+    {
+      "path": "results/external_lite/runtime_gate.json",
+      "bytes": 2202,
+      "sha256": "6c3d40aa9c3f694937f5de545750d90691371b7bd42f360b7af50f590c565f47"
+    },
+    {
+      "path": "results/external_lite/verification.json",
+      "bytes": 468,
+      "sha256": "f7750e556c7f9022b05ffb282207f2307afcbde5f4976890edddf815a0f0c1e3"
+    }
+  ]
+}

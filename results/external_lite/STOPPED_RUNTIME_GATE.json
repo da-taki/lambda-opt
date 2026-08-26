@@ -1,0 +1,74 @@
+{
+  "status": "FAIL",
+  "stopped": true,
+  "stop_reason": "Exact external-lite replay/evaluation configuration could not run on NVIDIA GeForce GTX 1650 without CUDA OOM/CUBLAS failure after source-training benchmark; projected complete run is not technically executable under the frozen protocol in this environment.",
+  "runtime_limit_seconds": 36000,
+  "estimated_seconds": 580.2794735995085,
+  "estimated_hours": 0.16118874266653013,
+  "benchmark_evidence": {
+    "source_training_benchmark_status": "PASS",
+    "mean_optimizer_step_seconds": 0.5479503999995359,
+    "replay_evaluation_benchmark_status": "FAIL",
+    "observed_failures": [
+      "CUDA out of memory during H=20 replay with clean/candidate models resident",
+      "CUDA out of memory/CUBLAS failure during one-model-at-a-time GPU replay",
+      "CPU replay fallback exited nonzero before finalized rows, consistent with resource pressure"
+    ]
+  },
+  "parameter_count": 57387520,
+  "study_seeds": [
+    2601,
+    2602,
+    2603
+  ],
+  "families": [
+    "exact_restore",
+    "reset_m",
+    "reset_v",
+    "stale_v",
+    "stale_mv",
+    "optimizer_reset"
+  ],
+  "effective_batch_verified": 8,
+  "dataset": {
+    "dataset": "Salesforce/wikitext/wikitext-103-raw-v1",
+    "tokenizer": "gpt2",
+    "tokenizer_class": "GPT2TokenizerFast"
+  },
+  "config": {
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "checkpoint_steps": [
+      150,
+      300
+    ],
+    "clean_source_steps": 300,
+    "context": 256,
+    "continuation_steps": 20,
+    "d_model": 512,
+    "dropout": 0.0,
+    "effective_batch": 8,
+    "eps": 1E-08,
+    "ffn": 2048,
+    "grad_clip": 1.0,
+    "heads": 8,
+    "layers": 10,
+    "min_lr": 3E-05,
+    "peak_lr": 0.0003,
+    "train_steps_total": 320,
+    "validation_target_tokens": 8192,
+    "warmup_steps": 30,
+    "weight_decay": 0.1
+  },
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "package_versions": {
+    "datasets": "5.0.1",
+    "python": "3.14.4",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.15.1"
+  },
+  "scientific_cases_run": false,
+  "protocol_altered": false,
+  "manuscript_edits": false,
+  "created_utc": "2026-08-26T02:27:14.8388476Z"
+}
