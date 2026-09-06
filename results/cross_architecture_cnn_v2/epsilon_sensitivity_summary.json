@@ -1,0 +1,40 @@
+{
+  "baseline_exact_regression": true,
+  "protocol_sha256": "5b0213c94acc2bf1a7ce1444f0a8c2598385ca2613f96b97d19de162d412094c",
+  "runtime_seconds": 6.440577800000028,
+  "seeds": [
+    4101,
+    4102,
+    4103
+  ],
+  "summary": [
+    {
+      "epsilon": 1e-08,
+      "median_of_seed_medians": 1887.2602064015916,
+      "seed_medians": [
+        1887.2602064015916,
+        1403.959691420724,
+        3743.0764599656495
+      ]
+    },
+    {
+      "epsilon": 1e-06,
+      "median_of_seed_medians": 228.00936346624465,
+      "seed_medians": [
+        228.00936346624465,
+        221.66649785025692,
+        327.3663473124232
+      ]
+    },
+    {
+      "epsilon": 0.0001,
+      "median_of_seed_medians": 22.126458198335104,
+      "seed_medians": [
+        22.126458198335104,
+        19.379499054390454,
+        29.442200130933724
+      ]
+    }
+  ],
+  "supporting_only": true
+}

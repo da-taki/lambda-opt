@@ -1,0 +1,8 @@
+{
+  "errors": [],
+  "failures": [],
+  "fixtures": "synthetic data, seed 999; no primary cohort rewrite outcomes",
+  "status": "PASS",
+  "tests_run": 9,
+  "utc": "2026-09-06T10:32:55.340499+00:00"
+}

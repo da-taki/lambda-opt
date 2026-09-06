@@ -1,0 +1,15 @@
+{
+  "checked_files": [
+    "epsilon_sensitivity_rows.csv",
+    "epsilon_sensitivity_seed_summary.csv",
+    "epsilon_sensitivity_family_summary.csv",
+    "epsilon_sensitivity_protocol.json",
+    "epsilon_sensitivity_report.md",
+    "epsilon_sensitivity_plot.pdf",
+    "epsilon_sensitivity_tests.json",
+    "epsilon_sensitivity_regression_gate.json"
+  ],
+  "checked_rows": 135,
+  "errors": [],
+  "status": "PASS"
+}

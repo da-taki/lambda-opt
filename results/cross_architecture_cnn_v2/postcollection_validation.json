@@ -1,0 +1,48 @@
+{
+  "all_first_step_metrics_exactly_reproduced": true,
+  "audit_runtime_seconds": 19.383396900000662,
+  "batch_plans_and_pairing_verified": true,
+  "checkpoint_and_dataset_hashes_verified": true,
+  "checkpoints": 15,
+  "first_step_rows": 60,
+  "focused_tests": {
+    "errors": [],
+    "failures": [],
+    "fixtures": "synthetic data, seed 999; no primary cohort rewrite outcomes",
+    "status": "PASS",
+    "tests_run": 9,
+    "utc": "2026-09-06T10:32:55.340499+00:00"
+  },
+  "functional_rows": 360,
+  "historical_files_unchanged": 9626,
+  "historical_verifiers": {
+    "historical_files_unchanged": true,
+    "results": [
+      {
+        "output": "epsilon_sensitivity verification passed\n",
+        "source_sha256": "a19236afdee1bdd1704fc8fec894d7287c67e423a905778e0a5b92713c643d76",
+        "status": "PASS",
+        "verifier": "verify_epsilon_sensitivity.py"
+      },
+      {
+        "output": "verify_adamw_state_coherence PASS\n",
+        "source_sha256": "41a3a7160638a2e1b80263ac17cafdee72161575be91c5f5664dcefff353d838",
+        "status": "PASS",
+        "verifier": "verify_adamw_state_coherence.py"
+      },
+      {
+        "output": "reviewer2026_v5_final_eval verification passed\n",
+        "source_sha256": "b30b9c9a79282db6559ea28a115d22cc5803091c2b3b7a1869cdccfad3840a8f",
+        "status": "PASS",
+        "verifier": "verify_reviewer2026_v5_final_eval.py"
+      }
+    ]
+  },
+  "independent_seeds": 5,
+  "protocol_and_code_hashes_verified": true,
+  "seed_rows": 20,
+  "source_rows": 15005,
+  "status": "PASS",
+  "tracked_diff_empty": true,
+  "trajectory_rows": 6060
+}

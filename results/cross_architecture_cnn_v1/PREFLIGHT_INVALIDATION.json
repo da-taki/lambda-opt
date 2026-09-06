@@ -1,0 +1,6 @@
+{
+  "status": "INVALIDATED_PREFLIGHT_ONLY",
+  "primary_cohort_started": false,
+  "reason": "GPU uint8 division/normalization not byte-identical to CPU torchvision ToTensor+Normalize; exact-equality preflight failed. Fix computes deterministic reference preprocessing on CPU then transfers to GPU. Tests unchanged. Entire fresh source-only pilot and prospective protocol in v2; no scientific rewrite outcomes observed.",
+  "replacement_directory": "results/cross_architecture_cnn_v2"
+}

@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "verifier": "verify_epsilon_sensitivity.py",
+      "status": "PASS",
+      "source_sha256": "a19236afdee1bdd1704fc8fec894d7287c67e423a905778e0a5b92713c643d76",
+      "output": "epsilon_sensitivity verification passed\n"
+    },
+    {
+      "verifier": "verify_adamw_state_coherence.py",
+      "status": "PASS",
+      "source_sha256": "41a3a7160638a2e1b80263ac17cafdee72161575be91c5f5664dcefff353d838",
+      "output": "verify_adamw_state_coherence PASS\n"
+    },
+    {
+      "verifier": "verify_reviewer2026_v5_final_eval.py",
+      "status": "PASS",
+      "source_sha256": "b30b9c9a79282db6559ea28a115d22cc5803091c2b3b7a1869cdccfad3840a8f",
+      "output": "reviewer2026_v5_final_eval verification passed\n"
+    }
+  ],
+  "historical_files_unchanged": true
+}

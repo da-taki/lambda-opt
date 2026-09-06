@@ -1,0 +1,30 @@
+{
+  "cpu_threads": 4,
+  "cuda": "12.8",
+  "cudnn": 91900,
+  "dataset": "CIFAR-10 python version; official 50000 train / 10000 test",
+  "dataset_root": "C:\\Users\\Asus\\Desktop\\Profitlo Projects\\Lambda_Opt\\experiments\\data",
+  "dataset_sha256": {
+    "cifar-10-batches-py\\batches.meta": "f962466ef690d46b226450fb9aadc74ba4bc64a76aa526b5827fe4bc5c7125cb",
+    "cifar-10-batches-py\\data_batch_1": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd",
+    "cifar-10-batches-py\\data_batch_2": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8",
+    "cifar-10-batches-py\\data_batch_3": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9",
+    "cifar-10-batches-py\\data_batch_4": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b",
+    "cifar-10-batches-py\\data_batch_5": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154",
+    "cifar-10-batches-py\\readme.html": "4d1c3fb199d6a183ae03f5162b469d7bc04edf2fad9547bd5f224271d52f98e5",
+    "cifar-10-batches-py\\test_batch": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831"
+  },
+  "dataset_source": "https://www.cs.toronto.edu/~kriz/cifar.html",
+  "device": "cuda",
+  "device_name": "NVIDIA GeForce GTX 1650",
+  "git_branch": "experiment/cnn-cross-architecture-replication",
+  "git_commit": "aa81e700ca4fcb1913fe399d4dd543d15993297b",
+  "git_status": "?? cleanup_results_audit_20260825.json\n?? experiments/\n?? lean/\n?? results/cross_architecture_cnn_v1/\n?? results/cross_architecture_cnn_v2/\n?? results/epsilon_sensitivity_v1/\n?? results/external_lite/protocol.json\n?? results/external_replication/\n?? results/opt2026_10m_gpu_final/\n?? results/opt2026_pytorch_scale_final/\n?? scripts/__pycache__/\n?? scripts/run_epsilon_sensitivity.py\n?? scripts/run_external_replication.py\n?? scripts/verify_epsilon_sensitivity.py\n?? scripts/verify_external_replication.py",
+  "implementation_sha256": "90ac7e5b5752e49b3ec87be9e81803bd8fcc5cf7cb2c978f39a50453f3fc4de1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+  "pytorch": "2.11.0+cu128",
+  "reused_utility_sha256": "cf264887160ff4696883729f545cdadd917dd1da904d188dd8e463266ef0c1e7",
+  "torchvision": "0.26.0+cu128",
+  "utc": "2026-09-06T10:32:38.981419+00:00"
+}

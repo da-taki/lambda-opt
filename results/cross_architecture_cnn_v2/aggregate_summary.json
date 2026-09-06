@@ -1,0 +1,163 @@
+{
+  "H3_adverse_seeds": 0,
+  "H3_favorable_seeds": 5,
+  "families": {
+    "clean": {
+      "H100_median_of_seed_medians_accuracy": 0.6306,
+      "H100_median_of_seed_medians_loss": 1.035914609527588,
+      "H100_seed_median_accuracy": [
+        0.6113,
+        0.6306,
+        0.6268,
+        0.6309,
+        0.6385
+      ],
+      "H100_seed_median_loss": [
+        1.0601507560729981,
+        1.035914609527588,
+        1.0235120729446412,
+        1.0364446083068848,
+        1.0137141054153442
+      ],
+      "T_tau_crossed": [],
+      "checkpoint_crossings": 0,
+      "checkpoint_rows": 15,
+      "individual_seed_medians_S1": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "iqr": 0.0,
+      "max": 0.0,
+      "median_of_seed_medians_S1": 0.0,
+      "min": 0.0
+    },
+    "full_per_parameter_reset": {
+      "H100_median_of_seed_medians_accuracy": 0.6318,
+      "H100_median_of_seed_medians_loss": 1.0188952648162841,
+      "H100_seed_median_accuracy": [
+        0.6092,
+        0.6232,
+        0.6318,
+        0.6366,
+        0.6453
+      ],
+      "H100_seed_median_loss": [
+        1.0636316154479981,
+        1.0444924980163575,
+        1.0095275552749634,
+        1.0188952648162841,
+        1.000804263496399
+      ],
+      "T_tau_crossed": [
+        73,
+        61,
+        89
+      ],
+      "checkpoint_crossings": 3,
+      "checkpoint_rows": 15,
+      "individual_seed_medians_S1": [
+        4.598622938467272,
+        3.9753695876121427,
+        4.537815049917,
+        4.301614157135106,
+        3.6960156971485705
+      ],
+      "iqr": 0.5624454623048569,
+      "max": 4.598622938467272,
+      "median_of_seed_medians_S1": 4.301614157135106,
+      "min": 3.6960156971485705
+    },
+    "reset_m": {
+      "H100_median_of_seed_medians_accuracy": 0.6268,
+      "H100_median_of_seed_medians_loss": 1.0379063053131103,
+      "H100_seed_median_accuracy": [
+        0.614,
+        0.6305,
+        0.6243,
+        0.6268,
+        0.6375
+      ],
+      "H100_seed_median_loss": [
+        1.0535211591720581,
+        1.0379063053131103,
+        1.02683490524292,
+        1.0384685815811157,
+        1.0181455993652344
+      ],
+      "T_tau_crossed": [],
+      "checkpoint_crossings": 0,
+      "checkpoint_rows": 15,
+      "individual_seed_medians_S1": [
+        0.8477882873502685,
+        0.8481481216651727,
+        0.8612851607044102,
+        0.8538054181421226,
+        0.8549088125045904
+      ],
+      "iqr": 0.00676069083941766,
+      "max": 0.8612851607044102,
+      "median_of_seed_medians_S1": 0.8538054181421226,
+      "min": 0.8477882873502685
+    },
+    "reset_v": {
+      "H100_median_of_seed_medians_accuracy": 0.196,
+      "H100_median_of_seed_medians_loss": 2.1313898956298827,
+      "H100_seed_median_accuracy": [
+        0.2264,
+        0.269,
+        0.1442,
+        0.1874,
+        0.196
+      ],
+      "H100_seed_median_loss": [
+        2.1313898956298827,
+        2.0170251682281495,
+        3.659492321014404,
+        2.311488892364502,
+        2.1290730812072756
+      ],
+      "T_tau_crossed": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "checkpoint_crossings": 15,
+      "checkpoint_rows": 15,
+      "individual_seed_medians_S1": [
+        1887.2602064015916,
+        1403.959691420724,
+        3743.0764599656495,
+        1466.4566052005148,
+        1405.5894452377013
+      ],
+      "iqr": 481.67076116389035,
+      "max": 3743.0764599656495,
+      "median_of_seed_medians_S1": 1466.4566052005148,
+      "min": 1403.959691420724
+    }
+  },
+  "independent_seeds": 5,
+  "paired_checkpoints": 15,
+  "paired_seed_direction_counts": {
+    "full_per_parameter_reset_gt_reset_m": 5,
+    "reset_v_gt_full_per_parameter_reset": 5,
+    "reset_v_gt_reset_m": 5
+  },
+  "protocol_sha256": "5b0213c94acc2bf1a7ce1444f0a8c2598385ca2613f96b97d19de162d412094c",
+  "verdict": "REPLICATION SUPPORTED"
+}

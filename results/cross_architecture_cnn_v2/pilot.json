@@ -1,0 +1,23 @@
+{
+  "acceptable": true,
+  "baseline": {
+    "accuracy": 0.0995,
+    "examples": 2000,
+    "loss": 2.304277526855469
+  },
+  "estimated_primary_5_seed_seconds": 658.4774728208106,
+  "evaluation_2000_seconds": 0.10654010000052949,
+  "final": {
+    "accuracy": 0.469,
+    "examples": 2000,
+    "loss": 1.4341171875
+  },
+  "first_50_mean_loss": 2.1561439871788024,
+  "last_50_mean_loss": 1.4311447286605834,
+  "parameter_count": 140714,
+  "rewrite_comparisons_run": false,
+  "runtime_seconds": 14.662805900000421,
+  "seed": 4099,
+  "steps": 500,
+  "training_seconds": 11.705805700000383
+}

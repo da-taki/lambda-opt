@@ -1,0 +1,10 @@
+{
+  "errors": [],
+  "failures": [
+    "(<__main__.Validation testMethod=test_architecture_and_preprocessing>, 'Traceback (most recent call last):\\n  File \"C:\\\\Users\\\\Asus\\\\Desktop\\\\Profitlo Projects\\\\Lambda_Opt\\\\results\\\\cross_architecture_cnn_v1\\\\test_experiment.py\", line 24, in test_architecture_and_preprocessing\\n    self.assertTrue(torch.equal(actual[0],expected))\\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: False is not true\\n')"
+  ],
+  "fixtures": "synthetic data, seed 999; no primary cohort rewrite outcomes",
+  "status": "FAIL",
+  "tests_run": 9,
+  "utc": "2026-09-06T10:31:20.062273+00:00"
+}
